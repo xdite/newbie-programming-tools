@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" fill="#212529">檔案版本演進</text>
+
+    <!-- 時間軸 -->
+    <line x1="100" y1="400" x2="700" y2="400" stroke="#adb5bd" stroke-width="2"/>
+    
+    <!-- 時間標記 -->
+    <g font-family="Arial" font-size="14" fill="#6c757d">
+        <text x="100" y="420" text-anchor="middle">第一天</text>
+        <text x="250" y="420" text-anchor="middle">第二天</text>
+        <text x="400" y="420" text-anchor="middle">第三天</text>
+        <text x="550" y="420" text-anchor="middle">第四天</text>
+        <text x="700" y="420" text-anchor="middle">第五天</text>
+    </g>
+
+    <!-- 檔案圖示和名稱 -->
+    <!-- 初稿 -->
+    <g transform="translate(70,300)">
+        <rect width="60" height="80" fill="#e9ecef" stroke="#495057"/>
+        <line x1="10" y1="20" x2="50" y2="20" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="30" x2="50" y2="30" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="40" x2="40" y2="40" stroke="#6c757d" stroke-width="2"/>
+        <text x="30" y="100" text-anchor="middle" font-family="Arial" font-size="12">報告_初稿.doc</text>
+    </g>
+
+    <!-- 修改版 -->
+    <g transform="translate(220,250)">
+        <rect width="60" height="80" fill="#e9ecef" stroke="#495057"/>
+        <line x1="10" y1="20" x2="50" y2="20" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="30" x2="50" y2="30" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="40" x2="40" y2="40" stroke="#6c757d" stroke-width="2"/>
+        <text x="30" y="100" text-anchor="middle" font-family="Arial" font-size="12">報告_修改版.doc</text>
+    </g>
+
+    <!-- 最終版 -->
+    <g transform="translate(370,200)">
+        <rect width="60" height="80" fill="#e9ecef" stroke="#495057"/>
+        <line x1="10" y1="20" x2="50" y2="20" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="30" x2="50" y2="30" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="40" x2="40" y2="40" stroke="#6c757d" stroke-width="2"/>
+        <text x="30" y="100" text-anchor="middle" font-family="Arial" font-size="12">報告_最終版.doc</text>
+    </g>
+
+    <!-- 最終版_真的最終 -->
+    <g transform="translate(520,150)">
+        <rect width="60" height="80" fill="#e9ecef" stroke="#495057"/>
+        <line x1="10" y1="20" x2="50" y2="20" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="30" x2="50" y2="30" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="40" x2="40" y2="40" stroke="#6c757d" stroke-width="2"/>
+        <text x="30" y="100" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">報告_最終版_</text>
+        <text x="30" y="115" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">真的最終.doc</text>
+    </g>
+
+    <!-- 最終版_這次是真的 -->
+    <g transform="translate(670,100)">
+        <rect width="60" height="80" fill="#e9ecef" stroke="#495057"/>
+        <line x1="10" y1="20" x2="50" y2="20" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="30" x2="50" y2="30" stroke="#6c757d" stroke-width="2"/>
+        <line x1="10" y1="40" x2="40" y2="40" stroke="#6c757d" stroke-width="2"/>
+        <text x="30" y="100" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">報告_最終版_</text>
+        <text x="30" y="115" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">這次是真的.doc</text>
+    </g>
+
+    <!-- 連接線 -->
+    <g stroke="#adb5bd" stroke-width="2" fill="none">
+        <path d="M 130,340 Q 190,320 220,290"/>
+        <path d="M 280,290 Q 340,270 370,240"/>
+        <path d="M 430,240 Q 490,220 520,190"/>
+        <path d="M 580,190 Q 640,170 670,140"/>
+    </g>
+
+    <!-- 問題標示 -->
+    <g transform="translate(350,50)">
+        <rect width="300" height="80" rx="10" fill="#ffe3e3" stroke="#ff8787"/>
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="14" fill="#e03131">問題：</text>
+        <text x="150" y="50" text-anchor="middle" font-family="Arial" font-size="12" fill="#e03131">• 檔案命名混亂</text>
+        <text x="150" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#e03131">• 難以追蹤修改內容</text>
+    </g>
+</svg> 

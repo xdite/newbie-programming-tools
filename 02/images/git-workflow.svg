@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- 工作區域 (Working Directory) -->
+    <g transform="translate(50,50)">
+        <rect width="200" height="150" rx="10" fill="#e9ecef" stroke="#495057" stroke-width="2"/>
+        <text x="100" y="40" text-anchor="middle" font-family="Arial" font-size="16" fill="#212529">工作目錄</text>
+        <text x="100" y="85" text-anchor="middle" font-family="Arial" font-size="14" fill="#495057">Working Directory</text>
+        <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#6c757d">實際的檔案</text>
+    </g>
+
+    <!-- 暫存區 (Staging Area) -->
+    <g transform="translate(300,50)">
+        <rect width="200" height="150" rx="10" fill="#e9ecef" stroke="#495057" stroke-width="2"/>
+        <text x="100" y="40" text-anchor="middle" font-family="Arial" font-size="16" fill="#212529">暫存區</text>
+        <text x="100" y="85" text-anchor="middle" font-family="Arial" font-size="14" fill="#495057">Staging Area</text>
+        <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#6c757d">準備提交的檔案</text>
+    </g>
+
+    <!-- Git 倉庫 (Repository) -->
+    <g transform="translate(550,50)">
+        <rect width="200" height="150" rx="10" fill="#e9ecef" stroke="#495057" stroke-width="2"/>
+        <text x="100" y="40" text-anchor="middle" font-family="Arial" font-size="16" fill="#212529">Git 倉庫</text>
+        <text x="100" y="85" text-anchor="middle" font-family="Arial" font-size="14" fill="#495057">Repository</text>
+        <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#6c757d">提交的歷史記錄</text>
+    </g>
+
+    <!-- 箭頭和指令 -->
+    <!-- Working Directory -> Staging Area -->
+    <g transform="translate(250,125)">
+        <path d="M 0,0 L 50,0" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+        <text x="25" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#495057">git add</text>
+    </g>
+
+    <!-- Staging Area -> Repository -->
+    <g transform="translate(500,125)">
+        <path d="M 0,0 L 50,0" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+        <text x="25" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#495057">git commit</text>
+    </g>
+
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#495057"/>
+        </marker>
+    </defs>
+
+    <!-- 遠端倉庫 (Remote Repository) -->
+    <g transform="translate(550,300)">
+        <rect width="200" height="150" rx="10" fill="#e9ecef" stroke="#495057" stroke-width="2"/>
+        <text x="100" y="40" text-anchor="middle" font-family="Arial" font-size="16" fill="#212529">遠端倉庫</text>
+        <text x="100" y="85" text-anchor="middle" font-family="Arial" font-size="14" fill="#495057">Remote Repository</text>
+        <text x="100" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#6c757d">GitHub/GitLab</text>
+    </g>
+
+    <!-- Local -> Remote 箭頭 -->
+    <g transform="translate(650,200)">
+        <path d="M 0,0 L 0,100" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+        <text x="30" y="50" text-anchor="start" font-family="Arial" font-size="14" fill="#495057">git push</text>
+    </g>
+
+    <!-- Remote -> Local 箭頭 -->
+    <g transform="translate(600,300)">
+        <path d="M 0,0 L 0,-100" stroke="#495057" stroke-width="2" marker-end="url(#arrow)"/>
+        <text x="-30" y="-50" text-anchor="end" font-family="Arial" font-size="14" fill="#495057">git pull</text>
+    </g>
+
+    <!-- 分支示意圖 -->
+    <g transform="translate(50,300)">
+        <rect width="450" height="150" rx="10" fill="#e9ecef" stroke="#495057" stroke-width="2"/>
+        <text x="225" y="40" text-anchor="middle" font-family="Arial" font-size="16" fill="#212529">分支 (Branches)</text>
+        
+        <!-- 主分支 -->
+        <path d="M 50,80 L 400,80" stroke="#495057" stroke-width="2"/>
+        <circle cx="150" cy="80" r="5" fill="#495057"/>
+        <circle cx="250" cy="80" r="5" fill="#495057"/>
+        <circle cx="350" cy="80" r="5" fill="#495057"/>
+        <text x="225" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">main</text>
+
+        <!-- 特性分支 -->
+        <path d="M 150,80 Q 200,110 250,110" stroke="#495057" stroke-width="2"/>
+        <circle cx="200" cy="110" r="5" fill="#495057"/>
+        <text x="200" y="130" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">feature</text>
+    </g>
+</svg> 
