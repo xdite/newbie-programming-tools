@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+        Token：健身房會員卡
+    </text>
+
+    <!-- 步驟 1：登入獲取 Token -->
+    <g transform="translate(50,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 1：登入獲取
+        </text>
+        
+        <!-- 登入表單 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="160" rx="5" fill="#e3f2fd"/>
+            
+            <!-- 登入界面 -->
+            <text x="90" y="30" text-anchor="middle" fill="#1976d2" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+                會員登入
+            </text>
+            
+            <!-- 登入信息 -->
+            <rect x="10" y="45" width="160" height="60" rx="3" fill="white" stroke="#1976d2"/>
+            <text x="20" y="65" fill="#666" font-family="monospace" font-size="10">
+                username: member123
+            </text>
+            <text x="20" y="85" fill="#666" font-family="monospace" font-size="10">
+                password: ********
+            </text>
+            
+            <!-- Token 響應 -->
+            <rect x="10" y="115" width="160" height="35" rx="3" fill="#e3f2fd" stroke="#1976d2"/>
+            <text x="85" y="137" text-anchor="middle" fill="#1976d2" font-family="monospace" font-size="10">
+                JWT Token 已發放
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="260" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">類似於：</tspan>
+            <tspan x="20" dy="25">• 辦理會員卡</tspan>
+            <tspan x="20" dy="25">• 驗證身份</tspan>
+            <tspan x="20" dy="25">• 獲得臨時憑證</tspan>
+        </text>
+    </g>
+
+    <!-- 步驟 2：Token 結構 -->
+    <g transform="translate(290,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 2：Token 內容
+        </text>
+        
+        <!-- Token 結構 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="160" rx="5" fill="#e8f5e9"/>
+            
+            <!-- Header -->
+            <rect x="10" y="20" width="160" height="35" rx="3" fill="white" stroke="#2e7d32"/>
+            <text x="20" y="35" fill="#2e7d32" font-family="Arial, sans-serif" font-size="10">
+                Header（頭部）：
+            </text>
+            <text x="20" y="48" fill="#666" font-family="monospace" font-size="8">
+                {"alg": "HS256", "typ": "JWT"}
+            </text>
+            
+            <!-- Payload -->
+            <rect x="10" y="65" width="160" height="55" rx="3" fill="white" stroke="#2e7d32"/>
+            <text x="20" y="80" fill="#2e7d32" font-family="Arial, sans-serif" font-size="10">
+                Payload（負載）：
+            </text>
+            <text x="20" y="93" fill="#666" font-family="monospace" font-size="8">
+                {"user": "member123",
+            </text>
+            <text x="20" y="106" fill="#666" font-family="monospace" font-size="8">
+                 "exp": 1735689600,
+            </text>
+            <text x="20" y="119" fill="#666" font-family="monospace" font-size="8">
+                 "role": "member"}
+            </text>
+            
+            <!-- Signature -->
+            <rect x="10" y="130" width="160" height="20" rx="3" fill="white" stroke="#2e7d32"/>
+            <text x="20" y="144" fill="#666" font-family="monospace" font-size="8">
+                Signature（簽名）...
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="260" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">包含信息：</tspan>
+            <tspan x="20" dy="25">• 用戶身份</tspan>
+            <tspan x="20" dy="25">• 有效期限</tspan>
+            <tspan x="20" dy="25">• 權限範圍</tspan>
+        </text>
+    </g>
+
+    <!-- 步驟 3：使用 Token -->
+    <g transform="translate(530,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 3：使用 Token
+        </text>
+        
+        <!-- 使用場景 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="160" rx="5" fill="#fff3e0"/>
+            
+            <!-- 請求示例 -->
+            <text x="10" y="30" fill="#e65100" font-family="Arial, sans-serif" font-size="12">
+                請求頭：
+            </text>
+            <rect x="10" y="40" width="160" height="40" rx="3" fill="white" stroke="#e65100"/>
+            <text x="20" y="55" fill="#666" font-family="monospace" font-size="8">
+                Authorization: Bearer
+            </text>
+            <text x="20" y="70" fill="#666" font-family="monospace" font-size="8">
+                eyJhbGciOiJIUzI1...
+            </text>
+            
+            <!-- 過期提示 -->
+            <text x="10" y="100" fill="#e65100" font-family="Arial, sans-serif" font-size="12">
+                過期處理：
+            </text>
+            <rect x="10" y="110" width="160" height="40" rx="3" fill="white" stroke="#e65100"/>
+            <text x="20" y="130" fill="#666" font-family="monospace" font-size="8">
+                自動續期或重新登入
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="260" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">類似於：</tspan>
+            <tspan x="20" dy="25">• 刷卡進入健身房</tspan>
+            <tspan x="20" dy="25">• 檢查會員有效期</tspan>
+            <tspan x="20" dy="25">• 需要時續期</tspan>
+        </text>
+    </g>
+
+    <!-- 連接箭頭 -->
+    <g>
+        <path d="M 270,200 L 290,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 510,200 L 530,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- 箭頭定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- 底部說明 -->
+    <g transform="translate(50,450)">
+        <text fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="0" dy="0">● 適用場景：</tspan>
+            <tspan x="100" dy="0">需要用戶登入的服務、Web 應用、移動應用</tspan>
+            <tspan x="400" dy="0">● 注意事項：</tspan>
+            <tspan x="500" dy="0">注意有效期、安全傳輸、及時續期</tspan>
+        </text>
+    </g>
+</svg> 

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+        API 認證：生活中的門票
+    </text>
+
+    <!-- 左側：電影院（API Key） -->
+    <g transform="translate(50,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 場景圖示 -->
+        <rect x="20" y="20" width="180" height="100" rx="5" fill="#e3f2fd"/>
+        <text x="110" y="80" text-anchor="middle" fill="#1976d2" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            電影院
+        </text>
+        
+        <!-- 證件圖示 -->
+        <g transform="translate(35,140)">
+            <rect width="150" height="80" rx="5" fill="#bbdefb"/>
+            <text x="75" y="35" text-anchor="middle" fill="#1976d2" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+                電影票
+            </text>
+            <text x="75" y="60" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                (API Key)
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="260" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">特點：</tspan>
+            <tspan x="20" dy="25">• 單次使用</tspan>
+            <tspan x="20" dy="25">• 簡單驗證</tspan>
+            <tspan x="20" dy="25">• 限定服務</tspan>
+        </text>
+    </g>
+
+    <!-- 中間：健身房（Token） -->
+    <g transform="translate(290,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 場景圖示 -->
+        <rect x="20" y="20" width="180" height="100" rx="5" fill="#e8f5e9"/>
+        <text x="110" y="80" text-anchor="middle" fill="#2e7d32" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            健身房
+        </text>
+        
+        <!-- 證件圖示 -->
+        <g transform="translate(35,140)">
+            <rect width="150" height="80" rx="5" fill="#c8e6c9"/>
+            <text x="75" y="35" text-anchor="middle" fill="#2e7d32" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+                會員卡
+            </text>
+            <text x="75" y="60" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                (Token)
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="260" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">特點：</tspan>
+            <tspan x="20" dy="25">• 重複使用</tspan>
+            <tspan x="20" dy="25">• 可續期</tspan>
+            <tspan x="20" dy="25">• 可撤銷</tspan>
+        </text>
+    </g>
+
+    <!-- 右側：銀行（Basic Auth） -->
+    <g transform="translate(530,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 場景圖示 -->
+        <rect x="20" y="20" width="180" height="100" rx="5" fill="#fff3e0"/>
+        <text x="110" y="80" text-anchor="middle" fill="#e65100" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            銀行
+        </text>
+        
+        <!-- 證件圖示 -->
+        <g transform="translate(35,140)">
+            <rect width="150" height="80" rx="5" fill="#ffe0b2"/>
+            <text x="75" y="35" text-anchor="middle" fill="#e65100" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+                帳號密碼
+            </text>
+            <text x="75" y="60" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                (Basic Auth)
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="260" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">特點：</tspan>
+            <tspan x="20" dy="25">• 永久有效</tspan>
+            <tspan x="20" dy="25">• 需加密傳輸</tspan>
+            <tspan x="20" dy="25">• 高安全性</tspan>
+        </text>
+    </g>
+
+    <!-- 底部說明 -->
+    <g transform="translate(50,450)">
+        <text fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="0" dy="0">● API Key：</tspan>
+            <tspan x="100" dy="0">適合簡單的公開 API</tspan>
+            <tspan x="300" dy="0">● Token：</tspan>
+            <tspan x="380" dy="0">適合需要用戶登入的服務</tspan>
+            <tspan x="600" dy="0">● Basic Auth：</tspan>
+            <tspan x="700" dy="0">適合內部系統</tspan>
+        </text>
+    </g>
+</svg> 

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+        Basic Auth：銀行帳戶登入
+    </text>
+
+    <!-- 步驟 1：輸入帳號密碼 -->
+    <g transform="translate(50,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 1：輸入憑證
+        </text>
+        
+        <!-- 登入表單 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="120" rx="5" fill="#e3f2fd"/>
+            
+            <!-- 帳號輸入框 -->
+            <text x="10" y="30" fill="#1976d2" font-family="Arial, sans-serif" font-size="14">
+                帳號：
+            </text>
+            <rect x="10" y="40" width="160" height="25" rx="3" fill="white" stroke="#1976d2"/>
+            <text x="20" y="57" fill="#666" font-family="monospace" font-size="12">username</text>
+            
+            <!-- 密碼輸入框 -->
+            <text x="10" y="85" fill="#1976d2" font-family="Arial, sans-serif" font-size="14">
+                密碼：
+            </text>
+            <rect x="10" y="95" width="160" height="25" rx="3" fill="white" stroke="#1976d2"/>
+            <text x="20" y="112" fill="#666" font-family="monospace" font-size="12">********</text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="220" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">對應 curl 指令：</tspan>
+            <tspan x="20" dy="25" font-family="monospace" fill="#666">curl -u username:password</tspan>
+            <tspan x="20" dy="25" font-family="monospace" fill="#666">https://api.example.com</tspan>
+        </text>
+    </g>
+
+    <!-- 步驟 2：Base64 編碼 -->
+    <g transform="translate(290,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 2：編碼轉換
+        </text>
+        
+        <!-- 編碼過程 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="120" rx="5" fill="#e8f5e9"/>
+            
+            <!-- 原始文字 -->
+            <text x="10" y="30" fill="#2e7d32" font-family="Arial, sans-serif" font-size="14">
+                原始格式：
+            </text>
+            <text x="10" y="50" fill="#666" font-family="monospace" font-size="12">
+                username:password
+            </text>
+            
+            <!-- 轉換箭頭 -->
+            <text x="90" y="75" text-anchor="middle" fill="#2e7d32" font-family="Arial, sans-serif" font-size="20">
+                ↓
+            </text>
+            
+            <!-- Base64 結果 -->
+            <text x="10" y="100" fill="#2e7d32" font-family="Arial, sans-serif" font-size="14">
+                Base64 編碼：
+            </text>
+            <text x="10" y="120" fill="#666" font-family="monospace" font-size="12">
+                dXNlcm5hbWU6cGFzc3dvcmQ=
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="220" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">使用 Base64 編碼：</tspan>
+            <tspan x="20" dy="25">• 轉換成一行文字</tspan>
+            <tspan x="20" dy="25">• 方便傳輸</tspan>
+            <tspan x="20" dy="25">• 不是加密！</tspan>
+        </text>
+    </g>
+
+    <!-- 步驟 3：發送請求 -->
+    <g transform="translate(530,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 3：發送請求
+        </text>
+        
+        <!-- 請求頭部 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="120" rx="5" fill="#fff3e0"/>
+            
+            <!-- 請求頭 -->
+            <text x="10" y="30" fill="#e65100" font-family="Arial, sans-serif" font-size="14">
+                請求頭：
+            </text>
+            <text x="10" y="50" fill="#666" font-family="monospace" font-size="12">
+                Authorization: Basic
+            </text>
+            <text x="10" y="70" fill="#666" font-family="monospace" font-size="12">
+                dXNlcm5hbWU6cGFzc3dvcmQ=
+            </text>
+            
+            <!-- HTTPS 提示 -->
+            <rect x="10" y="90" width="160" height="25" rx="3" fill="#ffd180"/>
+            <text x="90" y="107" text-anchor="middle" fill="#e65100" font-family="Arial, sans-serif" font-size="12">
+                必須使用 HTTPS！
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="220" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">安全注意事項：</tspan>
+            <tspan x="20" dy="25">• 使用 HTTPS 加密</tspan>
+            <tspan x="20" dy="25">• 避免明文存儲</tspan>
+            <tspan x="20" dy="25">• 定期更換密碼</tspan>
+        </text>
+    </g>
+
+    <!-- 連接箭頭 -->
+    <g>
+        <path d="M 270,200 L 290,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 510,200 L 530,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- 箭頭定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- 底部說明 -->
+    <g transform="translate(50,450)">
+        <text fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="0" dy="0">● 適用場景：</tspan>
+            <tspan x="100" dy="0">內部系統、開發環境、簡單的 API</tspan>
+            <tspan x="400" dy="0">● 注意事項：</tspan>
+            <tspan x="500" dy="0">必須使用 HTTPS，密碼要定期更換</tspan>
+        </text>
+    </g>
+</svg> 

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+        API Key：電影票認證
+    </text>
+
+    <!-- 步驟 1：獲取 API Key -->
+    <g transform="translate(50,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 1：註冊獲取
+        </text>
+        
+        <!-- 註冊表單 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="140" rx="5" fill="#e3f2fd"/>
+            
+            <!-- 註冊網站 -->
+            <text x="90" y="30" text-anchor="middle" fill="#1976d2" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+                API 服務網站
+            </text>
+            
+            <!-- API Key 展示 -->
+            <rect x="10" y="50" width="160" height="70" rx="3" fill="white" stroke="#1976d2"/>
+            <text x="85" y="75" text-anchor="middle" fill="#1976d2" font-family="Arial, sans-serif" font-size="12">
+                您的 API Key：
+            </text>
+            <text x="85" y="95" text-anchor="middle" fill="#666" font-family="monospace" font-size="10">
+                a1b2c3d4-5e6f-7g8h-9i0j
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="240" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">類似於：</tspan>
+            <tspan x="20" dy="25">• 在售票處買票</tspan>
+            <tspan x="20" dy="25">• 獲得唯一票號</tspan>
+            <tspan x="20" dy="25">• 一次性付費</tspan>
+        </text>
+    </g>
+
+    <!-- 步驟 2：保存和使用 -->
+    <g transform="translate(290,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 2：安全保存
+        </text>
+        
+        <!-- 保存方式 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="140" rx="5" fill="#e8f5e9"/>
+            
+            <!-- 環境變量 -->
+            <text x="10" y="30" fill="#2e7d32" font-family="Arial, sans-serif" font-size="14">
+                環境變量：
+            </text>
+            <rect x="10" y="40" width="160" height="25" rx="3" fill="white" stroke="#2e7d32"/>
+            <text x="15" y="57" fill="#666" font-family="monospace" font-size="10">
+                export API_KEY=a1b2c3d4...
+            </text>
+            
+            <!-- 配置文件 -->
+            <text x="10" y="85" fill="#2e7d32" font-family="Arial, sans-serif" font-size="14">
+                配置文件：
+            </text>
+            <rect x="10" y="95" width="160" height="25" rx="3" fill="white" stroke="#2e7d32"/>
+            <text x="15" y="112" fill="#666" font-family="monospace" font-size="10">
+                api_key: a1b2c3d4...
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="240" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">類似於：</tspan>
+            <tspan x="20" dy="25">• 將票存放在錢包</tspan>
+            <tspan x="20" dy="25">• 避免遺失或損壞</tspan>
+            <tspan x="20" dy="25">• 不要借給他人</tspan>
+        </text>
+    </g>
+
+    <!-- 步驟 3：使用 API Key -->
+    <g transform="translate(530,80)">
+        <rect width="220" height="350" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 步驟標題 -->
+        <text x="110" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+            步驟 3：使用服務
+        </text>
+        
+        <!-- 使用方式 -->
+        <g transform="translate(20,70)">
+            <rect width="180" height="140" rx="5" fill="#fff3e0"/>
+            
+            <!-- URL 參數 -->
+            <text x="10" y="25" fill="#e65100" font-family="Arial, sans-serif" font-size="12">
+                URL 參數：
+            </text>
+            <text x="10" y="45" fill="#666" font-family="monospace" font-size="10">
+                ?api_key=a1b2c3d4...
+            </text>
+            
+            <!-- 請求頭 -->
+            <text x="10" y="70" fill="#e65100" font-family="Arial, sans-serif" font-size="12">
+                請求頭：
+            </text>
+            <text x="10" y="90" fill="#666" font-family="monospace" font-size="10">
+                X-API-Key: a1b2c3d4...
+            </text>
+            
+            <!-- Bearer Token -->
+            <text x="10" y="115" fill="#e65100" font-family="Arial, sans-serif" font-size="12">
+                Bearer Token：
+            </text>
+            <text x="10" y="135" fill="#666" font-family="monospace" font-size="10">
+                Bearer a1b2c3d4...
+            </text>
+        </g>
+        
+        <!-- 說明文字 -->
+        <text x="20" y="240" fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="20" dy="0">類似於：</tspan>
+            <tspan x="20" dy="25">• 在入場時出示票券</tspan>
+            <tspan x="20" dy="25">• 驗票後可以進場</tspan>
+            <tspan x="20" dy="25">• 一張票看一場電影</tspan>
+        </text>
+    </g>
+
+    <!-- 連接箭頭 -->
+    <g>
+        <path d="M 270,200 L 290,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M 510,200 L 530,200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+
+    <!-- 箭頭定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- 底部說明 -->
+    <g transform="translate(50,450)">
+        <text fill="#333" font-family="Arial, sans-serif" font-size="14">
+            <tspan x="0" dy="0">● 適用場景：</tspan>
+            <tspan x="100" dy="0">公開 API、第三方服務、開發者平台</tspan>
+            <tspan x="400" dy="0">● 注意事項：</tspan>
+            <tspan x="500" dy="0">妥善保管、避免泄露、定期更換</tspan>
+        </text>
+    </g>
+</svg> 
