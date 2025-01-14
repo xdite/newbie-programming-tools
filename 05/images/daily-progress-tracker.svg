@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- 標題區 -->
+  <rect x="50" y="30" width="700" height="50" rx="5" fill="#2196F3" opacity="0.9"/>
+  <text x="400" y="62" text-anchor="middle" fill="white" font-size="24" font-weight="bold">今日進度追蹤 (2024-01-20)</text>
+  
+  <!-- 左側進度區 -->
+  <g transform="translate(50,100)">
+    <rect width="450" height="350" fill="white" stroke="#ddd"/>
+    <text x="20" y="40" fill="#333" font-size="18" font-weight="bold">任務進度</text>
+    
+    <!-- 完成的任務 -->
+    <g transform="translate(20,60)">
+      <rect width="410" height="40" fill="#e8f5e9" rx="4"/>
+      <text x="10" y="25" fill="#2e7d32">✅ 完成登入頁面 HTML</text>
+      <text x="380" y="25" fill="#2e7d32" text-anchor="end">2h</text>
+    </g>
+    
+    <g transform="translate(20,110)">
+      <rect width="410" height="40" fill="#e8f5e9" rx="4"/>
+      <text x="10" y="25" fill="#2e7d32">✅ 設計基本 CSS 樣式</text>
+      <text x="380" y="25" fill="#2e7d32" text-anchor="end">3h</text>
+    </g>
+    
+    <!-- 進行中的任務 -->
+    <g transform="translate(20,160)">
+      <rect width="410" height="120" fill="#fff3e0" rx="4"/>
+      <text x="10" y="30" fill="#ef6c00">⚡ 處理表單驗證</text>
+      <text x="380" y="30" fill="#ef6c00" text-anchor="end">進行中</text>
+      
+      <!-- 子任務 -->
+      <g transform="translate(30,50)">
+        <rect width="380" height="25" fill="#fff8e1" rx="2"/>
+        <text x="10" y="17" fill="#ef6c00" font-size="14">✅ 電子郵件格式檢查</text>
+        <text x="350" y="17" fill="#ef6c00" text-anchor="end" font-size="14">1h</text>
+      </g>
+      
+      <g transform="translate(30,85)">
+        <rect width="380" height="25" fill="#fff8e1" rx="2"/>
+        <text x="10" y="17" fill="#ef6c00" font-size="14">⚡ 密碼強度驗證</text>
+        <text x="350" y="17" fill="#ef6c00" text-anchor="end" font-size="14">進行中</text>
+      </g>
+    </g>
+    
+    <!-- 待完成的任務 -->
+    <g transform="translate(20,290)">
+      <rect width="410" height="40" fill="#f5f5f5" rx="4"/>
+      <text x="10" y="25" fill="#666">⬜ 表單提交功能</text>
+      <text x="380" y="25" fill="#666" text-anchor="end">待開始</text>
+    </g>
+  </g>
+  
+  <!-- 右側統計區 -->
+  <g transform="translate(520,100)">
+    <rect width="230" height="350" fill="white" stroke="#ddd"/>
+    <text x="20" y="40" fill="#333" font-size="18" font-weight="bold">今日統計</text>
+    
+    <!-- 圓形進度條 -->
+    <circle cx="115" cy="120" r="60" fill="none" stroke="#eee" stroke-width="10"/>
+    <circle cx="115" cy="120" r="60" fill="none" stroke="#2196F3" stroke-width="10" 
+            stroke-dasharray="251.2" stroke-dashoffset="125.6" transform="rotate(-90 115 120)"/>
+    <text x="115" y="120" text-anchor="middle" fill="#333" font-size="24" font-weight="bold">50%</text>
+    <text x="115" y="145" text-anchor="middle" fill="#666" font-size="14">完成度</text>
+    
+    <!-- 統計數據 -->
+    <g transform="translate(20,200)">
+      <rect width="190" height="30" fill="#e3f2fd" rx="4"/>
+      <text x="10" y="20" fill="#1565c0">已完成任務：3</text>
+    </g>
+    
+    <g transform="translate(20,240)">
+      <rect width="190" height="30" fill="#fff3e0" rx="4"/>
+      <text x="10" y="20" fill="#ef6c00">進行中任務：1</text>
+    </g>
+    
+    <g transform="translate(20,280)">
+      <rect width="190" height="30" fill="#f5f5f5" rx="4"/>
+      <text x="10" y="20" fill="#666">待完成任務：1</text>
+    </g>
+  </g>
+</svg> 

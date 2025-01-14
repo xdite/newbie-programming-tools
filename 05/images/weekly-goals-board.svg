@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- 標題區 -->
+  <rect x="50" y="30" width="700" height="50" rx="5" fill="#4CAF50" opacity="0.9"/>
+  <text x="400" y="62" text-anchor="middle" fill="white" font-size="24" font-weight="bold">第一週目標規劃</text>
+  
+  <!-- 左側任務列表 -->
+  <g transform="translate(50,100)">
+    <rect width="300" height="250" fill="white" stroke="#ddd"/>
+    <text x="20" y="40" fill="#333" font-size="18" font-weight="bold">待完成任務</text>
+    
+    <!-- 任務項目 -->
+    <g transform="translate(20,60)">
+      <rect width="260" height="30" fill="#e3f2fd" rx="4"/>
+      <text x="10" y="20" fill="#333">⬜ 完成登入頁面設計</text>
+    </g>
+    
+    <g transform="translate(20,100)">
+      <rect width="260" height="30" fill="#e3f2fd" rx="4"/>
+      <text x="10" y="20" fill="#333">⬜ 實作基本註冊功能</text>
+    </g>
+    
+    <g transform="translate(20,140)">
+      <rect width="260" height="30" fill="#e3f2fd" rx="4"/>
+      <text x="10" y="20" fill="#333">⬜ 測試帳號驗證</text>
+    </g>
+  </g>
+  
+  <!-- 右側時間表 -->
+  <g transform="translate(400,100)">
+    <rect width="350" height="250" fill="white" stroke="#ddd"/>
+    <text x="20" y="40" fill="#333" font-size="18" font-weight="bold">時間分配</text>
+    
+    <!-- 時間軸 -->
+    <g transform="translate(20,70)">
+      <!-- 週一 -->
+      <rect width="60" height="150" fill="#e8f5e9" stroke="#a5d6a7"/>
+      <text x="30" y="20" text-anchor="middle" fill="#2e7d32">週一</text>
+      <text x="30" y="80" text-anchor="middle" fill="#2e7d32" font-size="12">登入頁面</text>
+      
+      <!-- 週二 -->
+      <rect x="70" width="60" height="150" fill="#e3f2fd" stroke="#90caf9"/>
+      <text x="100" y="20" text-anchor="middle" fill="#1565c0">週二</text>
+      <text x="100" y="80" text-anchor="middle" fill="#1565c0" font-size="12">登入頁面</text>
+      
+      <!-- 週三 -->
+      <rect x="140" width="60" height="150" fill="#e8f5e9" stroke="#a5d6a7"/>
+      <text x="170" y="20" text-anchor="middle" fill="#2e7d32">週三</text>
+      <text x="170" y="80" text-anchor="middle" fill="#2e7d32" font-size="12">註冊功能</text>
+      
+      <!-- 週四 -->
+      <rect x="210" width="60" height="150" fill="#e3f2fd" stroke="#90caf9"/>
+      <text x="240" y="20" text-anchor="middle" fill="#1565c0">週四</text>
+      <text x="240" y="80" text-anchor="middle" fill="#1565c0" font-size="12">註冊功能</text>
+      
+      <!-- 週五 -->
+      <rect x="280" width="60" height="150" fill="#fff3e0" stroke="#ffcc80"/>
+      <text x="310" y="20" text-anchor="middle" fill="#ef6c00">週五</text>
+      <text x="310" y="80" text-anchor="middle" fill="#ef6c00" font-size="12">測試驗證</text>
+    </g>
+  </g>
+  
+  <!-- 進度指示器 -->
+  <g transform="translate(50,360)">
+    <rect width="700" height="20" fill="#eee" rx="10"/>
+    <rect width="140" height="20" fill="#4CAF50" rx="10"/>
+    <text x="720" y="15" fill="#666" font-size="14">20% 完成</text>
+  </g>
+</svg> 

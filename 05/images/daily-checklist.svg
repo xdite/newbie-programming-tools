@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題區 -->
+  <rect x="50" y="30" width="700" height="50" rx="5" fill="#673AB7" opacity="0.9"/>
+  <text x="400" y="62" text-anchor="middle" fill="white" font-size="24" font-weight="bold">每日自我檢查機制</text>
+  
+  <!-- 左側：晨間檢查 -->
+  <g transform="translate(50,100)">
+    <rect width="340" height="450" fill="white" stroke="#ddd"/>
+    <!-- 日出圖標 -->
+    <circle cx="50" cy="50" r="25" fill="#FFC107"/>
+    <text x="100" y="60" fill="#333" font-size="20" font-weight="bold">晨間檢查</text>
+    
+    <!-- 檢查項目 -->
+    <g transform="translate(20,100)">
+      <!-- 項目 1 -->
+      <rect width="300" height="80" fill="#f3e5f5" rx="4" opacity="0.8"/>
+      <text x="15" y="30" fill="#4a148c">1. 檢視昨天未完成項目</text>
+      <line x1="15" y1="45" x2="285" y2="45" stroke="#4a148c" stroke-width="1" opacity="0.3"/>
+      <text x="15" y="65" fill="#4a148c" font-size="14">✓ 查看昨日待辦事項</text>
+      
+      <!-- 項目 2 -->
+      <rect y="90" width="300" height="80" fill="#f3e5f5" rx="4" opacity="0.8"/>
+      <text x="15" y="120" fill="#4a148c">2. 設定今天主要目標</text>
+      <line x1="15" y1="135" x2="285" y2="135" stroke="#4a148c" stroke-width="1" opacity="0.3"/>
+      <text x="15" y="155" fill="#4a148c" font-size="14">✓ 列出三個重要任務</text>
+      
+      <!-- 項目 3 -->
+      <rect y="180" width="300" height="80" fill="#f3e5f5" rx="4" opacity="0.8"/>
+      <text x="15" y="210" fill="#4a148c">3. 預估時間</text>
+      <line x1="15" y1="225" x2="285" y2="225" stroke="#4a148c" stroke-width="1" opacity="0.3"/>
+      <text x="15" y="245" fill="#4a148c" font-size="14">✓ 評估每個任務所需時間</text>
+    </g>
+  </g>
+  
+  <!-- 右側：晚間檢查 -->
+  <g transform="translate(410,100)">
+    <rect width="340" height="450" fill="white" stroke="#ddd"/>
+    <!-- 月亮圖標 -->
+    <path d="M50,30 a20,20 0 0 1 0,40 a20,20 0 0 0 0,-40" fill="#5C6BC0"/>
+    <text x="100" y="60" fill="#333" font-size="20" font-weight="bold">晚間檢查</text>
+    
+    <!-- 檢查項目 -->
+    <g transform="translate(20,100)">
+      <!-- 項目 1 -->
+      <rect width="300" height="80" fill="#e8eaf6" rx="4" opacity="0.8"/>
+      <text x="15" y="30" fill="#1a237e">1. 回顧完成項目</text>
+      <line x1="15" y1="45" x2="285" y2="45" stroke="#1a237e" stroke-width="1" opacity="0.3"/>
+      <text x="15" y="65" fill="#1a237e" font-size="14">✓ 檢視今日完成度</text>
+      
+      <!-- 項目 2 -->
+      <rect y="90" width="300" height="80" fill="#e8eaf6" rx="4" opacity="0.8"/>
+      <text x="15" y="120" fill="#1a237e">2. 記錄問題</text>
+      <line x1="15" y1="135" x2="285" y2="135" stroke="#1a237e" stroke-width="1" opacity="0.3"/>
+      <text x="15" y="155" fill="#1a237e" font-size="14">✓ 整理遇到的困難</text>
+      
+      <!-- 項目 3 -->
+      <rect y="180" width="300" height="80" fill="#e8eaf6" rx="4" opacity="0.8"/>
+      <text x="15" y="210" fill="#1a237e">3. 規劃明天</text>
+      <line x1="15" y1="225" x2="285" y2="225" stroke="#1a237e" stroke-width="1" opacity="0.3"/>
+      <text x="15" y="245" fill="#1a237e" font-size="14">✓ 準備明日工作重點</text>
+    </g>
+  </g>
+  
+  <!-- 底部時間軸 -->
+  <g transform="translate(50,570)">
+    <line x1="0" y1="0" x2="700" y2="0" stroke="#ddd" stroke-width="2"/>
+    <circle cx="100" cy="0" r="5" fill="#FFC107"/>
+    <text x="100" y="20" text-anchor="middle" fill="#666" font-size="12">09:00</text>
+    <circle cx="600" cy="0" r="5" fill="#5C6BC0"/>
+    <text x="600" y="20" text-anchor="middle" fill="#666" font-size="12">18:00</text>
+  </g>
+</svg> 

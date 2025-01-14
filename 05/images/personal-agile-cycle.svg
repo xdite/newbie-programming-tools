@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 定義箭頭 -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- 背景圓圈 -->
+  <circle cx="400" cy="300" r="200" fill="#f5f5f5" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- 四個主要步驟的圓圈 -->
+  <g id="steps">
+    <!-- 計畫 -->
+    <circle cx="400" cy="150" r="60" fill="#4CAF50" opacity="0.9"/>
+    <text x="400" y="150" text-anchor="middle" fill="white" font-size="20" font-weight="bold">計畫</text>
+    <text x="400" y="170" text-anchor="middle" fill="white" font-size="14">拆解任務</text>
+    
+    <!-- 執行 -->
+    <circle cx="550" cy="300" r="60" fill="#2196F3" opacity="0.9"/>
+    <text x="550" y="300" text-anchor="middle" fill="white" font-size="20" font-weight="bold">執行</text>
+    <text x="550" y="320" text-anchor="middle" fill="white" font-size="14">完成任務</text>
+    
+    <!-- 檢視 -->
+    <circle cx="400" cy="450" r="60" fill="#FFC107" opacity="0.9"/>
+    <text x="400" y="450" text-anchor="middle" fill="white" font-size="20" font-weight="bold">檢視</text>
+    <text x="400" y="470" text-anchor="middle" fill="white" font-size="14">回顧進度</text>
+    
+    <!-- 調整 -->
+    <circle cx="250" cy="300" r="60" fill="#FF5722" opacity="0.9"/>
+    <text x="250" y="300" text-anchor="middle" fill="white" font-size="20" font-weight="bold">調整</text>
+    <text x="250" y="320" text-anchor="middle" fill="white" font-size="14">改進方法</text>
+  </g>
+  
+  <!-- 連接箭頭 -->
+  <g id="arrows" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)">
+    <path d="M450 170 Q 520 200 530 250" fill="none"/>
+    <path d="M530 350 Q 520 400 450 430" fill="none"/>
+    <path d="M350 430 Q 280 400 270 350" fill="none"/>
+    <path d="M270 250 Q 280 200 350 170" fill="none"/>
+  </g>
+  
+  <!-- 中心標題 -->
+  <text x="400" y="290" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">個人敏捷</text>
+  <text x="400" y="320" text-anchor="middle" font-size="18" fill="#666">開發循環</text>
+</svg> 

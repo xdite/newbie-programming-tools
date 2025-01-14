@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- 標題區 -->
+  <rect x="50" y="30" width="700" height="50" rx="5" fill="#009688" opacity="0.9"/>
+  <text x="400" y="62" text-anchor="middle" fill="white" font-size="24" font-weight="bold">檢查清單三大面向</text>
+  
+  <!-- 時間管理區塊 -->
+  <g transform="translate(50,100)">
+    <rect width="220" height="350" fill="white" stroke="#ddd" rx="8"/>
+    <!-- 圖標：時鐘 -->
+    <circle cx="110" cy="50" r="30" fill="#4DB6AC" opacity="0.2"/>
+    <circle cx="110" cy="50" r="25" fill="none" stroke="#009688" stroke-width="2"/>
+    <line x1="110" y1="50" x2="110" y2="35" stroke="#009688" stroke-width="2"/>
+    <line x1="110" y1="50" x2="120" y2="60" stroke="#009688" stroke-width="2"/>
+    
+    <text x="110" y="100" text-anchor="middle" fill="#333" font-size="18" font-weight="bold">時間管理</text>
+    
+    <!-- 檢查項目 -->
+    <g transform="translate(20,130)">
+      <rect width="180" height="40" fill="#E0F2F1" rx="4"/>
+      <text x="10" y="25" fill="#004D40">⏰ 檢視時間分配</text>
+    </g>
+    
+    <g transform="translate(20,180)">
+      <rect width="180" height="40" fill="#E0F2F1" rx="4"/>
+      <text x="10" y="25" fill="#004D40">🔍 識別時間黑洞</text>
+    </g>
+    
+    <g transform="translate(20,230)">
+      <rect width="180" height="40" fill="#E0F2F1" rx="4"/>
+      <text x="10" y="25" fill="#004D40">⚖️ 調整工作節奏</text>
+    </g>
+  </g>
+  
+  <!-- 任務管理區塊 -->
+  <g transform="translate(290,100)">
+    <rect width="220" height="350" fill="white" stroke="#ddd" rx="8"/>
+    <!-- 圖標：清單 -->
+    <rect cx="110" cy="50" x="85" y="25" width="50" height="50" fill="#7E57C2" opacity="0.2" rx="4"/>
+    <line x1="95" y1="40" x2="125" y2="40" stroke="#673AB7" stroke-width="2"/>
+    <line x1="95" y1="50" x2="125" y2="50" stroke="#673AB7" stroke-width="2"/>
+    <line x1="95" y1="60" x2="125" y2="60" stroke="#673AB7" stroke-width="2"/>
+    
+    <text x="110" y="100" text-anchor="middle" fill="#333" font-size="18" font-weight="bold">任務管理</text>
+    
+    <!-- 檢查項目 -->
+    <g transform="translate(20,130)">
+      <rect width="180" height="40" fill="#EDE7F6" rx="4"/>
+      <text x="10" y="25" fill="#311B92">📝 更新任務狀態</text>
+    </g>
+    
+    <g transform="translate(20,180)">
+      <rect width="180" height="40" fill="#EDE7F6" rx="4"/>
+      <text x="10" y="25" fill="#311B92">❗ 記錄卡關問題</text>
+    </g>
+    
+    <g transform="translate(20,230)">
+      <rect width="180" height="40" fill="#EDE7F6" rx="4"/>
+      <text x="10" y="25" fill="#311B92">🔄 評估需要調整</text>
+    </g>
+  </g>
+  
+  <!-- 學習記錄區塊 -->
+  <g transform="translate(530,100)">
+    <rect width="220" height="350" fill="white" stroke="#ddd" rx="8"/>
+    <!-- 圖標：書本 -->
+    <path d="M85,25 h50 v50 h-50 q10,0 10,-25 q0,-25 -10,-25" fill="#FF7043" opacity="0.2"/>
+    <path d="M85,25 h50 v50 h-50 q10,0 10,-25 q0,-25 -10,-25" fill="none" stroke="#FF5722" stroke-width="2"/>
+    
+    <text x="110" y="100" text-anchor="middle" fill="#333" font-size="18" font-weight="bold">學習記錄</text>
+    
+    <!-- 檢查項目 -->
+    <g transform="translate(20,130)">
+      <rect width="180" height="40" fill="#FBE9E7" rx="4"/>
+      <text x="10" y="25" fill="#BF360C">📚 記錄新知識</text>
+    </g>
+    
+    <g transform="translate(20,180)">
+      <rect width="180" height="40" fill="#FBE9E7" rx="4"/>
+      <text x="10" y="25" fill="#BF360C">💡 整理解決方案</text>
+    </g>
+    
+    <g transform="translate(20,230)">
+      <rect width="180" height="40" fill="#FBE9E7" rx="4"/>
+      <text x="10" y="25" fill="#BF360C">🔨 思考改進方向</text>
+    </g>
+  </g>
+  
+  <!-- 連接線 -->
+  <g stroke="#ddd" stroke-width="2" stroke-dasharray="5,5">
+    <path d="M160,450 Q 400,480 640,450" fill="none"/>
+  </g>
+  
+  <!-- 底部標籤 -->
+  <g transform="translate(50,470)">
+    <text x="110" y="0" text-anchor="middle" fill="#666" font-size="14">每日追蹤</text>
+    <text x="350" y="0" text-anchor="middle" fill="#666" font-size="14">定期檢視</text>
+    <text x="590" y="0" text-anchor="middle" fill="#666" font-size="14">持續改進</text>
+  </g>
+</svg> 

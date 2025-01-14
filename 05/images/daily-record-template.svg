@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題區 -->
+  <rect x="50" y="30" width="700" height="50" rx="5" fill="#3F51B5" opacity="0.9"/>
+  <text x="400" y="62" text-anchor="middle" fill="white" font-size="24" font-weight="bold">每日進度記錄模板</text>
+  
+  <!-- 日期區 -->
+  <g transform="translate(50,100)">
+    <rect width="700" height="40" fill="#E8EAF6" rx="4"/>
+    <text x="20" y="28" fill="#1A237E" font-size="18" font-weight="bold">日期：2024-01-20</text>
+  </g>
+  
+  <!-- 今日完成區塊 -->
+  <g transform="translate(50,160)">
+    <rect width="340" height="200" fill="white" stroke="#ddd" rx="4"/>
+    <rect x="0" y="0" width="340" height="40" fill="#4CAF50" opacity="0.9" rx="4"/>
+    <text x="20" y="28" fill="white" font-size="18" font-weight="bold">今日完成</text>
+    
+    <!-- 完成項目 -->
+    <g transform="translate(20,60)">
+      <rect width="300" height="120" fill="#E8F5E9" rx="4"/>
+      <text x="10" y="25" fill="#2E7D32">✅ 任務 1</text>
+      <line x1="10" y1="35" x2="290" y2="35" stroke="#2E7D32" stroke-width="1" opacity="0.3"/>
+      <text x="20" y="55" fill="#2E7D32" font-size="14">⏱️ 花費時間：2 小時</text>
+      <text x="20" y="80" fill="#2E7D32" font-size="14">❗ 遇到的問題：API 格式不符</text>
+      <text x="20" y="105" fill="#2E7D32" font-size="14">💡 解決方案：增加轉換層</text>
+    </g>
+  </g>
+  
+  <!-- 進行中區塊 -->
+  <g transform="translate(410,160)">
+    <rect width="340" height="200" fill="white" stroke="#ddd" rx="4"/>
+    <rect x="0" y="0" width="340" height="40" fill="#FF9800" opacity="0.9" rx="4"/>
+    <text x="20" y="28" fill="white" font-size="18" font-weight="bold">進行中</text>
+    
+    <!-- 進行中項目 -->
+    <g transform="translate(20,60)">
+      <rect width="300" height="120" fill="#FFF3E0" rx="4"/>
+      <text x="10" y="25" fill="#E65100">⚡ 任務 2</text>
+      <line x1="10" y1="35" x2="290" y2="35" stroke="#E65100" stroke-width="1" opacity="0.3"/>
+      <text x="20" y="55" fill="#E65100" font-size="14">📊 目前進度：70%</text>
+      <text x="20" y="80" fill="#E65100" font-size="14">⚠️ 卡關點：資料驗證邏輯</text>
+      <text x="20" y="105" fill="#E65100" font-size="14">➡️ 下一步：討論解決方案</text>
+    </g>
+  </g>
+  
+  <!-- 明日計畫區塊 -->
+  <g transform="translate(50,380)">
+    <rect width="340" height="160" fill="white" stroke="#ddd" rx="4"/>
+    <rect x="0" y="0" width="340" height="40" fill="#2196F3" opacity="0.9" rx="4"/>
+    <text x="20" y="28" fill="white" font-size="18" font-weight="bold">明日計畫</text>
+    
+    <!-- 計畫項目 -->
+    <g transform="translate(20,60)">
+      <rect width="300" height="80" fill="#E3F2FD" rx="4"/>
+      <text x="10" y="25" fill="#0D47A1">📋 任務 3</text>
+      <line x1="10" y1="35" x2="290" y2="35" stroke="#0D47A1" stroke-width="1" opacity="0.3"/>
+      <text x="10" y="60" fill="#0D47A1">📋 任務 4</text>
+    </g>
+  </g>
+  
+  <!-- 學習筆記區塊 -->
+  <g transform="translate(410,380)">
+    <rect width="340" height="160" fill="white" stroke="#ddd" rx="4"/>
+    <rect x="0" y="0" width="340" height="40" fill="#9C27B0" opacity="0.9" rx="4"/>
+    <text x="20" y="28" fill="white" font-size="18" font-weight="bold">學習筆記</text>
+    
+    <!-- 筆記內容 -->
+    <g transform="translate(20,60)">
+      <rect width="300" height="80" fill="#F3E5F5" rx="4"/>
+      <text x="10" y="25" fill="#4A148C">📚 今天學到：API 錯誤處理方法</text>
+      <line x1="10" y1="35" x2="290" y2="35" stroke="#4A148C" stroke-width="1" opacity="0.3"/>
+      <text x="10" y="60" fill="#4A148C">🔄 需要改進：時間估算準確度</text>
+    </g>
+  </g>
+</svg> 
