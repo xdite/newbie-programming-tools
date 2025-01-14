@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 人物圖示 -->
+  <g transform="translate(50,150)">
+    <circle cx="50" cy="30" r="30" fill="#64B5F6"/>  <!-- 頭 -->
+    <path d="M50,60 L50,120 L30,180 M50,120 L70,180 M20,100 L80,100" fill="none" stroke="#64B5F6" stroke-width="8"/>  <!-- 身體和手臂 -->
+  </g>
+
+  <!-- 對話框：命令 -->
+  <g transform="translate(150,100)">
+    <path d="M0,0 L200,0 L200,80 L20,80 L0,100 L0,0" fill="#E3F2FD" stroke="#90CAF9" stroke-width="2"/>
+    <text x="20" y="45" font-family="monospace" font-size="20">$ ls -l</text>
+  </g>
+
+  <!-- 終端機視窗 -->
+  <g transform="translate(400,50)">
+    <rect x="0" y="0" width="300" height="250" rx="10" ry="10" fill="#2d2d2d"/>
+    <rect x="10" y="10" width="280" height="230" rx="5" ry="5" fill="#1e1e1e"/>
+    <!-- 控制按鈕 -->
+    <circle cx="25" cy="25" r="6" fill="#ff5f56"/>
+    <circle cx="45" cy="25" r="6" fill="#ffbd2e"/>
+    <circle cx="65" cy="25" r="6" fill="#27c93f"/>
+    <!-- 終端機內容 -->
+    <text x="25" y="60" font-family="monospace" font-size="14" fill="#fff">$ ls -l</text>
+    <text x="25" y="85" font-family="monospace" font-size="14" fill="#fff">total 16</text>
+    <text x="25" y="110" font-family="monospace" font-size="14" fill="#fff">drwxr-xr-x  2 user  group  ...</text>
+    <text x="25" y="135" font-family="monospace" font-size="14" fill="#fff">-rw-r--r--  1 user  group  ...</text>
+    <text x="25" y="160" font-family="monospace" font-size="14" fill="#fff">$</text>
+  </g>
+
+  <!-- 電腦圖示 -->
+  <g transform="translate(750,150)">
+    <rect x="-50" y="-30" width="60" height="60" rx="5" ry="5" fill="#90A4AE"/>
+    <rect x="-45" y="-25" width="50" height="35" fill="#CFD8DC"/>
+    <rect x="-35" y="15" width="30" height="10" fill="#90A4AE"/>
+  </g>
+
+  <!-- 連接箭頭 -->
+  <g stroke="#90CAF9" stroke-width="3" fill="none">
+    <path d="M350,140 L390,140" marker-end="url(#arrowhead)"/>
+    <path d="M700,140 L660,140" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- 箭頭標記定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#90CAF9"/>
+    </marker>
+  </defs>
+
+  <!-- 說明文字 -->
+  <g font-family="sans-serif" font-size="16" fill="#333">
+    <text x="50" y="250">使用者</text>
+    <text x="500" y="350">終端機介面</text>
+    <text x="700" y="250">電腦</text>
+  </g>
+</svg> 

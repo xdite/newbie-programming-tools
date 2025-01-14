@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+ <rect x="50" y="50" width="700" height="500" rx="10" ry="10" fill="#2d2d2d"/>
+ <rect x="70" y="70" width="660" height="460" rx="5" ry="5" fill="#1e1e1e"/>
+ <g fill="#fff" font-family="monospace">
+  <text x="90" y="120" font-size="24">$</text>
+  <text x="120" y="120" font-size="24">echo "Hello, Terminal!"</text>
+  <text x="90" y="160" font-size="24">Hello, Terminal!</text>
+  <text x="90" y="200" font-size="24">$</text>
+  <text x="90" y="240" font-size="24">_</text>
+ </g>
+ <g fill="#ff5f56">
+  <circle cx="90" cy="85" r="6"/>
+ </g>
+ <g fill="#ffbd2e">
+  <circle cx="110" cy="85" r="6"/>
+ </g>
+ <g fill="#27c93f">
+  <circle cx="130" cy="85" r="6"/>
+ </g>
+</svg> 

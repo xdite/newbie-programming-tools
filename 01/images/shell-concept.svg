@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景層 -->
+  <rect x="100" y="50" width="600" height="400" rx="20" ry="20" fill="#F5F5F5"/>
+  
+  <!-- 使用者命令層 -->
+  <g transform="translate(150,100)">
+    <rect x="0" y="0" width="500" height="80" rx="10" ry="10" fill="#E3F2FD" stroke="#90CAF9" stroke-width="2"/>
+    <text x="20" y="35" font-family="monospace" font-size="18" fill="#1976D2">使用者命令</text>
+    <text x="20" y="60" font-family="monospace" font-size="16">$ ls -l</text>
+    <text x="20" y="60" font-family="monospace" font-size="16" fill="#666">echo "Hello"</text>
+  </g>
+
+  <!-- Shell 層 -->
+  <g transform="translate(150,220)">
+    <rect x="0" y="0" width="500" height="100" rx="10" ry="10" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2"/>
+    <text x="20" y="35" font-family="sans-serif" font-size="18" font-weight="bold" fill="#F57C00">Shell (Zsh/Bash)</text>
+    <text x="20" y="65" font-family="monospace" font-size="14" fill="#666">- 解析命令</text>
+    <text x="20" y="85" font-family="monospace" font-size="14" fill="#666">- 轉換為系統呼叫</text>
+    
+    <!-- Shell 類型 -->
+    <g transform="translate(300,20)">
+      <rect x="0" y="0" width="80" height="25" rx="5" ry="5" fill="#FFA726"/>
+      <text x="40" y="17" font-family="monospace" font-size="14" fill="white" text-anchor="middle">Zsh</text>
+      
+      <rect x="90" y="0" width="80" height="25" rx="5" ry="5" fill="#FB8C00"/>
+      <text x="130" y="17" font-family="monospace" font-size="14" fill="white" text-anchor="middle">Bash</text>
+    </g>
+  </g>
+
+  <!-- 系統核心層 -->
+  <g transform="translate(150,360)">
+    <rect x="0" y="0" width="500" height="80" rx="10" ry="10" fill="#E8F5E9" stroke="#81C784" stroke-width="2"/>
+    <text x="20" y="35" font-family="sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">系統核心 (Kernel)</text>
+    <text x="20" y="60" font-family="monospace" font-size="14" fill="#666">執行底層操作（檔案系統、程序管理等）</text>
+  </g>
+
+  <!-- 連接箭頭 -->
+  <g stroke="#90A4AE" stroke-width="2" fill="none">
+    <!-- 上層到 Shell -->
+    <path d="M400,180 L400,220" marker-end="url(#arrowhead)"/>
+    <!-- Shell 到系統核心 -->
+    <path d="M400,320 L400,360" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- 箭頭標記定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#90A4AE"/>
+    </marker>
+  </defs>
+
+  <!-- 說明文字 -->
+  <g font-family="sans-serif" font-size="14" fill="#666">
+    <text x="50" y="140" transform="rotate(-90,50,140)">使用者層</text>
+    <text x="50" y="270" transform="rotate(-90,50,270)">解釋層</text>
+    <text x="50" y="400" transform="rotate(-90,50,400)">系統層</text>
+  </g>
+</svg> 
