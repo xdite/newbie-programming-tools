@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題區 -->
+  <rect x="50" y="30" width="700" height="50" rx="5" fill="#2196F3" opacity="0.9"/>
+  <text x="400" y="62" text-anchor="middle" fill="white" font-size="24" font-weight="bold">個人任務看板</text>
+  
+  <!-- 待辦區塊 -->
+  <g transform="translate(50,100)">
+    <rect width="220" height="450" fill="white" stroke="#ddd" rx="8"/>
+    <rect x="0" y="0" width="220" height="50" fill="#F44336" opacity="0.9" rx="8"/>
+    <text x="110" y="32" text-anchor="middle" fill="white" font-size="18" font-weight="bold">待辦</text>
+    
+    <!-- 高優先級任務 -->
+    <g transform="translate(10,60)">
+      <rect width="200" height="80" fill="#FFEBEE" rx="4"/>
+      <rect x="10" y="10" width="60" height="20" fill="#F44336" rx="10"/>
+      <text x="40" y="24" text-anchor="middle" fill="white" font-size="12">高優先</text>
+      <text x="15" y="50" fill="#D32F2F">🐛 修復登入 bug</text>
+      <text x="15" y="70" fill="#D32F2F" font-size="12">預計: 3小時</text>
+    </g>
+    
+    <!-- 中優先級任務 -->
+    <g transform="translate(10,150)">
+      <rect width="200" height="80" fill="#FFF3E0" rx="4"/>
+      <rect x="10" y="10" width="60" height="20" fill="#FF9800" rx="10"/>
+      <text x="40" y="24" text-anchor="middle" fill="white" font-size="12">中優先</text>
+      <text x="15" y="50" fill="#E65100">⚡ 優化載入速度</text>
+      <text x="15" y="70" fill="#E65100" font-size="12">預計: 4小時</text>
+    </g>
+    
+    <!-- 低優先級任務 -->
+    <g transform="translate(10,240)">
+      <rect width="200" height="80" fill="#E8F5E9" rx="4"/>
+      <rect x="10" y="10" width="60" height="20" fill="#4CAF50" rx="10"/>
+      <text x="40" y="24" text-anchor="middle" fill="white" font-size="12">低優先</text>
+      <text x="15" y="50" fill="#2E7D32">📝 更新文件</text>
+      <text x="15" y="70" fill="#2E7D32" font-size="12">預計: 2小時</text>
+    </g>
+  </g>
+  
+  <!-- 進行中區塊 -->
+  <g transform="translate(290,100)">
+    <rect width="220" height="450" fill="white" stroke="#ddd" rx="8"/>
+    <rect x="0" y="0" width="220" height="50" fill="#FF9800" opacity="0.9" rx="8"/>
+    <text x="110" y="32" text-anchor="middle" fill="white" font-size="18" font-weight="bold">進行中</text>
+    
+    <!-- 進行中任務 -->
+    <g transform="translate(10,60)">
+      <rect width="200" height="160" fill="#FFF3E0" rx="4"/>
+      <text x="15" y="30" fill="#E65100">🛒 實作購物車功能</text>
+      <line x1="15" y1="40" x2="195" y2="40" stroke="#E65100" stroke-width="1" opacity="0.3"/>
+      
+      <!-- 子任務 -->
+      <g transform="translate(15,55)">
+        <text fill="#E65100" font-size="14">✅ 新增商品</text>
+        <text x="0" y="25" fill="#E65100" font-size="14">⚡ 修改數量 (50%)</text>
+        <text x="0" y="50" fill="#E65100" font-size="14">❌ 刪除商品</text>
+        
+        <!-- 進度條 -->
+        <rect x="0" y="65" width="170" height="20" fill="#FFE0B2" rx="10"/>
+        <rect x="0" y="65" width="85" height="20" fill="#FF9800" rx="10"/>
+        <text x="85" y="80" text-anchor="middle" fill="white" font-size="12">50%</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- 已完成區塊 -->
+  <g transform="translate(530,100)">
+    <rect width="220" height="450" fill="white" stroke="#ddd" rx="8"/>
+    <rect x="0" y="0" width="220" height="50" fill="#4CAF50" opacity="0.9" rx="8"/>
+    <text x="110" y="32" text-anchor="middle" fill="white" font-size="18" font-weight="bold">已完成</text>
+    
+    <!-- 已完成任務 -->
+    <g transform="translate(10,60)">
+      <rect width="200" height="80" fill="#E8F5E9" rx="4"/>
+      <text x="15" y="30" fill="#2E7D32">✅ 完成首頁設計</text>
+      <text x="15" y="50" fill="#2E7D32" font-size="12">耗時：4小時</text>
+      <text x="15" y="70" fill="#2E7D32" font-size="12">完成於：2024-01-19</text>
+    </g>
+    
+    <g transform="translate(10,150)">
+      <rect width="200" height="80" fill="#E8F5E9" rx="4"/>
+      <text x="15" y="30" fill="#2E7D32">✅ 實作商品列表</text>
+      <text x="15" y="50" fill="#2E7D32" font-size="12">耗時：6小時</text>
+      <text x="15" y="70" fill="#2E7D32" font-size="12">完成於：2024-01-20</text>
+    </g>
+  </g>
+  
+  <!-- 底部說明 -->
+  <g transform="translate(50,570)">
+    <text x="110" y="0" text-anchor="middle" fill="#666" font-size="14">優先級排序</text>
+    <text x="350" y="0" text-anchor="middle" fill="#666" font-size="14">進度追蹤</text>
+    <text x="590" y="0" text-anchor="middle" fill="#666" font-size="14">完成記錄</text>
+  </g>
+</svg> 
