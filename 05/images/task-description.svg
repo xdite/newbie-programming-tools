@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題區 -->
+  <rect x="50" y="30" width="700" height="50" rx="5" fill="#673AB7" opacity="0.9"/>
+  <text x="400" y="62" text-anchor="middle" fill="white" font-size="24" font-weight="bold">任務描述模板</text>
+  
+  <!-- 主要內容區 -->
+  <g transform="translate(50,100)">
+    <rect width="700" height="450" fill="white" stroke="#ddd" rx="8"/>
+    
+    <!-- 任務標題 -->
+    <g transform="translate(0,0)">
+      <rect width="700" height="60" fill="#EDE7F6" rx="8"/>
+      <text x="30" y="38" fill="#311B92" font-size="20" font-weight="bold">🛒 任務：實作購物車功能</text>
+    </g>
+    
+    <!-- 描述區塊 -->
+    <g transform="translate(30,80)">
+      <text fill="#673AB7" font-size="18" font-weight="bold">📝 描述</text>
+      <rect x="0" y="30" width="640" height="80" fill="#F3E5F5" rx="4"/>
+      <text x="20" y="60" fill="#4A148C">• 功能：讓用戶可以管理購物車內的商品</text>
+      <text x="20" y="90" fill="#4A148C">• 預期結果：用戶可以新增、修改、刪除商品</text>
+    </g>
+    
+    <!-- 拆解步驟區塊 -->
+    <g transform="translate(30,190)">
+      <text fill="#673AB7" font-size="18" font-weight="bold">📋 拆解步驟</text>
+      <rect x="0" y="30" width="640" height="100" fill="#F3E5F5" rx="4"/>
+      <text x="20" y="60" fill="#4A148C">1. ✅ 新增商品功能</text>
+      <text x="20" y="90" fill="#4A148C">2. ⚡ 修改數量功能</text>
+      <text x="20" y="120" fill="#4A148C">3. ❌ 刪除商品功能</text>
+    </g>
+    
+    <!-- 相關資源區塊 -->
+    <g transform="translate(30,320)">
+      <text fill="#673AB7" font-size="18" font-weight="bold">🔗 相關資源</text>
+      <rect x="0" y="30" width="640" height="80" fill="#F3E5F5" rx="4"/>
+      <text x="20" y="60" fill="#4A148C">• API 文件：/api/cart</text>
+      <text x="20" y="90" fill="#4A148C">• 設計稿：/design/cart.fig</text>
+    </g>
+  </g>
+  
+  <!-- 時間估算區塊 -->
+  <g transform="translate(50,480)">
+    <rect width="700" height="80" fill="#7E57C2" rx="8"/>
+    <text x="30" y="35" fill="white" font-size="18" font-weight="bold">⏱️ 時間估算</text>
+    
+    <!-- 時間資訊 -->
+    <g transform="translate(30,50)">
+      <text fill="white">預計工時：6 小時</text>
+      <text x="220" y="0" fill="white">開始時間：2024-01-20</text>
+      <text x="440" y="0" fill="white">預計完成：2024-01-21</text>
+    </g>
+  </g>
+  
+  <!-- 狀態指示器 -->
+  <g transform="translate(680,120)">
+    <rect width="50" height="25" fill="#4CAF50" rx="12.5"/>
+    <text x="25" y="17" text-anchor="middle" fill="white" font-size="12">進行中</text>
+  </g>
+</svg> 
