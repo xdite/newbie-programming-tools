@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- 顧客（你的程式） -->
+    <g transform="translate(50,150)">
+        <rect width="150" height="100" rx="10" fill="#007bff" opacity="0.8"/>
+        <text x="75" y="55" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+            <tspan x="75" dy="0">你的程式</tspan>
+            <tspan x="75" dy="25">(顧客)</tspan>
+        </text>
+    </g>
+
+    <!-- API（服務生） -->
+    <g transform="translate(325,100)">
+        <rect width="150" height="200" rx="10" fill="#28a745" opacity="0.8"/>
+        <text x="75" y="100" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+            <tspan x="75" dy="0">API</tspan>
+            <tspan x="75" dy="25">(服務生)</tspan>
+        </text>
+    </g>
+
+    <!-- 廚房（後端服務） -->
+    <g transform="translate(600,150)">
+        <rect width="150" height="100" rx="10" fill="#dc3545" opacity="0.8"/>
+        <text x="75" y="55" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+            <tspan x="75" dy="0">後端服務</tspan>
+            <tspan x="75" dy="25">(廚房)</tspan>
+        </text>
+    </g>
+
+    <!-- POST 請求：點餐單 -->
+    <g transform="translate(160,80)">
+        <rect width="140" height="160" rx="5" fill="#ffffff" stroke="#17a2b8" stroke-width="2"/>
+        <text x="70" y="30" text-anchor="middle" fill="#17a2b8" font-family="Arial, sans-serif" font-weight="bold">
+            點餐單
+        </text>
+        <line x1="10" y1="40" x2="130" y2="40" stroke="#17a2b8" stroke-width="1"/>
+        <text x="20" y="60" fill="#333" font-family="Arial, sans-serif" font-size="12">
+            <tspan x="20" dy="0">主餐：海鮮燉飯</tspan>
+            <tspan x="20" dy="20">飲料：柳橙汁</tspan>
+            <tspan x="20" dy="20">備註：少鹽</tspan>
+            <tspan x="20" dy="20">數量：1</tspan>
+            <tspan x="20" dy="20">桌號：A12</tspan>
+        </text>
+    </g>
+
+    <!-- 響應對話框 -->
+    <g transform="translate(180,280)">
+        <path d="M 0,0 L 120,0 L 120,40 L 20,40 L 0,60 L 5,40 L 0,40 Z" 
+              fill="#6c757d" opacity="0.9"/>
+        <text x="60" y="25" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+            訂單已建立：#123
+        </text>
+    </g>
+
+    <!-- 數據庫圖示 -->
+    <g transform="translate(625,180)">
+        <path d="M 0,15 C 0,5 100,5 100,15 L 100,35 C 100,45 0,45 0,35 Z" 
+              fill="#ffc107" opacity="0.8"/>
+        <path d="M 0,15 C 0,25 100,25 100,15" 
+              fill="none" stroke="#000" stroke-width="1"/>
+        <text x="50" y="30" text-anchor="middle" fill="#000" font-family="Arial, sans-serif" font-size="12">
+            訂單資料庫
+        </text>
+    </g>
+
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- 流程箭頭 -->
+    <g>
+        <!-- 提交訂單 -->
+        <path d="M 200,180 L 325,180" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="262" y="170" text-anchor="middle" fill="#666" font-family="Arial, sans-serif">POST 請求</text>
+    </g>
+    <g>
+        <!-- 儲存訂單 -->
+        <path d="M 475,180 L 600,180" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="537" y="170" text-anchor="middle" fill="#666" font-family="Arial, sans-serif">儲存數據</text>
+    </g>
+    <g>
+        <!-- 返回訂單編號 -->
+        <path d="M 325,220 L 200,220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+        <text x="262" y="240" text-anchor="middle" fill="#666" font-family="Arial, sans-serif">返回訂單編號</text>
+    </g>
+
+    <!-- JSON 格式示意 -->
+    <g transform="translate(350,40)">
+        <rect width="200" height="50" rx="5" fill="#f8f9fa" stroke="#6c757d" stroke-width="1"/>
+        <text x="10" y="20" fill="#666" font-family="monospace" font-size="10">
+            <tspan x="10" dy="0">POST /orders</tspan>
+            <tspan x="10" dy="15">Content-Type: application/json</tspan>
+        </text>
+    </g>
+
+    <!-- 標題 -->
+    <text x="400" y="30" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+        POST 請求流程
+    </text>
+</svg> 
