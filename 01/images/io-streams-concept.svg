@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">Unix/Linux 的三種輸入輸出流</text>
+
+  <!-- 終端機視窗 -->
+  <g transform="translate(250,80)">
+    <!-- 視窗外框 -->
+    <rect x="0" y="0" width="300" height="180" rx="10" fill="#2D2D2D"/>
+    
+    <!-- 標題欄 -->
+    <rect x="0" y="0" width="300" height="30" rx="10" fill="#3D3D3D"/>
+    <text x="150" y="20" font-family="sans-serif" font-size="14" fill="#CCC" text-anchor="middle">終端機</text>
+    
+    <!-- 控制按鈕 -->
+    <circle cx="20" cy="15" r="6" fill="#FF5F56"/>
+    <circle cx="40" cy="15" r="6" fill="#FFBD2E"/>
+    <circle cx="60" cy="15" r="6" fill="#27C93F"/>
+
+    <!-- 命令提示符 -->
+    <text x="20" y="60" font-family="monospace" font-size="14" fill="#98FB98">$</text>
+    <text x="40" y="60" font-family="monospace" font-size="14" fill="#FFF">grep "error" log.txt</text>
+  </g>
+
+  <!-- 輸入輸出流 -->
+  <g transform="translate(50,100)">
+    <!-- 標準輸入 (stdin) -->
+    <g transform="translate(0,50)">
+      <rect x="0" y="0" width="150" height="80" rx="5" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+      <text x="75" y="30" font-family="sans-serif" font-size="16" fill="#1976d2" text-anchor="middle" font-weight="bold">標準輸入</text>
+      <text x="75" y="50" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">stdin (0)</text>
+      <text x="75" y="70" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">鍵盤輸入或檔案重定向</text>
+      
+      <!-- 輸入箭頭 -->
+      <path d="M150,40 L200,40" stroke="#1976d2" stroke-width="2" fill="none" marker-end="url(#arrowblue)"/>
+    </g>
+
+    <!-- 標準輸出 (stdout) -->
+    <g transform="translate(600,50)">
+      <rect x="0" y="0" width="150" height="80" rx="5" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+      <text x="75" y="30" font-family="sans-serif" font-size="16" fill="#388e3c" text-anchor="middle" font-weight="bold">標準輸出</text>
+      <text x="75" y="50" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">stdout (1)</text>
+      <text x="75" y="70" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">正常的程式輸出</text>
+      
+      <!-- 輸出箭頭 -->
+      <path d="M-50,40 L0,40" stroke="#388e3c" stroke-width="2" fill="none" marker-end="url(#arrowgreen)"/>
+    </g>
+
+    <!-- 標準錯誤 (stderr) -->
+    <g transform="translate(600,150)">
+      <rect x="0" y="0" width="150" height="80" rx="5" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+      <text x="75" y="30" font-family="sans-serif" font-size="16" fill="#c2185b" text-anchor="middle" font-weight="bold">標準錯誤</text>
+      <text x="75" y="50" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">stderr (2)</text>
+      <text x="75" y="70" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">錯誤和警告訊息</text>
+      
+      <!-- 錯誤箭頭 -->
+      <path d="M-50,40 L0,40" stroke="#c2185b" stroke-width="2" fill="none" marker-end="url(#arrowred)"/>
+    </g>
+  </g>
+
+  <!-- 重定向示例 -->
+  <g transform="translate(50,300)">
+    <rect x="0" y="0" width="700" height="150" rx="10" fill="#fff" stroke="#666" stroke-width="1"/>
+    
+    <!-- 重定向命令示例 -->
+    <g transform="translate(20,20)" font-family="monospace" font-size="14">
+      <text x="0" y="0" fill="#666">重定向示例：</text>
+      <text x="20" y="30" fill="#333">command &lt; input.txt      # 從檔案輸入</text>
+      <text x="20" y="60" fill="#333">command &gt; output.txt     # 輸出到檔案</text>
+      <text x="20" y="90" fill="#333">command 2&gt; error.log     # 錯誤輸出到檔案</text>
+      <text x="20" y="120" fill="#333">command 2&gt;&amp;1 &gt; all.log   # 所有輸出到同一個檔案</text>
+    </g>
+  </g>
+
+  <!-- 箭頭標記定義 -->
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1976d2"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#388e3c"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c2185b"/>
+    </marker>
+  </defs>
+</svg> 
