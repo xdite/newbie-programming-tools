@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- 顧客（你的程式） -->
+    <g transform="translate(50,150)">
+        <rect width="150" height="100" rx="10" fill="#007bff" opacity="0.8"/>
+        <text x="75" y="55" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+            <tspan x="75" dy="0">你的程式</tspan>
+            <tspan x="75" dy="25">(顧客)</tspan>
+        </text>
+    </g>
+
+    <!-- API（服務生） -->
+    <g transform="translate(325,100)">
+        <rect width="150" height="200" rx="10" fill="#28a745" opacity="0.8"/>
+        <text x="75" y="100" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+            <tspan x="75" dy="0">API</tspan>
+            <tspan x="75" dy="25">(服務生)</tspan>
+        </text>
+    </g>
+
+    <!-- 廚房（後端服務） -->
+    <g transform="translate(600,150)">
+        <rect width="150" height="100" rx="10" fill="#dc3545" opacity="0.8"/>
+        <text x="75" y="55" text-anchor="middle" fill="white" font-family="Arial, sans-serif">
+            <tspan x="75" dy="0">後端服務</tspan>
+            <tspan x="75" dy="25">(廚房)</tspan>
+        </text>
+    </g>
+
+    <!-- 連接箭頭 -->
+    <!-- 請求箭頭 -->
+    <g>
+        <!-- 顧客到API -->
+        <path d="M 200,180 L 325,180" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="262" y="170" text-anchor="middle" fill="#666" font-family="Arial, sans-serif">請求</text>
+    </g>
+    <g>
+        <!-- API到廚房 -->
+        <path d="M 475,180 L 600,180" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="537" y="170" text-anchor="middle" fill="#666" font-family="Arial, sans-serif">處理</text>
+    </g>
+    <g>
+        <!-- 廚房到API -->
+        <path d="M 600,220 L 475,220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="537" y="240" text-anchor="middle" fill="#666" font-family="Arial, sans-serif">準備</text>
+    </g>
+    <g>
+        <!-- API到顧客 -->
+        <path d="M 325,220 L 200,220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="262" y="240" text-anchor="middle" fill="#666" font-family="Arial, sans-serif">響應</text>
+    </g>
+
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- API 文檔（菜單） -->
+    <g transform="translate(325,50)">
+        <rect width="150" height="40" rx="5" fill="#ffc107" opacity="0.8"/>
+        <text x="75" y="25" text-anchor="middle" fill="#000" font-family="Arial, sans-serif">API 文檔 (菜單)</text>
+    </g>
+</svg> 
