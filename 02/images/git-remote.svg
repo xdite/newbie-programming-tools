@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="700" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" fill="#212529">遠端倉庫：雲端協作中心</text>
+
+    <!-- 說明文字 -->
+    <g transform="translate(50,70)">
+        <rect width="700" height="60" rx="5" fill="#fff9db" stroke="#ffd43b"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#f08c00">
+            遠端倉庫就像是放在雲端的共享資料夾
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">
+            團隊成員可以一起協作，同步程式碼，備份專案
+        </text>
+    </g>
+
+    <!-- 雲端伺服器 -->
+    <g transform="translate(300,150)">
+        <!-- 雲朵 -->
+        <path d="M 100,30 
+                 C 60,30 20,60 20,100 
+                 C 20,140 60,170 100,170 
+                 L 150,170 
+                 C 190,170 230,140 230,100 
+                 C 230,60 190,30 150,30 
+                 Z" 
+              fill="#e7f5ff" stroke="#74c0fc" stroke-width="3"/>
+        
+        <!-- GitHub 標誌 -->
+        <text x="125" y="110" text-anchor="middle" font-family="Arial" font-size="24" fill="#1864ab">GitHub</text>
+    </g>
+
+    <!-- 團隊成員 -->
+    <g transform="translate(50,200)">
+        <!-- 開發者 1 -->
+        <g transform="translate(0,0)">
+            <rect width="180" height="150" rx="10" fill="#d3f9d8" stroke="#40c057"/>
+            <text x="90" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#2b8a3e">開發者 A</text>
+            <text x="90" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">本地倉庫</text>
+            <path d="M 90,90 L 300,220" stroke="#40c057" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+            <text x="150" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#2b8a3e">git push</text>
+        </g>
+
+        <!-- 開發者 2 -->
+        <g transform="translate(570,0)">
+            <rect width="180" height="150" rx="10" fill="#d3f9d8" stroke="#40c057"/>
+            <text x="90" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#2b8a3e">開發者 B</text>
+            <text x="90" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">本地倉庫</text>
+            <path d="M 90,90 L -120,220" stroke="#40c057" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+            <text x="30" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="#2b8a3e">git push</text>
+        </g>
+
+        <!-- 開發者 3 -->
+        <g transform="translate(285,300)">
+            <rect width="180" height="100" rx="10" fill="#d3f9d8" stroke="#40c057"/>
+            <text x="90" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#2b8a3e">開發者 C</text>
+            <text x="90" y="70" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">本地倉庫</text>
+            <path d="M 90,0 L 90,-80" stroke="#40c057" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+            <text x="120" y="-30" text-anchor="middle" font-family="Arial" font-size="12" fill="#2b8a3e">git pull</text>
+        </g>
+    </g>
+
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#40c057"/>
+        </marker>
+    </defs>
+
+    <!-- 功能說明 -->
+    <g transform="translate(50,620)">
+        <rect width="700" height="65" rx="5" fill="#e7f5ff" stroke="#74c0fc"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#1864ab">遠端倉庫的功能：</text>
+        <g transform="translate(40,50)">
+            <text x="0" y="0" font-family="Arial" font-size="14" fill="#495057">• 程式碼共享中心　• 版本備份空間　• 團隊協作平台　• 專案發布基地</text>
+        </g>
+    </g>
+
+    <!-- 同步指示 -->
+    <g transform="translate(300,400)">
+        <rect width="200" height="60" rx="5" fill="#fff4e6" stroke="#ffd8a8"/>
+        <text x="100" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#d9480f">同步機制</text>
+        <text x="100" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">push 上傳 / pull 下載</text>
+    </g>
+</svg> 

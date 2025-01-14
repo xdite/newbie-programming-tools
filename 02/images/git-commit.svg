@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" fill="#212529">Git 提交：專案快照</text>
+
+    <!-- 說明文字 -->
+    <g transform="translate(50,70)">
+        <rect width="700" height="60" rx="5" fill="#fff9db" stroke="#ffd43b"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#f08c00">
+            每次提交就像幫專案拍一張照片
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">
+            記錄下當下所有檔案的狀態，並加上說明標籤
+        </text>
+    </g>
+
+    <!-- 主要內容區域 -->
+    <g transform="translate(50,150)">
+        <!-- 檔案變化示意 -->
+        <g transform="translate(0,0)">
+            <!-- 修改前的檔案 -->
+            <rect width="200" height="250" rx="10" fill="#e7f5ff" stroke="#74c0fc"/>
+            <text x="100" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#1864ab">修改前</text>
+            <g transform="translate(20,50)">
+                <rect width="160" height="180" rx="5" fill="white" stroke="#adb5bd"/>
+                <text x="10" y="30" font-family="monospace" font-size="12" fill="#495057">function hello() {</text>
+                <text x="10" y="50" font-family="monospace" font-size="12" fill="#495057">  console.log(</text>
+                <text x="10" y="70" font-family="monospace" font-size="12" fill="#495057">    "Hello"</text>
+                <text x="10" y="90" font-family="monospace" font-size="12" fill="#495057">  );</text>
+                <text x="10" y="110" font-family="monospace" font-size="12" fill="#495057">}</text>
+            </g>
+        </g>
+
+        <!-- 相機快門圖示 -->
+        <g transform="translate(250,100)">
+            <circle cx="50" cy="50" r="40" fill="#40c057" stroke="#2b8a3e" stroke-width="2"/>
+            <text x="50" y="55" text-anchor="middle" font-family="Arial" font-size="14" fill="white">git</text>
+            <text x="50" y="70" text-anchor="middle" font-family="Arial" font-size="14" fill="white">commit</text>
+        </g>
+
+        <!-- 修改後的檔案 -->
+        <g transform="translate(350,0)">
+            <rect width="200" height="250" rx="10" fill="#d3f9d8" stroke="#40c057"/>
+            <text x="100" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#2b8a3e">修改後</text>
+            <g transform="translate(20,50)">
+                <rect width="160" height="180" rx="5" fill="white" stroke="#adb5bd"/>
+                <text x="10" y="30" font-family="monospace" font-size="12" fill="#495057">function hello() {</text>
+                <text x="10" y="50" font-family="monospace" font-size="12" fill="#495057">  console.log(</text>
+                <text x="10" y="70" font-family="monospace" font-size="12" fill="#495057">    "Hello World"</text>
+                <text x="10" y="90" font-family="monospace" font-size="12" fill="#495057">  );</text>
+                <text x="10" y="110" font-family="monospace" font-size="12" fill="#495057">}</text>
+            </g>
+        </g>
+
+        <!-- 提交資訊卡片 -->
+        <g transform="translate(600,0)">
+            <rect width="150" height="250" rx="10" fill="#fff4e6" stroke="#ffd8a8"/>
+            <text x="75" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#d9480f">提交資訊</text>
+            <g transform="translate(10,50)">
+                <text x="0" y="20" font-family="Arial" font-size="12" fill="#495057">作者：小明</text>
+                <text x="0" y="40" font-family="Arial" font-size="12" fill="#495057">時間：2024/01/17</text>
+                <text x="0" y="70" font-family="Arial" font-size="12" fill="#495057">說明：</text>
+                <text x="0" y="90" font-family="Arial" font-size="12" fill="#495057">更新歡迎訊息</text>
+                <text x="0" y="120" font-family="Arial" font-size="12" fill="#495057">修改內容：</text>
+                <text x="0" y="140" font-family="Arial" font-size="12" fill="#495057">- 加入 "World"</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 提交特性說明 -->
+    <g transform="translate(50,450)">
+        <rect width="700" height="120" rx="5" fill="#e7f5ff" stroke="#74c0fc"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#1864ab">提交的特性：</text>
+        <g transform="translate(40,50)">
+            <text x="0" y="0" font-family="Arial" font-size="14" fill="#495057">• 每個提交都有唯一的識別碼（SHA-1）</text>
+            <text x="0" y="25" font-family="Arial" font-size="14" fill="#495057">• 記錄了誰在什麼時候做了什麼修改</text>
+            <text x="0" y="50" font-family="Arial" font-size="14" fill="#495057">• 可以添加說明訊息，方便日後查看</text>
+        </g>
+    </g>
+</svg> 
