@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="600" version="1.1" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="900" height="600" fill="#F5F5F5"/>
+  
+  <!-- 標題 -->
+  <text x="450" y="40" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">常用命令概覽</text>
+
+  <!-- 文件操作類 -->
+  <g transform="translate(50,80)">
+    <rect x="0" y="0" width="380" height="220" rx="10" ry="10" fill="#E3F2FD" stroke="#90CAF9" stroke-width="2"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1976D2">文件操作</text>
+    
+    <!-- 命令列表 -->
+    <g font-family="monospace" font-size="14">
+      <text x="20" y="60" fill="#333">ls [-l|-a]：列出目錄內容</text>
+      <text x="20" y="85" fill="#333">cd [目錄|..|~]：切換目錄</text>
+      <text x="20" y="110" fill="#333">pwd：顯示當前位置</text>
+      <text x="20" y="135" fill="#333">mkdir：創建目錄</text>
+      <text x="20" y="160" fill="#333">rm [-r]：刪除文件/目錄</text>
+      <text x="20" y="185" fill="#333">cp：複製文件</text>
+      <text x="20" y="210" fill="#333">mv：移動/重命名</text>
+    </g>
+  </g>
+
+  <!-- 文件內容類 -->
+  <g transform="translate(470,80)">
+    <rect x="0" y="0" width="380" height="220" rx="10" ry="10" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#F57C00">內容操作</text>
+    
+    <!-- 命令列表 -->
+    <g font-family="monospace" font-size="14">
+      <text x="20" y="60" fill="#333">cat：顯示文件內容</text>
+      <text x="20" y="85" fill="#333">less：分頁查看</text>
+      <text x="20" y="110" fill="#333">head：查看開頭</text>
+      <text x="20" y="135" fill="#333">tail：查看結尾</text>
+      <text x="20" y="160" fill="#333">grep：搜索內容</text>
+      <text x="20" y="185" fill="#333">echo：輸出文字</text>
+    </g>
+  </g>
+
+  <!-- 系統相關 -->
+  <g transform="translate(50,320)">
+    <rect x="0" y="0" width="380" height="220" rx="10" ry="10" fill="#E8F5E9" stroke="#81C784" stroke-width="2"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">系統操作</text>
+    
+    <!-- 命令列表 -->
+    <g font-family="monospace" font-size="14">
+      <text x="20" y="60" fill="#333">ps：進程狀態</text>
+      <text x="20" y="85" fill="#333">top：系統資源監控</text>
+      <text x="20" y="110" fill="#333">df：磁碟使用情況</text>
+      <text x="20" y="135" fill="#333">du：目錄空間使用</text>
+      <text x="20" y="160" fill="#333">chmod：修改權限</text>
+      <text x="20" y="185" fill="#333">sudo：管理員權限</text>
+    </g>
+  </g>
+
+  <!-- 網路相關 -->
+  <g transform="translate(470,320)">
+    <rect x="0" y="0" width="380" height="220" rx="10" ry="10" fill="#F3E5F5" stroke="#CE93D8" stroke-width="2"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#7B1FA2">網路操作</text>
+    
+    <!-- 命令列表 -->
+    <g font-family="monospace" font-size="14">
+      <text x="20" y="60" fill="#333">ping：測試連接</text>
+      <text x="20" y="85" fill="#333">curl：傳輸數據</text>
+      <text x="20" y="110" fill="#333">wget：下載文件</text>
+      <text x="20" y="135" fill="#333">ssh：遠程連接</text>
+      <text x="20" y="160" fill="#333">scp：遠程複製</text>
+    </g>
+  </g>
+
+  <!-- 快捷鍵提示 -->
+  <g transform="translate(50,560)">
+    <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#666">常用快捷鍵：</text>
+    <text x="100" y="0" font-family="monospace" font-size="14" fill="#666">↑↓ 歷史命令   Tab 自動補全   Ctrl+C 中斷   Ctrl+L 清屏</text>
+  </g>
+
+  <!-- 提示 -->
+  <g transform="translate(450,580)">
+    <text x="0" y="0" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">使用 man [命令] 或 [命令] --help 獲取詳細幫助</text>
+  </g>
+</svg> 
