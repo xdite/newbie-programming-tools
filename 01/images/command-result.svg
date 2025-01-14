@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="300" version="1.1" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 終端機視窗 -->
+  <g transform="translate(50,30)">
+    <!-- 視窗外框 -->
+    <rect x="0" y="0" width="700" height="240" rx="10" ry="10" fill="#2D2D2D"/>
+    
+    <!-- 標題欄 -->
+    <rect x="0" y="0" width="700" height="30" rx="10" ry="10" fill="#3D3D3D"/>
+    <text x="350" y="20" font-family="sans-serif" font-size="14" fill="#CCC" text-anchor="middle">終端機</text>
+    
+    <!-- 控制按鈕 -->
+    <circle cx="20" cy="15" r="6" fill="#FF5F56"/>
+    <circle cx="40" cy="15" r="6" fill="#FFBD2E"/>
+    <circle cx="60" cy="15" r="6" fill="#27C93F"/>
+
+    <!-- 命令和結果區域 -->
+    <g transform="translate(20,50)" font-family="monospace" font-size="14">
+      <!-- 第一個命令：pwd -->
+      <text x="0" y="0" fill="#87CEFA">user@macbook</text>
+      <text x="120" y="0" fill="#98FB98">~/Documents</text>
+      <text x="220" y="0" fill="#FFF">$ pwd</text>
+      <text x="0" y="25" fill="#FFF">/Users/user/Documents</text>
+
+      <!-- 第二個命令：ls -->
+      <text x="0" y="60" fill="#87CEFA">user@macbook</text>
+      <text x="120" y="60" fill="#98FB98">~/Documents</text>
+      <text x="220" y="60" fill="#FFF">$ ls -l</text>
+      <text x="0" y="85" fill="#FFF">total 8</text>
+      <text x="0" y="110" fill="#FFF">drwxr-xr-x  2 user  staff  64 Jan 10 10:30 Projects</text>
+      <text x="0" y="135" fill="#FFF">-rw-r--r--  1 user  staff  85 Jan 10 10:25 notes.txt</text>
+
+      <!-- 第三個命令：cd -->
+      <text x="0" y="170" fill="#87CEFA">user@macbook</text>
+      <text x="120" y="170" fill="#98FB98">~/Documents</text>
+      <text x="220" y="170" fill="#FFF">$ cd Projects</text>
+    </g>
+  </g>
+
+  <!-- 說明文字 -->
+  <g transform="translate(50,290)" font-family="sans-serif" font-size="12" fill="#666">
+    <text x="0" y="0">提示符格式：使用者@主機名 當前目錄 $</text>
+    <text x="400" y="0">顏色用於區分不同類型的信息</text>
+  </g>
+</svg> 

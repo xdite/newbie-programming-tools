@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">環境變量：系統的設定筆記本</text>
+
+  <!-- 環境變量筆記本 -->
+  <g transform="translate(100,80)">
+    <!-- 筆記本外框 -->
+    <rect x="0" y="0" width="300" height="350" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+    <rect x="20" y="0" width="30" height="350" fill="#e9ecef" stroke="#333" stroke-width="2"/>
+    
+    <!-- 環境變量條目 -->
+    <g transform="translate(60,30)" font-family="monospace" font-size="16">
+      <text x="0" y="0" fill="#0066cc">PATH=</text>
+      <text x="20" y="25" fill="#28a745" font-size="14">/usr/local/bin:/usr/bin</text>
+      
+      <text x="0" y="70" fill="#0066cc">HOME=</text>
+      <text x="20" y="95" fill="#28a745" font-size="14">/Users/username</text>
+      
+      <text x="0" y="140" fill="#0066cc">SHELL=</text>
+      <text x="20" y="165" fill="#28a745" font-size="14">/bin/zsh</text>
+      
+      <text x="0" y="210" fill="#0066cc">LANG=</text>
+      <text x="20" y="235" fill="#28a745" font-size="14">zh_TW.UTF-8</text>
+    </g>
+  </g>
+
+  <!-- 程式和箭頭 -->
+  <g transform="translate(500,80)">
+    <!-- 程式圖示 -->
+    <rect x="0" y="0" width="200" height="100" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+    <text x="100" y="55" font-family="sans-serif" font-size="16" fill="#333" text-anchor="middle">程式</text>
+    
+    <rect x="0" y="130" width="200" height="100" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+    <text x="100" y="185" font-family="sans-serif" font-size="16" fill="#333" text-anchor="middle">Shell</text>
+    
+    <rect x="0" y="260" width="200" height="100" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+    <text x="100" y="315" font-family="sans-serif" font-size="16" fill="#333" text-anchor="middle">系統工具</text>
+  </g>
+
+  <!-- 連接線 -->
+  <g stroke="#666" stroke-width="2" fill="none">
+    <path d="M400,130 C450,130 450,130 500,130" marker-end="url(#arrowhead)"/>
+    <path d="M400,200 C450,200 450,180 500,180" marker-end="url(#arrowhead)"/>
+    <path d="M400,270 C450,270 450,310 500,310" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <!-- 箭頭標記 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- 說明文字 -->
+  <g transform="translate(100,450)" font-family="sans-serif" font-size="14" fill="#666">
+    <text x="0" y="0">• 環境變量就像是系統的設定筆記本</text>
+    <text x="300" y="0">• 所有程式都可以讀取這些設定</text>
+    <text x="600" y="0">• 常用於存儲路徑、設定值等</text>
+  </g>
+</svg> 
