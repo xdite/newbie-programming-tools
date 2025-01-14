@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" fill="#212529">Git 時光機</text>
+
+    <!-- 時間軸 -->
+    <g transform="translate(50,200)">
+        <!-- 主時間線 -->
+        <path d="M 50,50 L 700,50" stroke="#495057" stroke-width="4" fill="none"/>
+        
+        <!-- 時間點標記 -->
+        <g>
+            <!-- 過去版本 1 -->
+            <circle cx="150" cy="50" r="10" fill="#748ffc"/>
+            <text x="150" y="80" text-anchor="middle" font-family="Arial" font-size="12">第一版</text>
+            <text x="150" y="95" text-anchor="middle" font-family="Arial" font-size="10" fill="#495057">2024/01/01</text>
+        </g>
+
+        <g>
+            <!-- 過去版本 2 -->
+            <circle cx="300" cy="50" r="10" fill="#748ffc"/>
+            <text x="300" y="80" text-anchor="middle" font-family="Arial" font-size="12">加入新功能</text>
+            <text x="300" y="95" text-anchor="middle" font-family="Arial" font-size="10" fill="#495057">2024/01/15</text>
+        </g>
+
+        <g>
+            <!-- 過去版本 3 -->
+            <circle cx="450" cy="50" r="10" fill="#748ffc"/>
+            <text x="450" y="80" text-anchor="middle" font-family="Arial" font-size="12">修復錯誤</text>
+            <text x="450" y="95" text-anchor="middle" font-family="Arial" font-size="10" fill="#495057">2024/02/01</text>
+        </g>
+
+        <g>
+            <!-- 現在版本 -->
+            <circle cx="600" cy="50" r="15" fill="#40c057" stroke="#2b8a3e" stroke-width="2"/>
+            <text x="600" y="80" text-anchor="middle" font-family="Arial" font-size="12" fill="#2b8a3e">現在</text>
+            <text x="600" y="95" text-anchor="middle" font-family="Arial" font-size="10" fill="#495057">2024/02/15</text>
+        </g>
+    </g>
+
+    <!-- 時光機操作面板 -->
+    <g transform="translate(200,300)">
+        <rect width="400" height="120" rx="10" fill="#e7f5ff" stroke="#74c0fc" stroke-width="2"/>
+        
+        <!-- 標題 -->
+        <text x="200" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#1864ab">時光機操作面板</text>
+        
+        <!-- 指令說明 -->
+        <g transform="translate(20,50)">
+            <text x="0" y="0" font-family="Arial" font-size="14" fill="#495057">往返任意時間點：</text>
+            <text x="20" y="25" font-family="Arial" font-size="12" fill="#495057">• git checkout 版本號</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#495057">• git reset --hard 版本號</text>
+        </g>
+    </g>
+
+    <!-- 穿梭效果 -->
+    <g transform="translate(0,0)">
+        <!-- 從現在到過去的箭頭 -->
+        <path d="M 650,180 Q 500,140 350,180" stroke="#748ffc" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+        <text x="500" y="150" text-anchor="middle" font-family="Arial" font-size="12" fill="#748ffc">時光回溯</text>
+
+        <!-- 從過去到現在的箭頭 -->
+        <path d="M 350,220 Q 500,260 650,220" stroke="#40c057" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+        <text x="500" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#40c057">返回現在</text>
+    </g>
+
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+        </marker>
+    </defs>
+
+    <!-- 說明文字 -->
+    <g transform="translate(50,100)">
+        <rect width="700" height="60" rx="5" fill="#fff9db" stroke="#ffd43b"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#f08c00">
+            Git 就像時光機，讓你可以：
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">
+            在專案的任何時間點之間自由穿梭，查看或恢復任何版本的內容
+        </text>
+    </g>
+</svg> 
