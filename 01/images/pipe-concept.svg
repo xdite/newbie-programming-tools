@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">管道（Pipe）： ｜ 命令串連的橋樑</text>
+
+  <!-- 命令和管道圖示 -->
+  <g transform="translate(50,100)">
+    <!-- 第一個命令 -->
+    <rect x="0" y="0" width="180" height="100" rx="10" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+    <text x="90" y="45" font-family="monospace" font-size="20" fill="#1976d2" text-anchor="middle">cat names.txt</text>
+    <text x="90" y="70" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">讀取檔案內容</text>
+
+    <!-- 第一個管道 -->
+    <g transform="translate(180,35)">
+      <rect x="0" y="-15" width="120" height="30" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+      <text x="60" y="5" font-family="monospace" font-size="18" fill="#f57c00" text-anchor="middle">|</text>
+      <!-- 流動的點 -->
+      <circle cx="30" cy="0" r="3" fill="#f57c00">
+        <animate attributeName="cx" values="10;110" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- 第二個命令 -->
+    <rect x="300" y="0" width="180" height="100" rx="10" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+    <text x="390" y="45" font-family="monospace" font-size="20" fill="#388e3c" text-anchor="middle">sort</text>
+    <text x="390" y="70" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">排序內容</text>
+
+    <!-- 第二個管道 -->
+    <g transform="translate(480,35)">
+      <rect x="0" y="-15" width="120" height="30" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+      <text x="60" y="5" font-family="monospace" font-size="18" fill="#f57c00" text-anchor="middle">|</text>
+      <!-- 流動的點 -->
+      <circle cx="30" cy="0" r="3" fill="#f57c00">
+        <animate attributeName="cx" values="10;110" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- 第三個命令 -->
+    <rect x="600" y="0" width="180" height="100" rx="10" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+    <text x="690" y="45" font-family="monospace" font-size="20" fill="#c2185b" text-anchor="middle">uniq</text>
+    <text x="690" y="70" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">去除重複行</text>
+  </g>
+
+  <!-- 數據流說明 -->
+  <g transform="translate(50,250)">
+    <!-- 輸入數據示例 -->
+    <rect x="0" y="0" width="180" height="80" rx="5" fill="#fff" stroke="#666" stroke-width="1"/>
+    <text x="90" y="30" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">David</text>
+    <text x="90" y="50" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">Alice</text>
+    <text x="90" y="70" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">David</text>
+
+    <!-- 中間處理數據 -->
+    <rect x="300" y="0" width="180" height="80" rx="5" fill="#fff" stroke="#666" stroke-width="1"/>
+    <text x="390" y="30" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">Alice</text>
+    <text x="390" y="50" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">David</text>
+    <text x="390" y="70" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">David</text>
+
+    <!-- 最終輸出 -->
+    <rect x="600" y="0" width="180" height="80" rx="5" fill="#fff" stroke="#666" stroke-width="1"/>
+    <text x="690" y="30" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">Alice</text>
+    <text x="690" y="50" font-family="monospace" font-size="14" fill="#666" text-anchor="middle">David</text>
+  </g>
+
+  <!-- 說明文字 -->
+  <g transform="translate(50,360)" font-family="sans-serif" font-size="14" fill="#666">
+    <text x="0" y="0">• 管道（|）將前一個命令的輸出作為後一個命令的輸入</text>
+    <text x="0" y="25">• 每個命令都處理上一個命令的輸出，最後得到想要的結果</text>
+  </g>
+</svg> 
