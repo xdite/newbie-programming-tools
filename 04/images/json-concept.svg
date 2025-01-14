@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+        JSON 格式：標準化的點餐單
+    </text>
+
+    <!-- 左側：實體點餐單 -->
+    <g transform="translate(50,80)">
+        <rect width="300" height="380" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 點餐單標題 -->
+        <text x="150" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+            實體點餐單
+        </text>
+        
+        <!-- 分隔線 -->
+        <line x1="20" y1="60" x2="280" y2="60" stroke="#6c757d" stroke-width="1"/>
+        
+        <!-- 點餐內容 -->
+        <g transform="translate(40,90)">
+            <text fill="#333" font-family="Arial, sans-serif" font-size="14">
+                <tspan x="0" dy="0">桌號：A12</tspan>
+                <tspan x="0" dy="30">顧客姓名：小明</tspan>
+                <tspan x="0" dy="30">用餐人數：2人</tspan>
+            </text>
+            
+            <!-- 餐點列表 -->
+            <text x="0" y="120" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+                餐點：
+            </text>
+            <g transform="translate(20,140)">
+                <text fill="#333" font-family="Arial, sans-serif" font-size="14">
+                    <tspan x="0" dy="0">1. 海鮮燉飯</tspan>
+                    <tspan x="20" dy="20">- 少鹽</tspan>
+                    <tspan x="0" dy="20">2. 牛排</tspan>
+                    <tspan x="20" dy="20">- 五分熟</tspan>
+                </text>
+            </g>
+            
+            <!-- 飲料 -->
+            <text x="0" y="240" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+                飲料：
+            </text>
+            <g transform="translate(20,260)">
+                <text fill="#333" font-family="Arial, sans-serif" font-size="14">
+                    <tspan x="0" dy="0">1. 柳橙汁</tspan>
+                    <tspan x="0" dy="20">2. 美式咖啡</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 右側：JSON 格式 -->
+    <g transform="translate(450,80)">
+        <rect width="300" height="380" rx="10" fill="#282c34" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- JSON 標題 -->
+        <text x="150" y="40" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+            JSON 格式
+        </text>
+        
+        <!-- 分隔線 -->
+        <line x1="20" y1="60" x2="280" y2="60" stroke="#6c757d" stroke-width="1"/>
+        
+        <!-- JSON 內容 -->
+        <g transform="translate(40,90)">
+            <text fill="#89ca78" font-family="monospace" font-size="14">
+                <tspan x="0" dy="0">{</tspan>
+                <tspan x="20" dy="20" fill="#e5c07b">"table"</tspan><tspan fill="#abb2bf">: </tspan><tspan fill="#89ca78">"A12"</tspan><tspan fill="#abb2bf">,</tspan>
+                <tspan x="20" dy="20" fill="#e5c07b">"customer"</tspan><tspan fill="#abb2bf">: </tspan><tspan fill="#89ca78">"小明"</tspan><tspan fill="#abb2bf">,</tspan>
+                <tspan x="20" dy="20" fill="#e5c07b">"people"</tspan><tspan fill="#abb2bf">: </tspan><tspan fill="#d19a66">2</tspan><tspan fill="#abb2bf">,</tspan>
+                <tspan x="20" dy="20" fill="#e5c07b">"dishes"</tspan><tspan fill="#abb2bf">: [</tspan>
+                <tspan x="40" dy="20" fill="#abb2bf">{</tspan>
+                <tspan x="60" dy="20" fill="#e5c07b">"name"</tspan><tspan fill="#abb2bf">: </tspan><tspan fill="#89ca78">"海鮮燉飯"</tspan><tspan fill="#abb2bf">,</tspan>
+                <tspan x="60" dy="20" fill="#e5c07b">"note"</tspan><tspan fill="#abb2bf">: </tspan><tspan fill="#89ca78">"少鹽"</tspan>
+                <tspan x="40" dy="20" fill="#abb2bf">},</tspan>
+                <tspan x="40" dy="20" fill="#abb2bf">{</tspan>
+                <tspan x="60" dy="20" fill="#e5c07b">"name"</tspan><tspan fill="#abb2bf">: </tspan><tspan fill="#89ca78">"牛排"</tspan><tspan fill="#abb2bf">,</tspan>
+                <tspan x="60" dy="20" fill="#e5c07b">"note"</tspan><tspan fill="#abb2bf">: </tspan><tspan fill="#89ca78">"五分熟"</tspan>
+                <tspan x="40" dy="20" fill="#abb2bf">}</tspan>
+                <tspan x="20" dy="20" fill="#abb2bf">],</tspan>
+                <tspan x="20" dy="20" fill="#e5c07b">"drinks"</tspan><tspan fill="#abb2bf">: [</tspan>
+                <tspan x="40" dy="20" fill="#89ca78">"柳橙汁"</tspan><tspan fill="#abb2bf">,</tspan>
+                <tspan x="40" dy="20" fill="#89ca78">"美式咖啡"</tspan>
+                <tspan x="20" dy="20" fill="#abb2bf">]</tspan>
+                <tspan x="0" dy="20">}</tspan>
+            </text>
+        </g>
+    </g>
+
+    <!-- 對應關係箭頭 -->
+    <g>
+        <!-- 桌號對應 -->
+        <path d="M 350,180 L 450,180" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+        <!-- 姓名對應 -->
+        <path d="M 350,200 L 450,200" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+        <!-- 餐點對應 -->
+        <path d="M 350,280 L 450,280" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+        <!-- 飲料對應 -->
+        <path d="M 350,380 L 450,380" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+    </g>
+
+    <!-- 語法說明 -->
+    <g transform="translate(50,480)">
+        <text fill="#333" font-family="Arial, sans-serif" font-size="12">
+            <tspan x="0" dy="0">● 使用 { } 包住整個內容</tspan>
+            <tspan x="200" dy="0">● 使用 " " 包住名稱和文字值</tspan>
+            <tspan x="400" dy="0">● 使用 : 分隔名稱和值</tspan>
+            <tspan x="600" dy="0">● 使用 , 分隔不同項目</tspan>
+        </text>
+    </g>
+</svg> 
