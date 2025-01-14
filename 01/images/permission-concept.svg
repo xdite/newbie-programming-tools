@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">檔案權限系統</text>
+
+  <!-- 檔案圖示 -->
+  <g transform="translate(100,80)">
+    <!-- 檔案外框 -->
+    <rect x="0" y="0" width="600" height="320" rx="10" fill="#fff" stroke="#333" stroke-width="2"/>
+    
+    <!-- 權限字串示例 -->
+    <g transform="translate(30,30)">
+      <text x="0" y="0" font-family="monospace" font-size="24" fill="#333">-rw-r--r--</text>
+      
+      <!-- 權限說明線條 -->
+      <g stroke="#666" stroke-width="1" fill="none">
+        <path d="M0,10 L0,40"/>
+        <path d="M30,10 L30,40"/>
+        <path d="M60,10 L60,40"/>
+        <path d="M90,10 L90,40"/>
+      </g>
+      
+      <!-- 權限說明文字 -->
+      <g font-family="sans-serif" font-size="14" fill="#666">
+        <text x="0" y="55">檔案類型</text>
+        <text x="30" y="55">擁有者權限</text>
+        <text x="60" y="55">群組權限</text>
+        <text x="90" y="55">其他人權限</text>
+      </g>
+    </g>
+
+    <!-- 權限類型說明 -->
+    <g transform="translate(30,120)">
+      <g font-family="sans-serif" font-size="16">
+        <!-- 讀取權限 -->
+        <rect x="0" y="0" width="150" height="80" rx="5" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+        <text x="75" y="35" fill="#1976d2" text-anchor="middle" font-weight="bold">讀取 (r)</text>
+        <text x="75" y="60" fill="#666" text-anchor="middle" font-size="14">查看檔案內容</text>
+        
+        <!-- 寫入權限 -->
+        <rect x="200" y="0" width="150" height="80" rx="5" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+        <text x="275" y="35" fill="#388e3c" text-anchor="middle" font-weight="bold">寫入 (w)</text>
+        <text x="275" y="60" fill="#666" text-anchor="middle" font-size="14">修改檔案內容</text>
+        
+        <!-- 執行權限 -->
+        <rect x="400" y="0" width="150" height="80" rx="5" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+        <text x="475" y="35" fill="#c2185b" text-anchor="middle" font-weight="bold">執行 (x)</text>
+        <text x="475" y="60" fill="#666" text-anchor="middle" font-size="14">執行程式或腳本</text>
+      </g>
+    </g>
+
+    <!-- 使用者類型說明 -->
+    <g transform="translate(30,220)">
+      <g font-family="sans-serif" font-size="16">
+        <!-- 擁有者 -->
+        <rect x="0" y="0" width="150" height="80" rx="5" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+        <text x="75" y="35" fill="#f57c00" text-anchor="middle" font-weight="bold">擁有者</text>
+        <text x="75" y="60" fill="#666" text-anchor="middle" font-size="14">檔案的創建者</text>
+        
+        <!-- 群組 -->
+        <rect x="200" y="0" width="150" height="80" rx="5" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+        <text x="275" y="35" fill="#7b1fa2" text-anchor="middle" font-weight="bold">群組</text>
+        <text x="275" y="60" fill="#666" text-anchor="middle" font-size="14">同一群組的用戶</text>
+        
+        <!-- 其他人 -->
+        <rect x="400" y="0" width="150" height="80" rx="5" fill="#e0f2f1" stroke="#00796b" stroke-width="2"/>
+        <text x="475" y="35" fill="#00796b" text-anchor="middle" font-weight="bold">其他人</text>
+        <text x="475" y="60" fill="#666" text-anchor="middle" font-size="14">系統其他用戶</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 說明文字 -->
+  <g transform="translate(100,430)" font-family="sans-serif" font-size="14" fill="#666">
+    <text x="0" y="0">• 每個檔案都有三種權限（讀取、寫入、執行）</text>
+    <text x="0" y="25">• 權限分別設定給三種使用者（擁有者、群組、其他人）</text>
+    <text x="0" y="50">• 使用 chmod 命令修改權限</text>
+  </g>
+</svg> 
