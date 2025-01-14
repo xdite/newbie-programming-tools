@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" fill="#212529">Git 倉庫：魔法箱子</text>
+
+    <!-- 說明文字 -->
+    <g transform="translate(50,70)">
+        <rect width="700" height="60" rx="5" fill="#fff9db" stroke="#ffd43b"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#f08c00">
+            Git 倉庫就像一個魔法箱子
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="#495057">
+            不只存放當前的檔案，還保存了所有的歷史記錄和設定
+        </text>
+    </g>
+
+    <!-- 魔法箱子 -->
+    <g transform="translate(100,150)">
+        <!-- 箱子本體 -->
+        <rect width="600" height="350" rx="20" fill="#e7f5ff" stroke="#74c0fc" stroke-width="3"/>
+        
+        <!-- 箱子蓋子 -->
+        <path d="M 0,50 L 600,50" stroke="#74c0fc" stroke-width="3"/>
+        
+        <!-- .git 資料夾標示 -->
+        <g transform="translate(20,20)">
+            <rect width="80" height="30" rx="5" fill="#1864ab"/>
+            <text x="40" y="20" text-anchor="middle" font-family="Arial" font-size="14" fill="white">.git</text>
+        </g>
+
+        <!-- 內容分區 -->
+        <g transform="translate(30,80)">
+            <!-- 當前檔案 -->
+            <g>
+                <rect width="250" height="120" rx="10" fill="#d3f9d8" stroke="#40c057"/>
+                <text x="125" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#2b8a3e">當前檔案</text>
+                <text x="20" y="60" font-family="Arial" font-size="12" fill="#495057">• index.html</text>
+                <text x="20" y="80" font-family="Arial" font-size="12" fill="#495057">• style.css</text>
+                <text x="20" y="100" font-family="Arial" font-size="12" fill="#495057">• script.js</text>
+            </g>
+
+            <!-- 歷史記錄 -->
+            <g transform="translate(290,0)">
+                <rect width="250" height="120" rx="10" fill="#e7f5ff" stroke="#74c0fc"/>
+                <text x="125" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#1864ab">歷史記錄</text>
+                <text x="20" y="60" font-family="Arial" font-size="12" fill="#495057">• 每次修改的快照</text>
+                <text x="20" y="80" font-family="Arial" font-size="12" fill="#495057">• 誰在什麼時候改了什麼</text>
+                <text x="20" y="100" font-family="Arial" font-size="12" fill="#495057">• 完整的變更追蹤</text>
+            </g>
+
+            <!-- 設定資訊 -->
+            <g transform="translate(0,140)">
+                <rect width="250" height="120" rx="10" fill="#fff3bf" stroke="#ffd43b"/>
+                <text x="125" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#e67700">設定資訊</text>
+                <text x="20" y="60" font-family="Arial" font-size="12" fill="#495057">• 遠端倉庫位置</text>
+                <text x="20" y="80" font-family="Arial" font-size="12" fill="#495057">• 使用者資訊</text>
+                <text x="20" y="100" font-family="Arial" font-size="12" fill="#495057">• 忽略檔案清單</text>
+            </g>
+
+            <!-- 分支資訊 -->
+            <g transform="translate(290,140)">
+                <rect width="250" height="120" rx="10" fill="#f3f0ff" stroke="#b197fc"/>
+                <text x="125" y="30" text-anchor="middle" font-family="Arial" font-size="16" fill="#6741d9">分支資訊</text>
+                <text x="20" y="60" font-family="Arial" font-size="12" fill="#495057">• 主分支（main）</text>
+                <text x="20" y="80" font-family="Arial" font-size="12" fill="#495057">• 開發分支</text>
+                <text x="20" y="100" font-family="Arial" font-size="12" fill="#495057">• 各分支的位置</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 箱子特性說明 -->
+    <g transform="translate(50,520)">
+        <rect width="700" height="60" rx="5" fill="#e7f5ff" stroke="#74c0fc"/>
+        <text x="20" y="25" font-family="Arial" font-size="14" fill="#1864ab">魔法箱子的特性：</text>
+        <text x="40" y="45" font-family="Arial" font-size="12" fill="#495057">• 自動記錄所有變更　• 可以回到任何時間點　• 支援多人協作　• 保護資料安全</text>
+    </g>
+</svg> 
