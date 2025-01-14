@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- 標題 -->
+    <text x="400" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+        API 文檔：程式界的菜單
+    </text>
+
+    <!-- 左側：實體菜單 -->
+    <g transform="translate(50,80)">
+        <rect width="300" height="380" rx="10" fill="#ffffff" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- 菜單標題 -->
+        <text x="150" y="40" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+            餐廳菜單
+        </text>
+        
+        <!-- 分隔線 -->
+        <line x1="20" y1="60" x2="280" y2="60" stroke="#6c757d" stroke-width="1"/>
+        
+        <!-- 菜單內容 -->
+        <g transform="translate(40,80)">
+            <!-- 菜品名稱 -->
+            <text x="0" y="0" fill="#d35400" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+                海鮮燉飯
+            </text>
+            <!-- 菜品描述 -->
+            <text x="0" y="25" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                新鮮海鮮配西班牙米製成
+            </text>
+            <!-- 價格 -->
+            <text x="0" y="45" fill="#333" font-family="Arial, sans-serif" font-size="14">
+                NT$ 320
+            </text>
+            <!-- 選項 -->
+            <text x="0" y="70" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                可選項：辣度（小辣/中辣/大辣）
+            </text>
+            <!-- 備註 -->
+            <text x="0" y="90" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                * 可告知服務生調整鹹度
+            </text>
+
+            <!-- 分隔線 -->
+            <line x1="-20" y1="110" x2="240" y2="110" stroke="#ddd" stroke-width="1"/>
+
+            <!-- 點餐方式說明 -->
+            <text x="0" y="140" fill="#333" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+                如何點餐：
+            </text>
+            <text x="0" y="165" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                1. 告知服務生餐點名稱
+            </text>
+            <text x="0" y="185" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                2. 說明特殊需求
+            </text>
+            <text x="0" y="205" fill="#666" font-family="Arial, sans-serif" font-size="12">
+                3. 等待服務生確認
+            </text>
+        </g>
+    </g>
+
+    <!-- 右側：API 文檔 -->
+    <g transform="translate(450,80)">
+        <rect width="300" height="380" rx="10" fill="#282c34" stroke="#6c757d" stroke-width="2"/>
+        
+        <!-- API 文檔標題 -->
+        <text x="150" y="40" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+            API 文檔
+        </text>
+        
+        <!-- 分隔線 -->
+        <line x1="20" y1="60" x2="280" y2="60" stroke="#6c757d" stroke-width="1"/>
+        
+        <!-- API 文檔內容 -->
+        <g transform="translate(30,80)">
+            <!-- Endpoint -->
+            <text fill="#61afef" font-family="monospace" font-size="14" font-weight="bold">
+                POST /orders/seafood-risotto
+            </text>
+            
+            <!-- 描述 -->
+            <text y="25" fill="#abb2bf" font-family="monospace" font-size="12">
+                建立海鮮燉飯訂單
+            </text>
+
+            <!-- 請求參數 -->
+            <text y="55" fill="#c678dd" font-family="monospace" font-size="14">
+                Request Body:
+            </text>
+            <text y="80" fill="#98c379" font-family="monospace" font-size="12">
+                {
+            </text>
+            <text y="100" fill="#e5c07b" font-family="monospace" font-size="12">
+                  "spiciness": "mild|medium|hot",  // 必填
+            </text>
+            <text y="120" fill="#e5c07b" font-family="monospace" font-size="12">
+                  "saltLevel": "normal|less|more"  // 選填
+            </text>
+            <text y="140" fill="#98c379" font-family="monospace" font-size="12">
+                }
+            </text>
+
+            <!-- 響應格式 -->
+            <text y="170" fill="#c678dd" font-family="monospace" font-size="14">
+                Response:
+            </text>
+            <text y="195" fill="#98c379" font-family="monospace" font-size="12">
+                {
+            </text>
+            <text y="215" fill="#e5c07b" font-family="monospace" font-size="12">
+                  "orderId": "string",
+            </text>
+            <text y="235" fill="#e5c07b" font-family="monospace" font-size="12">
+                  "price": 320,
+            </text>
+            <text y="255" fill="#e5c07b" font-family="monospace" font-size="12">
+                  "estimatedTime": "15min"
+            </text>
+            <text y="275" fill="#98c379" font-family="monospace" font-size="12">
+                }
+            </text>
+        </g>
+    </g>
+
+    <!-- 對應關係箭頭 -->
+    <g>
+        <!-- 菜品名稱對應 -->
+        <path d="M 350,170 L 450,170" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+        <!-- 選項對應 -->
+        <path d="M 350,220 L 450,220" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+        <!-- 價格對應 -->
+        <path d="M 350,270 L 450,270" stroke="#666" stroke-width="1" stroke-dasharray="5,5"/>
+    </g>
+
+    <!-- 說明標籤 -->
+    <g transform="translate(50,480)">
+        <text fill="#333" font-family="Arial, sans-serif" font-size="12">
+            <tspan x="0" dy="0">● Endpoint = 餐點名稱</tspan>
+            <tspan x="200" dy="0">● 參數 = 客製選項</tspan>
+            <tspan x="400" dy="0">● 響應 = 點餐結果</tspan>
+            <tspan x="600" dy="0">● 文檔 = 點餐指南</tspan>
+        </text>
+    </g>
+</svg> 
