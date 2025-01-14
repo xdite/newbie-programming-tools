@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="300" version="1.1" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="50" y="50" width="700" height="200" rx="10" ry="10" fill="#F5F5F5"/>
+  
+  <!-- 命令示例 -->
+  <g transform="translate(100,100)">
+    <!-- 命令部分 -->
+    <rect x="0" y="0" width="120" height="60" rx="5" ry="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="2"/>
+    <text x="60" y="35" font-family="monospace" font-size="24" text-anchor="middle" fill="#1976D2">ls</text>
+    
+    <!-- 選項部分 -->
+    <rect x="140" y="0" width="120" height="60" rx="5" ry="5" fill="#FFF3E0" stroke="#FFB74D" stroke-width="2"/>
+    <text x="200" y="35" font-family="monospace" font-size="24" text-anchor="middle" fill="#F57C00">-l</text>
+    
+    <!-- 參數部分 -->
+    <rect x="280" y="0" width="320" height="60" rx="5" ry="5" fill="#E8F5E9" stroke="#81C784" stroke-width="2"/>
+    <text x="440" y="35" font-family="monospace" font-size="24" text-anchor="middle" fill="#2E7D32">/Users</text>
+  </g>
+  
+  <!-- 說明文字 -->
+  <g font-family="sans-serif" font-size="14">
+    <text x="160" y="200" text-anchor="middle" fill="#1976D2">命令 (Command)</text>
+    <text x="300" y="200" text-anchor="middle" fill="#F57C00">選項 (Options)</text>
+    <text x="500" y="200" text-anchor="middle" fill="#2E7D32">參數 (Arguments)</text>
+  </g>
+  
+  <!-- 說明線條 -->
+  <g stroke="#90A4AE" stroke-width="1" fill="none">
+    <path d="M160,170 L160,185"/>
+    <path d="M300,170 L300,185"/>
+    <path d="M500,170 L500,185"/>
+  </g>
+  
+  <!-- 補充說明 -->
+  <g font-family="sans-serif" font-size="12" fill="#666">
+    <text x="160" y="220" text-anchor="middle">要執行的指令</text>
+    <text x="300" y="220" text-anchor="middle">修改命令行為</text>
+    <text x="500" y="220" text-anchor="middle">命令的操作對象</text>
+  </g>
+  
+  <!-- 選項說明 -->
+  <g transform="translate(100,240)">
+    <text x="0" y="20" font-family="monospace" font-size="12" fill="#666">短選項：-l</text>
+    <text x="200" y="20" font-family="monospace" font-size="12" fill="#666">長選項：--all</text>
+  </g>
+</svg> 
