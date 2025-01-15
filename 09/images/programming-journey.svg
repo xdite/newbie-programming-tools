@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#1a202c"/>
+    
+    <!-- 裝飾性網格背景 -->
+    <path d="M0 80 L800 80 M0 160 L800 160 M0 240 L800 240 M0 320 L800 320" 
+          stroke="#2d3748" stroke-width="1" stroke-dasharray="4,4"/>
+    <path d="M160 0 L160 400 M320 0 L320 400 M480 0 L480 400 M640 0 L640 400" 
+          stroke="#2d3748" stroke-width="1" stroke-dasharray="4,4"/>
+    
+    <!-- 主標題 -->
+    <g transform="translate(400,60)">
+        <text x="-180" y="0" font-family="Arial" font-size="32" fill="#ffffff" font-weight="bold">新手寫程式的一切</text>
+        <text x="-150" y="30" font-family="Arial" font-size="16" fill="#a0aec0">從命令行到AI輔助的學習旅程</text>
+    </g>
+    
+    <!-- 左側：基礎工具 -->
+    <g transform="translate(100,160)">
+        <rect width="120" height="120" fill="#2c5282" rx="10"/>
+        <text x="60" y="-10" font-family="Arial" font-size="14" fill="#63b3ed" text-anchor="middle">基礎工具</text>
+        <!-- 工具圖示 -->
+        <g transform="translate(20,20)">
+            <rect width="80" height="20" fill="#4299e1" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">命令行</text>
+        </g>
+        <g transform="translate(20,50)">
+            <rect width="80" height="20" fill="#4299e1" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">Git</text>
+        </g>
+        <g transform="translate(20,80)">
+            <rect width="80" height="20" fill="#4299e1" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">調試工具</text>
+        </g>
+    </g>
+    
+    <!-- 中間：開發技能 -->
+    <g transform="translate(340,160)">
+        <rect width="120" height="120" fill="#44337a" rx="10"/>
+        <text x="60" y="-10" font-family="Arial" font-size="14" fill="#b794f4" text-anchor="middle">開發技能</text>
+        <!-- 技能圖示 -->
+        <g transform="translate(20,20)">
+            <rect width="80" height="20" fill="#805ad5" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">API開發</text>
+        </g>
+        <g transform="translate(20,50)">
+            <rect width="80" height="20" fill="#805ad5" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">數據庫</text>
+        </g>
+        <g transform="translate(20,80)">
+            <rect width="80" height="20" fill="#805ad5" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">網絡協議</text>
+        </g>
+    </g>
+    
+    <!-- 右側：AI增強 -->
+    <g transform="translate(580,160)">
+        <rect width="120" height="120" fill="#702459" rx="10"/>
+        <text x="60" y="-10" font-family="Arial" font-size="14" fill="#fbb6ce" text-anchor="middle">AI增強</text>
+        <!-- AI功能圖示 -->
+        <g transform="translate(20,20)">
+            <rect width="80" height="20" fill="#d53f8c" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">LLM助手</text>
+        </g>
+        <g transform="translate(20,50)">
+            <rect width="80" height="20" fill="#d53f8c" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">自動化</text>
+        </g>
+        <g transform="translate(20,80)">
+            <rect width="80" height="20" fill="#d53f8c" rx="4"/>
+            <text x="40" y="15" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">效率提升</text>
+        </g>
+    </g>
+    
+    <!-- 連接箭頭 -->
+    <g>
+        <!-- 基礎到開發 -->
+        <path d="M 230,220 L 330,220" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- 開發到AI -->
+        <path d="M 470,220 L 570,220" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- 底部說明 -->
+    <g transform="translate(400,340)">
+        <text x="-200" y="0" font-family="Arial" font-size="14" fill="#a0aec0" text-anchor="middle">基礎打穩</text>
+        <text x="0" y="0" font-family="Arial" font-size="14" fill="#a0aec0" text-anchor="middle">技能提升</text>
+        <text x="200" y="0" font-family="Arial" font-size="14" fill="#a0aec0" text-anchor="middle">效率突破</text>
+    </g>
+    
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6"
+                orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+        </marker>
+    </defs>
+</svg> 
