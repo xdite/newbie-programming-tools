@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        容器化：外送餐點 vs 應用部署
+    </text>
+
+    <!-- Food Delivery Section -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#e65100">外送餐點</text>
+        
+        <!-- Food Container -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#e65100" stroke-width="2" rx="10"/>
+        
+        <!-- Food Items -->
+        <g transform="translate(40,70)">
+            <!-- Main Dish -->
+            <rect x="0" y="0" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#e65100">主餐</text>
+            <text x="10" y="45" font-family="Arial" font-size="12" fill="#666">✓ 獨立包裝</text>
+            <text x="120" y="45" font-family="Arial" font-size="12" fill="#666">✓ 保溫保鮮</text>
+            
+            <!-- Side Dishes -->
+            <rect x="0" y="70" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="95" font-family="Arial" font-size="14" fill="#e65100">配菜</text>
+            <text x="10" y="115" font-family="Arial" font-size="12" fill="#666">✓ 分類存放</text>
+            <text x="120" y="115" font-family="Arial" font-size="12" fill="#666">✓ 避免混合</text>
+            
+            <!-- Sauce -->
+            <rect x="0" y="140" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="165" font-family="Arial" font-size="14" fill="#e65100">調味料</text>
+            <text x="10" y="185" font-family="Arial" font-size="12" fill="#666">✓ 密封包裝</text>
+            <text x="120" y="185" font-family="Arial" font-size="12" fill="#666">✓ 防止滲漏</text>
+            
+            <!-- Instructions -->
+            <rect x="0" y="210" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="235" font-family="Arial" font-size="14" fill="#e65100">食用說明</text>
+            <text x="10" y="255" font-family="Arial" font-size="12" fill="#666">✓ 加熱方式</text>
+            <text x="120" y="255" font-family="Arial" font-size="12" fill="#666">✓ 擺盤建議</text>
+        </g>
+    </g>
+
+    <!-- Compatibility Arrows -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+        <text x="30" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">相同概念</text>
+    </g>
+
+    <!-- Container Application Section -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#2e7d32">容器化應用</text>
+        
+        <!-- Container Box -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="10"/>
+        
+        <!-- Container Items -->
+        <g transform="translate(40,70)">
+            <!-- Application -->
+            <rect x="0" y="0" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#2e7d32">應用程式</text>
+            <text x="10" y="45" font-family="Arial" font-size="12" fill="#666">✓ 獨立環境</text>
+            <text x="120" y="45" font-family="Arial" font-size="12" fill="#666">✓ 版本控制</text>
+            
+            <!-- Dependencies -->
+            <rect x="0" y="70" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="95" font-family="Arial" font-size="14" fill="#2e7d32">相依套件</text>
+            <text x="10" y="115" font-family="Arial" font-size="12" fill="#666">✓ 完整打包</text>
+            <text x="120" y="115" font-family="Arial" font-size="12" fill="#666">✓ 避免衝突</text>
+            
+            <!-- Configuration -->
+            <rect x="0" y="140" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="165" font-family="Arial" font-size="14" fill="#2e7d32">環境設定</text>
+            <text x="10" y="185" font-family="Arial" font-size="12" fill="#666">✓ 標準配置</text>
+            <text x="120" y="185" font-family="Arial" font-size="12" fill="#666">✓ 安全隔離</text>
+            
+            <!-- Documentation -->
+            <rect x="0" y="210" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="235" font-family="Arial" font-size="14" fill="#2e7d32">部署文件</text>
+            <text x="10" y="255" font-family="Arial" font-size="12" fill="#666">✓ 啟動指令</text>
+            <text x="120" y="255" font-family="Arial" font-size="12" fill="#666">✓ 使用說明</text>
+        </g>
+    </g>
+
+    <!-- Benefits -->
+    <g transform="translate(50,420)">
+        <rect x="0" y="0" width="700" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="5"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 完整封裝   ✓ 環境隔離   ✓ 快速部署   ✓ 可攜性強
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 標準化交付   ✓ 一致性環境   ✓ 易於擴展   ✓ 方便管理
+        </text>
+    </g>
+</svg> 

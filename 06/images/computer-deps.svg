@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        依賴管理：電腦組裝 vs 程式開發
+    </text>
+
+    <!-- Computer Assembly Section -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#1976d2">電腦組裝</text>
+        
+        <!-- Computer Case Outline -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#1976d2" stroke-width="2" rx="10"/>
+        
+        <!-- Components -->
+        <g transform="translate(40,70)">
+            <!-- CPU -->
+            <rect x="0" y="0" width="220" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+            <text x="10" y="30" font-family="Arial" font-size="14" fill="#1976d2">CPU</text>
+            <text x="120" y="30" font-family="Arial" font-size="12" fill="#666">Intel i7 12700K</text>
+            
+            <!-- Motherboard -->
+            <rect x="0" y="60" width="220" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+            <text x="10" y="90" font-family="Arial" font-size="14" fill="#1976d2">主機板</text>
+            <text x="120" y="90" font-family="Arial" font-size="12" fill="#666">Z690 晶片組</text>
+            
+            <!-- RAM -->
+            <rect x="0" y="120" width="220" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+            <text x="10" y="150" font-family="Arial" font-size="14" fill="#1976d2">記憶體</text>
+            <text x="120" y="150" font-family="Arial" font-size="12" fill="#666">DDR5-4800</text>
+            
+            <!-- Power Supply -->
+            <rect x="0" y="180" width="220" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+            <text x="10" y="210" font-family="Arial" font-size="14" fill="#1976d2">電源供應器</text>
+            <text x="120" y="210" font-family="Arial" font-size="12" fill="#666">850W 金牌</text>
+        </g>
+    </g>
+
+    <!-- Compatibility Arrows -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+        <text x="30" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">相同概念</text>
+    </g>
+
+    <!-- Software Project Section -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#2e7d32">程式開發</text>
+        
+        <!-- Project Outline -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="10"/>
+        
+        <!-- Dependencies -->
+        <g transform="translate(40,70)">
+            <!-- Programming Language -->
+            <rect x="0" y="0" width="220" height="50" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="30" font-family="Arial" font-size="14" fill="#2e7d32">程式語言</text>
+            <text x="120" y="30" font-family="Arial" font-size="12" fill="#666">Python 3.9.5</text>
+            
+            <!-- Libraries -->
+            <rect x="0" y="60" width="220" height="50" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="90" font-family="Arial" font-size="14" fill="#2e7d32">函式庫</text>
+            <text x="120" y="90" font-family="Arial" font-size="12" fill="#666">requests 2.28.1</text>
+            
+            <!-- Framework -->
+            <rect x="0" y="120" width="220" height="50" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="150" font-family="Arial" font-size="14" fill="#2e7d32">框架</text>
+            <text x="120" y="150" font-family="Arial" font-size="12" fill="#666">Django 4.2.0</text>
+            
+            <!-- Tools -->
+            <rect x="0" y="180" width="220" height="50" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="210" font-family="Arial" font-size="14" fill="#2e7d32">工具套件</text>
+            <text x="120" y="210" font-family="Arial" font-size="12" fill="#666">pytest 7.3.1</text>
+        </g>
+    </g>
+
+    <!-- Key Points -->
+    <g transform="translate(50,420)">
+        <rect x="0" y="0" width="700" height="60" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="5"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 組件必須相容   ✓ 版本需要匹配   ✓ 效能要求平衡
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 穩定性很重要   ✓ 升級需謹慎   ✓ 需要定期維護
+        </text>
+    </g>
+</svg> 
