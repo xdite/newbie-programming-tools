@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- 標題 -->
+    <text x="250" y="40" font-family="Arial" font-size="24" fill="#2d3748" font-weight="bold">學習流程優化：從困擾到效率</text>
+    
+    <!-- 左側：問題情境 -->
+    <g transform="translate(50,80)">
+        <rect width="300" height="450" fill="#fff5f5" stroke="#fc8181" stroke-width="2" rx="10"/>
+        <text x="100" y="40" font-family="Arial" font-size="20" fill="#c53030" font-weight="bold">學習困擾</text>
+        
+        <!-- 書本堆疊 -->
+        <g transform="translate(50,70)">
+            <rect width="200" height="30" fill="#fed7d7" stroke="#fc8181" stroke-width="1"/>
+            <rect width="180" height="30" fill="#fed7d7" stroke="#fc8181" stroke-width="1" transform="translate(10,10)"/>
+            <rect width="160" height="30" fill="#fed7d7" stroke="#fc8181" stroke-width="1" transform="translate(20,20)"/>
+            <text x="60" y="45" font-family="Arial" font-size="14" fill="#c53030">資料太多難消化</text>
+        </g>
+        
+        <!-- 時鐘 -->
+        <g transform="translate(50,160)">
+            <circle cx="50" cy="50" r="40" fill="#fed7d7" stroke="#fc8181" stroke-width="2"/>
+            <line x1="50" y1="50" x2="50" y2="20" stroke="#c53030" stroke-width="2"/>
+            <line x1="50" y1="50" x2="70" y2="50" stroke="#c53030" stroke-width="2"/>
+            <text x="100" y="60" font-family="Arial" font-size="14" fill="#c53030">時間不夠用</text>
+        </g>
+        
+        <!-- 混亂的筆記 -->
+        <g transform="translate(50,270)">
+            <path d="M 10,0 L 180,0 L 180,80 L 10,80 Z" fill="#fed7d7" stroke="#fc8181" stroke-width="1"/>
+            <path d="M 20,20 L 170,20 M 20,40 L 120,40 M 20,60 L 150,60" stroke="#c53030" stroke-width="1"/>
+            <text x="60" y="110" font-family="Arial" font-size="14" fill="#c53030">筆記雜亂無章</text>
+        </g>
+    </g>
+    
+    <!-- 中間：優化流程 -->
+    <g transform="translate(400,80)">
+        <rect width="100" height="450" fill="#ebf8ff" stroke="#63b3ed" stroke-width="2" rx="10"/>
+        
+        <!-- LLM助手 -->
+        <g transform="translate(20,50)">
+            <circle cx="30" cy="30" r="25" fill="#bee3f8"/>
+            <text x="17" y="37" font-family="Arial" font-size="16" fill="#2b6cb0">AI</text>
+        </g>
+        
+        <!-- 自動化齒輪 -->
+        <g transform="translate(20,150)">
+            <path d="M 30,0 L 40,10 L 50,0 L 40,20 Z" fill="#bee3f8" stroke="#63b3ed"/>
+            <circle cx="30" cy="30" r="15" fill="#bee3f8" stroke="#63b3ed"/>
+        </g>
+        
+        <!-- 處理箭頭 -->
+        <g transform="translate(20,250)">
+            <path d="M 0,30 L 60,30 M 40,10 L 60,30 L 40,50" fill="none" stroke="#63b3ed" stroke-width="2"/>
+        </g>
+    </g>
+    
+    <!-- 右側：優化結果 -->
+    <g transform="translate(550,80)">
+        <rect width="300" height="450" fill="#f0fff4" stroke="#9ae6b4" stroke-width="2" rx="10"/>
+        <text x="100" y="40" font-family="Arial" font-size="20" fill="#2f855a" font-weight="bold">學習效率</text>
+        
+        <!-- 知識圖譜 -->
+        <g transform="translate(50,70)">
+            <circle cx="50" cy="50" r="20" fill="#c6f6d5"/>
+            <circle cx="100" cy="30" r="15" fill="#c6f6d5"/>
+            <circle cx="120" cy="80" r="18" fill="#c6f6d5"/>
+            <line x1="50" y1="50" x2="100" y2="30" stroke="#9ae6b4" stroke-width="2"/>
+            <line x1="50" y1="50" x2="120" y2="80" stroke="#9ae6b4" stroke-width="2"/>
+            <text x="40" y="100" font-family="Arial" font-size="14" fill="#2f855a">知識連結清晰</text>
+        </g>
+        
+        <!-- 學習進度條 -->
+        <g transform="translate(50,180)">
+            <rect width="200" height="20" fill="#e6ffed" stroke="#9ae6b4"/>
+            <rect width="160" height="20" fill="#9ae6b4"/>
+            <text x="40" y="50" font-family="Arial" font-size="14" fill="#2f855a">學習進度 80%</text>
+        </g>
+        
+        <!-- 複習提醒系統 -->
+        <g transform="translate(50,250)">
+            <rect width="200" height="100" fill="#c6f6d5" stroke="#9ae6b4" rx="5"/>
+            <text x="20" y="30" font-family="Arial" font-size="14" fill="#2f855a">智能複習提醒</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 今日複習：第3章</text>
+            <text x="20" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 下次複習：2天後</text>
+        </g>
+    </g>
+    
+    <!-- 連接箭頭 -->
+    <g>
+        <!-- 問題到流程 -->
+        <path d="M 350,300 L 400,300" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- 流程到結果 -->
+        <path d="M 500,300 L 550,300" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6"
+                orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+        </marker>
+    </defs>
+</svg> 
