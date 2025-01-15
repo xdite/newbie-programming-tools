@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#ffffff"/>
+    
+    <!-- 輸入區域 -->
+    <g transform="translate(50,50)">
+        <rect width="200" height="300" fill="#f0f9ff" stroke="#90cdf4" stroke-width="2" rx="10"/>
+        <text x="70" y="30" font-family="Arial" font-size="16" fill="#2b6cb0">輸入處理</text>
+        
+        <!-- 輸入項目 -->
+        <g transform="translate(20,60)">
+            <rect width="160" height="40" fill="#bee3f8" rx="5"/>
+            <text x="30" y="25" font-family="Arial" font-size="14">紙本文件</text>
+        </g>
+        
+        <g transform="translate(20,120)">
+            <rect width="160" height="40" fill="#bee3f8" rx="5"/>
+            <text x="30" y="25" font-family="Arial" font-size="14">Excel表格</text>
+        </g>
+        
+        <g transform="translate(20,180)">
+            <rect width="160" height="40" fill="#bee3f8" rx="5"/>
+            <text x="30" y="25" font-family="Arial" font-size="14">處方箋/表單</text>
+        </g>
+        
+        <g transform="translate(20,240)">
+            <rect width="160" height="40" fill="#bee3f8" rx="5"/>
+            <text x="30" y="25" font-family="Arial" font-size="14">電話記錄</text>
+        </g>
+    </g>
+    
+    <!-- 處理區域 -->
+    <g transform="translate(300,50)">
+        <rect width="200" height="300" fill="#f0fff4" stroke="#9ae6b4" stroke-width="2" rx="10"/>
+        <text x="70" y="30" font-family="Arial" font-size="16" fill="#2f855a">智能處理</text>
+        
+        <!-- LLM處理 -->
+        <g transform="translate(20,60)">
+            <rect width="160" height="120" fill="#9ae6b4" rx="5"/>
+            <text x="65" y="30" font-family="Arial" font-size="14">LLM</text>
+            <text x="30" y="60" font-family="Arial" font-size="12">• 內容理解</text>
+            <text x="30" y="80" font-family="Arial" font-size="12">• 智能分類</text>
+            <text x="30" y="100" font-family="Arial" font-size="12">• 格式轉換</text>
+        </g>
+        
+        <!-- 程式處理 -->
+        <g transform="translate(20,190)">
+            <rect width="160" height="100" fill="#9ae6b4" rx="5"/>
+            <text x="60" y="30" font-family="Arial" font-size="14">程式</text>
+            <text x="30" y="60" font-family="Arial" font-size="12">• 數據處理</text>
+            <text x="30" y="80" font-family="Arial" font-size="12">• API 調用</text>
+        </g>
+    </g>
+    
+    <!-- 輸出區域 -->
+    <g transform="translate(550,50)">
+        <rect width="200" height="300" fill="#fff5f7" stroke="#fbb6ce" stroke-width="2" rx="10"/>
+        <text x="70" y="30" font-family="Arial" font-size="16" fill="#97266d">輸出處理</text>
+        
+        <!-- 輸出項目 -->
+        <g transform="translate(20,60)">
+            <rect width="160" height="40" fill="#fbb6ce" rx="5"/>
+            <text x="30" y="25" font-family="Arial" font-size="14">通知提醒</text>
+        </g>
+        
+        <g transform="translate(20,120)">
+            <rect width="160" height="40" fill="#fbb6ce" rx="5"/>
+            <text x="30" y="25" font-family="Arial" font-size="14">圖表報告</text>
+        </g>
+        
+        <g transform="translate(20,180)">
+            <rect width="160" height="40" fill="#fbb6ce" rx="5"/>
+            <text x="30" y="25" font-family="Arial" font-size="14">郵件/簡訊</text>
+        </g>
+        
+        <g transform="translate(20,240)">
+            <rect width="160" height="40" fill="#fbb6ce" rx="5"/>
+            <text x="30" y="25" font-family="Arial" font-size="14">自動回覆</text>
+        </g>
+    </g>
+    
+    <!-- 連接箭頭 -->
+    <g>
+        <!-- 輸入到處理 -->
+        <path d="M 260,200 L 290,200" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- 處理到輸出 -->
+        <path d="M 510,200 L 540,200" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6"
+                orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+        </marker>
+    </defs>
+</svg> 

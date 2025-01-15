@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- 標題 -->
+    <text x="300" y="40" font-family="Arial" font-size="20" fill="#2d3748" font-weight="bold">解題思維框架</text>
+    
+    <!-- 步驟1：定義問題 I/O -->
+    <g transform="translate(50,80)">
+        <rect width="700" height="120" fill="#f7fafc" stroke="#4299e1" stroke-width="2" rx="10"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#2b6cb0" font-weight="bold">1. 定義問題的 I/O</text>
+        
+        <!-- 輸入部分 -->
+        <g transform="translate(20,50)">
+            <rect width="200" height="50" fill="#ebf8ff" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#2c5282">輸入</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#2c5282">• 現有資源</text>
+            <text x="100" y="40" font-family="Arial" font-size="12" fill="#2c5282">• 限制條件</text>
+        </g>
+        
+        <!-- 目標部分 -->
+        <g transform="translate(250,50)">
+            <rect width="200" height="50" fill="#ebf8ff" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#2c5282">目標</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#2c5282">• 理想結果</text>
+            <text x="100" y="40" font-family="Arial" font-size="12" fill="#2c5282">• 成功標準</text>
+        </g>
+        
+        <!-- 輸出部分 -->
+        <g transform="translate(480,50)">
+            <rect width="200" height="50" fill="#ebf8ff" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#2c5282">輸出</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#2c5282">• 具體產出</text>
+            <text x="100" y="40" font-family="Arial" font-size="12" fill="#2c5282">• 評估指標</text>
+        </g>
+    </g>
+    
+    <!-- 步驟2：拆解問題 -->
+    <g transform="translate(50,220)">
+        <rect width="700" height="160" fill="#f7fafc" stroke="#48bb78" stroke-width="2" rx="10"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#2f855a" font-weight="bold">2. 拆解問題</text>
+        
+        <!-- 當前狀態 -->
+        <g transform="translate(20,50)">
+            <rect width="200" height="90" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#2f855a">數字化當前狀態</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#2f855a">• 現有效率</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 資源使用</text>
+            <text x="20" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 品質指標</text>
+        </g>
+        
+        <!-- 瓶頸分析 -->
+        <g transform="translate(250,50)">
+            <rect width="200" height="90" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#2f855a">找出瓶頸</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#2f855a">• 耗時環節</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 效率低點</text>
+            <text x="20" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 品質問題</text>
+        </g>
+        
+        <!-- 改善目標 -->
+        <g transform="translate(480,50)">
+            <rect width="200" height="90" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#2f855a">定義改善目標</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#2f855a">• 目標數值</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 時間要求</text>
+            <text x="20" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 品質標準</text>
+        </g>
+    </g>
+    
+    <!-- 步驟3：規劃解決方案 -->
+    <g transform="translate(50,400)">
+        <rect width="700" height="160" fill="#f7fafc" stroke="#ed64a6" stroke-width="2" rx="10"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#97266d" font-weight="bold">3. 規劃解決方案</text>
+        
+        <!-- 現狀分析 -->
+        <g transform="translate(20,50)">
+            <rect width="200" height="90" fill="#fff5f7" stroke="#fbb6ce" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#97266d">現狀分析</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#97266d">• 流程梳理</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#97266d">• 時間統計</text>
+            <text x="20" y="80" font-family="Arial" font-size="12" fill="#97266d">• 資源盤點</text>
+        </g>
+        
+        <!-- 優化方案 -->
+        <g transform="translate(250,50)">
+            <rect width="200" height="90" fill="#fff5f7" stroke="#fbb6ce" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#97266d">優化方案</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#97266d">• LLM 輔助</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#97266d">• 自動化工具</text>
+            <text x="20" y="80" font-family="Arial" font-size="12" fill="#97266d">• 流程改善</text>
+        </g>
+        
+        <!-- 實施計劃 -->
+        <g transform="translate(480,50)">
+            <rect width="200" height="90" fill="#fff5f7" stroke="#fbb6ce" stroke-width="1" rx="5"/>
+            <text x="20" y="20" font-family="Arial" font-size="14" fill="#97266d">實施計劃</text>
+            <text x="20" y="40" font-family="Arial" font-size="12" fill="#97266d">• 優先順序</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#97266d">• 時程規劃</text>
+            <text x="20" y="80" font-family="Arial" font-size="12" fill="#97266d">• 效果驗證</text>
+        </g>
+    </g>
+    
+    <!-- 連接箭頭 -->
+    <g>
+        <!-- 步驟1到步驟2 -->
+        <path d="M 400,200 L 400,220" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- 步驟2到步驟3 -->
+        <path d="M 400,380 L 400,400" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6"
+                orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+        </marker>
+    </defs>
+</svg> 
