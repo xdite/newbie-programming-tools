@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-size="24" text-anchor="middle" fill="#333">關聯查詢示例</text>
+    
+    <!-- Tables Section -->
+    <g transform="translate(50,80)">
+        <!-- Authors Table -->
+        <g>
+            <text x="100" y="25" font-size="16" text-anchor="middle" fill="#333">作者表 (authors)</text>
+            <rect y="35" width="200" height="120" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            
+            <!-- Header -->
+            <rect y="35" width="200" height="30" fill="#4263eb" rx="5"/>
+            <text x="20" y="55" font-size="12" fill="white">author_id | name | nationality</text>
+            
+            <!-- Data -->
+            <g transform="translate(20,85)" fill="#333" font-size="12">
+                <text>A001 | 張三 | TW</text>
+                <text y="25">A002 | 李四 | CN</text>
+                <text y="50">A003 | 王五 | TW</text>
+            </g>
+        </g>
+        
+        <!-- Books Table -->
+        <g transform="translate(300,0)">
+            <text x="100" y="25" font-size="16" text-anchor="middle" fill="#333">書籍表 (books)</text>
+            <rect y="35" width="200" height="120" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            
+            <!-- Header -->
+            <rect y="35" width="200" height="30" fill="#4263eb" rx="5"/>
+            <text x="20" y="55" font-size="12" fill="white">book_id | title | author_id</text>
+            
+            <!-- Data -->
+            <g transform="translate(20,85)" fill="#333" font-size="12">
+                <text>B001 | 數據庫設計 | A001</text>
+                <text y="25">B002 | SQL入門 | A001</text>
+                <text y="50">B003 | 程式設計 | A002</text>
+            </g>
+        </g>
+    </g>
+    
+    <!-- JOIN Query Example -->
+    <g transform="translate(50,250)">
+        <!-- Query Box -->
+        <rect width="700" height="60" fill="#f0f4ff" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="20" y="35" font-size="14" fill="#333" font-family="monospace">
+            SELECT b.title, a.name
+            FROM books b
+            JOIN authors a ON b.author_id = a.author_id;
+        </text>
+    </g>
+    
+    <!-- Result Section -->
+    <g transform="translate(50,350)">
+        <text x="350" y="25" font-size="16" text-anchor="middle" fill="#333">查詢結果</text>
+        <rect y="35" width="700" height="120" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        
+        <!-- Header -->
+        <rect y="35" width="700" height="30" fill="#4263eb" rx="5"/>
+        <text x="20" y="55" font-size="14" fill="white">書名 | 作者</text>
+        
+        <!-- Results -->
+        <g transform="translate(20,85)" fill="#333" font-size="14">
+            <text>數據庫設計 | 張三</text>
+            <text y="25">SQL入門 | 張三</text>
+            <text y="50">程式設計 | 李四</text>
+        </g>
+    </g>
+    
+    <!-- Arrows and Explanations -->
+    <g>
+        <!-- Join Operation Arrow -->
+        <path d="M250,140 L300,140" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="275" y="130" font-size="12" text-anchor="middle" fill="#666">JOIN</text>
+        
+        <!-- Query to Result Arrow -->
+        <path d="M400,310 L400,350" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4263eb"/>
+        </marker>
+    </defs>
+</svg> 

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-size="24" text-anchor="middle" fill="#333">數據庫事務概念</text>
+    
+    <!-- Bank Transfer Example -->
+    <g transform="translate(50,80)">
+        <!-- Account A -->
+        <g>
+            <text x="100" y="25" font-size="16" text-anchor="middle" fill="#333">帳戶 A</text>
+            <rect y="35" width="200" height="80" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <text x="20" y="65" font-size="14" fill="#333">帳號：A001</text>
+            <text x="20" y="95" font-size="14" fill="#333">餘額：$1000</text>
+            <text x="120" y="95" font-size="14" fill="#ff4444">-$100</text>
+        </g>
+        
+        <!-- Transfer Arrow -->
+        <g transform="translate(200,55)">
+            <path d="M20,20 L80,20" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <text x="50" y="15" font-size="14" text-anchor="middle" fill="#4263eb">轉帳 $100</text>
+        </g>
+        
+        <!-- Account B -->
+        <g transform="translate(300,0)">
+            <text x="100" y="25" font-size="16" text-anchor="middle" fill="#333">帳戶 B</text>
+            <rect y="35" width="200" height="80" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <text x="20" y="65" font-size="14" fill="#333">帳號：B001</text>
+            <text x="20" y="95" font-size="14" fill="#333">餘額：$500</text>
+            <text x="120" y="95" font-size="14" fill="#4CAF50">+$100</text>
+        </g>
+    </g>
+    
+    <!-- ACID Properties -->
+    <g transform="translate(50,200)">
+        <text x="350" y="25" font-size="18" text-anchor="middle" fill="#333">ACID 特性</text>
+        
+        <!-- Atomicity -->
+        <g transform="translate(0,40)">
+            <rect width="150" height="100" fill="#e7f5ff" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <text x="75" y="30" font-size="16" text-anchor="middle" fill="#4263eb">原子性</text>
+            <text x="75" y="55" font-size="12" text-anchor="middle" fill="#666">全部完成</text>
+            <text x="75" y="75" font-size="12" text-anchor="middle" fill="#666">或</text>
+            <text x="75" y="95" font-size="12" text-anchor="middle" fill="#666">全部失敗</text>
+        </g>
+        
+        <!-- Consistency -->
+        <g transform="translate(170,40)">
+            <rect width="150" height="100" fill="#e7f5ff" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <text x="75" y="30" font-size="16" text-anchor="middle" fill="#4263eb">一致性</text>
+            <text x="75" y="55" font-size="12" text-anchor="middle" fill="#666">轉帳前後</text>
+            <text x="75" y="75" font-size="12" text-anchor="middle" fill="#666">總金額</text>
+            <text x="75" y="95" font-size="12" text-anchor="middle" fill="#666">保持不變</text>
+        </g>
+        
+        <!-- Isolation -->
+        <g transform="translate(340,40)">
+            <rect width="150" height="100" fill="#e7f5ff" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <text x="75" y="30" font-size="16" text-anchor="middle" fill="#4263eb">隔離性</text>
+            <text x="75" y="55" font-size="12" text-anchor="middle" fill="#666">多個事務</text>
+            <text x="75" y="75" font-size="12" text-anchor="middle" fill="#666">互不影響</text>
+            <text x="75" y="95" font-size="12" text-anchor="middle" fill="#666">避免混亂</text>
+        </g>
+        
+        <!-- Durability -->
+        <g transform="translate(510,40)">
+            <rect width="150" height="100" fill="#e7f5ff" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <text x="75" y="30" font-size="16" text-anchor="middle" fill="#4263eb">持久性</text>
+            <text x="75" y="55" font-size="12" text-anchor="middle" fill="#666">提交後的</text>
+            <text x="75" y="75" font-size="12" text-anchor="middle" fill="#666">更改永久</text>
+            <text x="75" y="95" font-size="12" text-anchor="middle" fill="#666">保存</text>
+        </g>
+    </g>
+    
+    <!-- Transaction Process -->
+    <g transform="translate(50,380)">
+        <text x="350" y="25" font-size="18" text-anchor="middle" fill="#333">事務處理流程</text>
+        <rect y="40" width="700" height="150" fill="white" stroke="#ddd" stroke-width="2" rx="5"/>
+        
+        <!-- Process Steps -->
+        <g transform="translate(50,60)">
+            <!-- Start -->
+            <g>
+                <circle cx="20" cy="20" r="15" fill="#4263eb"/>
+                <text x="20" y="25" font-size="14" text-anchor="middle" fill="white">1</text>
+                <text x="20" y="50" font-size="12" text-anchor="middle" fill="#333">開始事務</text>
+            </g>
+            
+            <!-- Update A -->
+            <g transform="translate(150,0)">
+                <circle cx="20" cy="20" r="15" fill="#4263eb"/>
+                <text x="20" y="25" font-size="14" text-anchor="middle" fill="white">2</text>
+                <text x="20" y="50" font-size="12" text-anchor="middle" fill="#333">扣款</text>
+            </g>
+            
+            <!-- Update B -->
+            <g transform="translate(300,0)">
+                <circle cx="20" cy="20" r="15" fill="#4263eb"/>
+                <text x="20" y="25" font-size="14" text-anchor="middle" fill="white">3</text>
+                <text x="20" y="50" font-size="12" text-anchor="middle" fill="#333">存入</text>
+            </g>
+            
+            <!-- Commit/Rollback -->
+            <g transform="translate(450,0)">
+                <circle cx="20" cy="20" r="15" fill="#4263eb"/>
+                <text x="20" y="25" font-size="14" text-anchor="middle" fill="white">4</text>
+                <text x="20" y="50" font-size="12" text-anchor="middle" fill="#333">提交/回滾</text>
+            </g>
+            
+            <!-- Process Arrows -->
+            <path d="M35,20 L135,20" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <path d="M185,20 L285,20" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+            <path d="M335,20 L435,20" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+            
+            <!-- Success/Failure Paths -->
+            <path d="M470,20 L550,20" stroke="#4CAF50" stroke-width="2" marker-end="url(#successarrow)"/>
+            <text x="510" y="15" font-size="12" fill="#4CAF50">成功</text>
+            
+            <path d="M470,20 L550,60" stroke="#ff4444" stroke-width="2" marker-end="url(#failarrow)"/>
+            <text x="510" y="55" font-size="12" fill="#ff4444">失敗</text>
+        </g>
+    </g>
+    
+    <!-- Arrow Markers -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4263eb"/>
+        </marker>
+        <marker id="successarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4CAF50"/>
+        </marker>
+        <marker id="failarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ff4444"/>
+        </marker>
+    </defs>
+</svg> 
