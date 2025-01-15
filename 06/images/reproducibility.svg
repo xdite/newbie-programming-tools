@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        專案環境重現性
+    </text>
+
+    <!-- Recipe Book Side -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#6f42c1">食譜記錄</text>
+        
+        <!-- Recipe Book -->
+        <rect x="20" y="50" width="260" height="240" fill="#fff" stroke="#6f42c1" stroke-width="2" rx="10"/>
+        
+        <!-- Recipe Content -->
+        <g transform="translate(40,70)">
+            <!-- Title -->
+            <text x="0" y="20" font-family="Arial" font-size="16" fill="#333">蛋糕食譜</text>
+            
+            <!-- Ingredients List -->
+            <g transform="translate(0,40)">
+                <text x="0" y="0" font-family="Arial" font-size="14" fill="#666">食材清單：</text>
+                <text x="20" y="25" font-family="Arial" font-size="12" fill="#333">• 麵粉 200g</text>
+                <text x="20" y="45" font-family="Arial" font-size="12" fill="#333">• 糖 100g</text>
+                <text x="20" y="65" font-family="Arial" font-size="12" fill="#333">• 雞蛋 2個</text>
+                <text x="20" y="85" font-family="Arial" font-size="12" fill="#333">• 牛奶 150ml</text>
+            </g>
+            
+            <!-- Steps -->
+            <g transform="translate(0,140)">
+                <text x="0" y="0" font-family="Arial" font-size="14" fill="#666">製作步驟：</text>
+                <text x="20" y="25" font-family="Arial" font-size="12" fill="#333">1. 預熱烤箱 180°C</text>
+                <text x="20" y="45" font-family="Arial" font-size="12" fill="#333">2. 混合乾料</text>
+                <text x="20" y="65" font-family="Arial" font-size="12" fill="#333">3. 加入濕料攪拌</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Arrow -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+    </g>
+
+    <!-- Requirements Side -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#6f42c1">專案依賴</text>
+        
+        <!-- Requirements File -->
+        <rect x="20" y="50" width="260" height="240" fill="#fff" stroke="#6f42c1" stroke-width="2" rx="10"/>
+        
+        <!-- Requirements Content -->
+        <g transform="translate(40,70)">
+            <!-- Title -->
+            <text x="0" y="20" font-family="Arial" font-size="16" fill="#333">requirements.txt</text>
+            
+            <!-- Dependencies List -->
+            <g transform="translate(0,40)">
+                <text x="0" y="0" font-family="Arial" font-size="14" fill="#666">套件清單：</text>
+                <text x="20" y="25" font-family="Arial" font-size="12" fill="#333">flask==2.0.1</text>
+                <text x="20" y="45" font-family="Arial" font-size="12" fill="#333">requests==2.31.0</text>
+                <text x="20" y="65" font-family="Arial" font-size="12" fill="#333">pandas==1.3.3</text>
+                <text x="20" y="85" font-family="Arial" font-size="12" fill="#333">numpy==1.21.2</text>
+            </g>
+            
+            <!-- Installation -->
+            <g transform="translate(0,140)">
+                <text x="0" y="0" font-family="Arial" font-size="14" fill="#666">安裝指令：</text>
+                <rect x="0" y="10" width="220" height="30" fill="#f8f9fa" stroke="#6f42c1"/>
+                <text x="10" y="30" font-family="monospace" font-size="12" fill="#333">pip install -r requirements.txt</text>
+                <text x="0" y="60" font-family="Arial" font-size="12" fill="#28a745">✓ 環境完全重現</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Connection Lines -->
+    <g transform="translate(0,0)" stroke="#6f42c1" stroke-width="1" stroke-dasharray="4,4">
+        <!-- Ingredients to Dependencies -->
+        <path d="M 110,200 C 400,180 400,180 690,200" fill="none"/>
+        <!-- Steps to Installation -->
+        <path d="M 110,300 C 400,280 400,280 690,300" fill="none"/>
+    </g>
+</svg> 
