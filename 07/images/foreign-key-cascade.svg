@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-size="24" text-anchor="middle" fill="#333">外鍵與級聯操作</text>
+    
+    <!-- Authors Table (Left) -->
+    <g transform="translate(50,100)">
+        <text x="150" y="25" font-size="18" text-anchor="middle" fill="#333">作者表 (authors)</text>
+        
+        <!-- Table Header -->
+        <rect width="300" height="40" fill="#4263eb" rx="5"/>
+        <g transform="translate(20,25)" fill="white">
+            <text font-size="14">author_id (PK)</text>
+            <text x="150" font-size="14">author_name</text>
+            <text x="250" font-size="14">nationality</text>
+        </g>
+        
+        <!-- Table Records -->
+        <g transform="translate(0,40)">
+            <!-- Record 1 -->
+            <rect width="300" height="40" fill="white" stroke="#4263eb" stroke-width="1"/>
+            <g transform="translate(20,25)" fill="#333">
+                <text font-size="14">A001</text>
+                <text x="150" font-size="14">張三</text>
+                <text x="250" font-size="14">TW</text>
+            </g>
+            
+            <!-- Record 2 -->
+            <g transform="translate(0,40)">
+                <rect width="300" height="40" fill="white" stroke="#4263eb" stroke-width="1"/>
+                <g transform="translate(20,25)" fill="#333">
+                    <text font-size="14">A002</text>
+                    <text x="150" font-size="14">李四</text>
+                    <text x="250" font-size="14">CN</text>
+                </g>
+            </g>
+        </g>
+    </g>
+    
+    <!-- Books Table (Right) -->
+    <g transform="translate(450,100)">
+        <text x="150" y="25" font-size="18" text-anchor="middle" fill="#333">書籍表 (books)</text>
+        
+        <!-- Table Header -->
+        <rect width="300" height="40" fill="#4263eb" rx="5"/>
+        <g transform="translate(20,25)" fill="white">
+            <text font-size="14">book_id (PK)</text>
+            <text x="150" font-size="14">title</text>
+            <text x="250" font-size="14">author_id (FK)</text>
+        </g>
+        
+        <!-- Table Records -->
+        <g transform="translate(0,40)">
+            <!-- Record 1 -->
+            <rect width="300" height="40" fill="white" stroke="#4263eb" stroke-width="1"/>
+            <g transform="translate(20,25)" fill="#333">
+                <text font-size="14">B001</text>
+                <text x="150" font-size="14">數據庫設計</text>
+                <text x="250" font-size="14">A001</text>
+            </g>
+            
+            <!-- Record 2 -->
+            <g transform="translate(0,40)">
+                <rect width="300" height="40" fill="white" stroke="#4263eb" stroke-width="1"/>
+                <g transform="translate(20,25)" fill="#333">
+                    <text font-size="14">B002</text>
+                    <text x="150" font-size="14">SQL入門</text>
+                    <text x="250" font-size="14">A001</text>
+                </g>
+            </g>
+            
+            <!-- Record 3 -->
+            <g transform="translate(0,80)">
+                <rect width="300" height="40" fill="white" stroke="#4263eb" stroke-width="1"/>
+                <g transform="translate(20,25)" fill="#333">
+                    <text font-size="14">B003</text>
+                    <text x="150" font-size="14">程式設計</text>
+                    <text x="250" font-size="14">A002</text>
+                </g>
+            </g>
+        </g>
+    </g>
+    
+    <!-- Foreign Key Relationship -->
+    <g transform="translate(350,140)">
+        <!-- Relationship Line -->
+        <path d="M0,40 L100,40" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <!-- FK Label -->
+        <text x="50" y="30" font-size="14" text-anchor="middle" fill="#666">外鍵關係</text>
+    </g>
+    
+    <!-- Cascade Operation Example -->
+    <g transform="translate(50,350)">
+        <rect width="700" height="200" fill="white" stroke="#ddd" stroke-width="2" rx="5"/>
+        <text x="20" y="30" font-size="16" fill="#333">級聯操作示例：</text>
+        
+        <!-- Example 1: Before Delete -->
+        <g transform="translate(20,60)">
+            <text font-size="14" fill="#333">1. 刪除作者前：</text>
+            <text x="120" y="0" font-size="14" fill="#666">作者 A001 (張三) 有兩本書 (B001, B002)</text>
+        </g>
+        
+        <!-- Example 2: Delete Operation -->
+        <g transform="translate(20,90)">
+            <text font-size="14" fill="#333">2. 執行刪除：</text>
+            <text x="120" y="0" font-size="14" fill="#666">DELETE FROM authors WHERE author_id = 'A001';</text>
+        </g>
+        
+        <!-- Example 3: After Delete -->
+        <g transform="translate(20,120)">
+            <text font-size="14" fill="#333">3. 級聯刪除後：</text>
+            <text x="120" y="0" font-size="14" fill="#666">• 作者 A001 被刪除</text>
+            <text x="120" y="25" font-size="14" fill="#666">• 書籍 B001 和 B002 也被自動刪除</text>
+            <text x="120" y="50" font-size="14" fill="#666">• 保持數據一致性，避免孤立記錄</text>
+        </g>
+    </g>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4263eb"/>
+        </marker>
+    </defs>
+</svg> 
