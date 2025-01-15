@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-size="24" text-anchor="middle" fill="#333">多對多關係：書籍與分類</text>
+    
+    <!-- Books Section (Left) -->
+    <g transform="translate(50,100)">
+        <text x="125" y="25" font-size="18" text-anchor="middle" fill="#333">書籍</text>
+        
+        <!-- Book 1 -->
+        <g transform="translate(0,40)">
+            <rect width="250" height="80" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <!-- Book Icon -->
+            <rect x="10" y="15" width="40" height="50" fill="#4263eb" opacity="0.2" rx="2"/>
+            <rect x="15" y="20" width="30" height="40" fill="#4263eb" opacity="0.4" rx="2"/>
+            <!-- Book Info -->
+            <g transform="translate(60,25)" fill="#333">
+                <text font-size="14">數據庫設計 (B001)</text>
+                <text y="25" font-size="12" fill="#666">價格：$49.99</text>
+            </g>
+        </g>
+        
+        <!-- Book 2 -->
+        <g transform="translate(0,140)">
+            <rect width="250" height="80" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <!-- Book Icon -->
+            <rect x="10" y="15" width="40" height="50" fill="#4263eb" opacity="0.2" rx="2"/>
+            <rect x="15" y="20" width="30" height="40" fill="#4263eb" opacity="0.4" rx="2"/>
+            <!-- Book Info -->
+            <g transform="translate(60,25)" fill="#333">
+                <text font-size="14">Python 入門 (B002)</text>
+                <text y="25" font-size="12" fill="#666">價格：$39.99</text>
+            </g>
+        </g>
+    </g>
+    
+    <!-- Junction Table (Middle) -->
+    <g transform="translate(350,100)">
+        <text x="50" y="25" font-size="18" text-anchor="middle" fill="#333">關聯表</text>
+        <rect y="40" width="100" height="180" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        
+        <!-- Relationship Records -->
+        <g transform="translate(10,60)" fill="#666">
+            <text font-size="12">B001-C001</text>
+            <text y="25" font-size="12">B001-C002</text>
+            <text y="50" font-size="12">B002-C001</text>
+            <text y="75" font-size="12">B002-C003</text>
+        </g>
+    </g>
+    
+    <!-- Categories Section (Right) -->
+    <g transform="translate(500,100)">
+        <text x="125" y="25" font-size="18" text-anchor="middle" fill="#333">分類</text>
+        
+        <!-- Category 1 -->
+        <g transform="translate(0,40)">
+            <rect width="250" height="50" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <!-- Category Icon -->
+            <circle cx="25" cy="25" r="15" fill="#4263eb" opacity="0.2"/>
+            <!-- Category Info -->
+            <text x="50" y="30" font-size="14" fill="#333">程式設計 (C001)</text>
+        </g>
+        
+        <!-- Category 2 -->
+        <g transform="translate(0,105)">
+            <rect width="250" height="50" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <!-- Category Icon -->
+            <circle cx="25" cy="25" r="15" fill="#4263eb" opacity="0.2"/>
+            <!-- Category Info -->
+            <text x="50" y="30" font-size="14" fill="#333">數據庫 (C002)</text>
+        </g>
+        
+        <!-- Category 3 -->
+        <g transform="translate(0,170)">
+            <rect width="250" height="50" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+            <!-- Category Icon -->
+            <circle cx="25" cy="25" r="15" fill="#4263eb" opacity="0.2"/>
+            <!-- Category Info -->
+            <text x="50" y="30" font-size="14" fill="#333">入門教材 (C003)</text>
+        </g>
+    </g>
+    
+    <!-- Relationship Lines -->
+    <g>
+        <!-- Book 1 to Junction -->
+        <path d="M300,160 L350,160" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M300,160 L350,185" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        
+        <!-- Book 2 to Junction -->
+        <path d="M300,260 L350,210" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M300,260 L350,235" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        
+        <!-- Junction to Categories -->
+        <path d="M450,160 L500,165" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M450,185 L500,230" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M450,210 L500,165" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M450,235 L500,295" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- Explanation Box -->
+    <g transform="translate(50,400)">
+        <rect width="700" height="150" fill="white" stroke="#ddd" stroke-width="2" rx="5"/>
+        <text x="20" y="30" font-size="16" fill="#333">多對多關係說明：</text>
+        <g transform="translate(20,50)" fill="#666">
+            <text font-size="14">1. 一本書可以屬於多個分類（例如：《數據庫設計》同時屬於「程式設計」和「數據庫」分類）</text>
+            <text y="25" font-size="14">2. 一個分類可以包含多本書（例如：「程式設計」分類包含多本不同的書籍）</text>
+            <text y="50" font-size="14">3. 需要使用關聯表（中間表）來存儲書籍和分類之間的對應關係</text>
+            <text y="75" font-size="14">4. 關聯表中的每一行記錄代表一個書籍-分類的配對關係</text>
+        </g>
+    </g>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4263eb"/>
+        </marker>
+    </defs>
+</svg> 

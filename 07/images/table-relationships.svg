@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-size="24" text-anchor="middle" fill="#333">數據庫表關係示例：網路書店</text>
+    
+    <!-- One-to-One Relationship -->
+    <g transform="translate(50,100)">
+        <text x="350" y="20" font-size="18" text-anchor="middle" fill="#333">一對一關係 (One-to-One)</text>
+        
+        <!-- User Table -->
+        <rect x="100" y="40" width="200" height="100" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="200" y="65" font-size="16" text-anchor="middle" fill="#333">用戶表 (Users)</text>
+        <line x1="100" y1="80" x2="300" y2="80" stroke="#4263eb"/>
+        <text x="120" y="100" font-size="12" fill="#666">user_id (PK)</text>
+        <text x="120" y="120" font-size="12" fill="#666">username</text>
+        
+        <!-- User Profile Table -->
+        <rect x="500" y="40" width="200" height="100" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="600" y="65" font-size="16" text-anchor="middle" fill="#333">用戶詳情表 (Profiles)</text>
+        <line x1="500" y1="80" x2="700" y2="80" stroke="#4263eb"/>
+        <text x="520" y="100" font-size="12" fill="#666">user_id (PK/FK)</text>
+        <text x="520" y="120" font-size="12" fill="#666">address, phone...</text>
+        
+        <!-- Relationship Line -->
+        <path d="M300,90 L500,90" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="400" y="80" font-size="14" fill="#666">1:1</text>
+    </g>
+    
+    <!-- One-to-Many Relationship -->
+    <g transform="translate(50,280)">
+        <text x="350" y="20" font-size="18" text-anchor="middle" fill="#333">一對多關係 (One-to-Many)</text>
+        
+        <!-- Author Table -->
+        <rect x="100" y="40" width="200" height="100" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="200" y="65" font-size="16" text-anchor="middle" fill="#333">作者表 (Authors)</text>
+        <line x1="100" y1="80" x2="300" y2="80" stroke="#4263eb"/>
+        <text x="120" y="100" font-size="12" fill="#666">author_id (PK)</text>
+        <text x="120" y="120" font-size="12" fill="#666">name, nationality</text>
+        
+        <!-- Books Table -->
+        <rect x="500" y="40" width="200" height="100" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="600" y="65" font-size="16" text-anchor="middle" fill="#333">書籍表 (Books)</text>
+        <line x1="500" y1="80" x2="700" y2="80" stroke="#4263eb"/>
+        <text x="520" y="100" font-size="12" fill="#666">book_id (PK)</text>
+        <text x="520" y="120" font-size="12" fill="#666">author_id (FK)</text>
+        
+        <!-- Relationship Line -->
+        <path d="M300,90 L500,90" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="400" y="80" font-size="14" fill="#666">1:N</text>
+    </g>
+    
+    <!-- Many-to-Many Relationship -->
+    <g transform="translate(50,460)">
+        <text x="350" y="20" font-size="18" text-anchor="middle" fill="#333">多對多關係 (Many-to-Many)</text>
+        
+        <!-- Books Table -->
+        <rect x="50" y="40" width="150" height="80" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="125" y="65" font-size="16" text-anchor="middle" fill="#333">書籍表</text>
+        <line x1="50" y1="80" x2="200" y2="80" stroke="#4263eb"/>
+        <text x="70" y="100" font-size="12" fill="#666">book_id (PK)</text>
+        
+        <!-- Junction Table -->
+        <rect x="325" y="40" width="150" height="80" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="400" y="65" font-size="16" text-anchor="middle" fill="#333">書籍分類表</text>
+        <line x1="325" y1="80" x2="475" y2="80" stroke="#4263eb"/>
+        <text x="345" y="100" font-size="12" fill="#666">book_id (PK/FK)</text>
+        <text x="345" y="115" font-size="12" fill="#666">category_id (PK/FK)</text>
+        
+        <!-- Categories Table -->
+        <rect x="600" y="40" width="150" height="80" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="675" y="65" font-size="16" text-anchor="middle" fill="#333">分類表</text>
+        <line x1="600" y1="80" x2="750" y2="80" stroke="#4263eb"/>
+        <text x="620" y="100" font-size="12" fill="#666">category_id (PK)</text>
+        
+        <!-- Relationship Lines -->
+        <path d="M200,80 L325,80" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <path d="M475,80 L600,80" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="262" y="70" font-size="14" fill="#666">N:M</text>
+        <text x="537" y="70" font-size="14" fill="#666">M:N</text>
+    </g>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4263eb"/>
+        </marker>
+    </defs>
+</svg> 

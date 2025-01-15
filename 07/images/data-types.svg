@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-size="24" text-anchor="middle" fill="#333">數據類型與實際應用</text>
+    
+    <!-- Main Circle -->
+    <circle cx="400" cy="250" r="200" fill="white" stroke="#4263eb" stroke-width="2"/>
+    
+    <!-- Center Text -->
+    <text x="400" y="250" font-size="20" text-anchor="middle" fill="#333">數據類型</text>
+    
+    <!-- Type Sections -->
+    <!-- Text Type -->
+    <g transform="translate(400,250)">
+        <!-- Section 1: VARCHAR -->
+        <path d="M-141.4,141.4 A200,200 0 0,1 -200,0 L0,0 Z" 
+              fill="#ff9f9f" stroke="white" stroke-width="2"/>
+        <g transform="translate(-160,80)">
+            <text font-size="16" fill="#333">文字型 (VARCHAR)</text>
+            <text y="25" font-size="12" fill="#666">- 商品名稱</text>
+            <text y="45" font-size="12" fill="#666">- 客戶姓名</text>
+            <text y="65" font-size="12" fill="#666">- 電子郵件</text>
+        </g>
+        
+        <!-- Section 2: INT -->
+        <path d="M-200,0 A200,200 0 0,1 -141.4,-141.4 L0,0 Z" 
+              fill="#9fccff" stroke="white" stroke-width="2"/>
+        <g transform="translate(-160,-80)">
+            <text font-size="16" fill="#333">整數型 (INT)</text>
+            <text y="25" font-size="12" fill="#666">- 庫存數量</text>
+            <text y="45" font-size="12" fill="#666">- 商品編號</text>
+            <text y="65" font-size="12" fill="#666">- 訂單數量</text>
+        </g>
+        
+        <!-- Section 3: DECIMAL -->
+        <path d="M-141.4,-141.4 A200,200 0 0,1 0,-200 L0,0 Z" 
+              fill="#a5d6a7" stroke="white" stroke-width="2"/>
+        <g transform="translate(-50,-160)">
+            <text font-size="16" fill="#333">金額型 (DECIMAL)</text>
+            <text y="25" font-size="12" fill="#666">- 商品價格</text>
+            <text y="45" font-size="12" fill="#666">- 訂單金額</text>
+            <text y="65" font-size="12" fill="#666">- 折扣比例</text>
+        </g>
+        
+        <!-- Section 4: DATE -->
+        <path d="M0,-200 A200,200 0 0,1 141.4,-141.4 L0,0 Z" 
+              fill="#ffcc80" stroke="white" stroke-width="2"/>
+        <g transform="translate(50,-160)">
+            <text font-size="16" fill="#333">日期型 (DATE)</text>
+            <text y="25" font-size="12" fill="#666">- 訂單日期</text>
+            <text y="45" font-size="12" fill="#666">- 出貨時間</text>
+            <text y="65" font-size="12" fill="#666">- 到期日期</text>
+        </g>
+        
+        <!-- Section 5: BOOLEAN -->
+        <path d="M141.4,-141.4 A200,200 0 0,1 200,0 L0,0 Z" 
+              fill="#ce93d8" stroke="white" stroke-width="2"/>
+        <g transform="translate(160,-80)">
+            <text font-size="16" fill="#333">布林型 (BOOLEAN)</text>
+            <text y="25" font-size="12" fill="#666">- 是否有效</text>
+            <text y="45" font-size="12" fill="#666">- 訂單狀態</text>
+            <text y="65" font-size="12" fill="#666">- 會員資格</text>
+        </g>
+        
+        <!-- Section 6: TEXT -->
+        <path d="M200,0 A200,200 0 0,1 141.4,141.4 L0,0 Z" 
+              fill="#90caf9" stroke="white" stroke-width="2"/>
+        <g transform="translate(160,80)">
+            <text font-size="16" fill="#333">長文字 (TEXT)</text>
+            <text y="25" font-size="12" fill="#666">- 商品描述</text>
+            <text y="45" font-size="12" fill="#666">- 客戶評價</text>
+            <text y="65" font-size="12" fill="#666">- 備註說明</text>
+        </g>
+    </g>
+    
+    <!-- Legend -->
+    <g transform="translate(50,450)">
+        <text font-size="14" fill="#333">提示：選擇合適的數據類型可以：</text>
+        <text x="200" y="25" font-size="12" fill="#666">1. 確保數據的正確性</text>
+        <text x="400" y="25" font-size="12" fill="#666">2. 優化存儲空間</text>
+        <text x="600" y="25" font-size="12" fill="#666">3. 提升查詢效率</text>
+    </g>
+</svg> 

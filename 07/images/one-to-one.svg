@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-size="24" text-anchor="middle" fill="#333">一對一關係：護照與個人資料</text>
+    
+    <!-- Passport Card -->
+    <g transform="translate(100,80)">
+        <!-- Card Background -->
+        <rect x="0" y="0" width="250" height="160" fill="#2b5797" rx="10"/>
+        <rect x="0" y="0" width="250" height="40" fill="#1e3d6b" rx="10"/>
+        <text x="125" y="25" font-size="16" text-anchor="middle" fill="white">護照基本資料表</text>
+        
+        <!-- Photo Area -->
+        <rect x="20" y="50" width="70" height="90" fill="#ddd" stroke="#fff"/>
+        <circle cx="55" cy="75" r="15" fill="#999"/>
+        <rect x="40" y="95" width="30" height="35" fill="#999"/>
+        
+        <!-- Text Fields -->
+        <g transform="translate(100,60)" fill="white">
+            <text font-size="12">護照號碼 (PK)</text>
+            <text y="20" font-size="12" fill="#ffd700">A123456789</text>
+            <text y="40" font-size="12">姓名</text>
+            <text y="60" font-size="12">國籍</text>
+            <text y="80" font-size="12">出生日期</text>
+        </g>
+    </g>
+    
+    <!-- Personal Info Card -->
+    <g transform="translate(450,80)">
+        <!-- Card Background -->
+        <rect x="0" y="0" width="250" height="160" fill="#white" stroke="#4263eb" stroke-width="2" rx="10"/>
+        <rect x="0" y="0" width="250" height="40" fill="#4263eb" rx="10"/>
+        <text x="125" y="25" font-size="16" text-anchor="middle" fill="white">個人詳細資料表</text>
+        
+        <!-- Content -->
+        <g transform="translate(20,60)" fill="#333">
+            <text font-size="12">護照號碼 (FK)</text>
+            <text y="20" font-size="12" fill="#4263eb">A123456789</text>
+            <text y="40" font-size="12">居住地址</text>
+            <text y="60" font-size="12">聯絡電話</text>
+            <text y="80" font-size="12">電子郵件</text>
+        </g>
+    </g>
+    
+    <!-- Relationship Arrow -->
+    <g transform="translate(350,140)">
+        <!-- Main Arrow -->
+        <path d="M0,0 L100,0" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        
+        <!-- Relationship Text -->
+        <text x="50" y="-10" font-size="14" text-anchor="middle" fill="#666">一對一關係</text>
+        
+        <!-- Cardinality -->
+        <text x="10" y="-10" font-size="14" text-anchor="middle" fill="#666">1</text>
+        <text x="90" y="-10" font-size="14" text-anchor="middle" fill="#666">1</text>
+    </g>
+    
+    <!-- Description -->
+    <g transform="translate(100,280)">
+        <rect width="600" height="80" fill="white" stroke="#ddd" stroke-width="2" rx="5"/>
+        <text x="20" y="30" font-size="14" fill="#333">說明：</text>
+        <text x="20" y="55" font-size="14" fill="#666">• 每個人只能有一本護照，每本護照只對應一個人的詳細資料</text>
+        <text x="20" y="75" font-size="14" fill="#666">• 護照號碼是唯一識別碼，在詳細資料表中作為外鍵使用</text>
+    </g>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4263eb"/>
+        </marker>
+    </defs>
+</svg> 

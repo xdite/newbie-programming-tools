@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-size="24" text-anchor="middle" fill="#333">數據庫基本概念</text>
+    
+    <!-- Database Icon -->
+    <g transform="translate(350,70)">
+        <path d="M0,0 C100,0 100,0 100,0 C100,10 100,20 100,30 C100,40 0,40 0,30 C0,20 0,10 0,0" 
+              fill="#4263eb" opacity="0.7"/>
+        <path d="M0,10 C100,10 100,10 100,10 C100,20 100,30 100,40 C100,50 0,50 0,40 C0,30 0,20 0,10" 
+              fill="#4263eb" opacity="0.8"/>
+        <path d="M0,20 C100,20 100,20 100,20 C100,30 100,40 100,50 C100,60 0,60 0,50 C0,40 0,30 0,20" 
+              fill="#4263eb" opacity="0.9"/>
+        <text x="50" y="35" font-size="16" text-anchor="middle" fill="white">商店數據庫</text>
+    </g>
+
+    <!-- Tables -->
+    <g transform="translate(100,180)">
+        <!-- Products Table -->
+        <rect x="0" y="0" width="200" height="150" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <rect x="0" y="0" width="200" height="30" fill="#4263eb" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="100" y="20" font-size="16" text-anchor="middle" fill="white">商品表 (Products)</text>
+        
+        <!-- Table Fields -->
+        <line x1="0" y1="60" x2="200" y2="60" stroke="#ddd"/>
+        <text x="10" y="50" font-size="12" fill="#666">商品編號 (product_id)</text>
+        <text x="150" y="50" font-size="12" fill="#666">PRIMARY KEY</text>
+        
+        <line x1="0" y1="90" x2="200" y2="90" stroke="#ddd"/>
+        <text x="10" y="80" font-size="12" fill="#666">商品名稱 (name)</text>
+        <text x="150" y="80" font-size="12" fill="#666">VARCHAR(100)</text>
+        
+        <line x1="0" y1="120" x2="200" y2="120" stroke="#ddd"/>
+        <text x="10" y="110" font-size="12" fill="#666">價格 (price)</text>
+        <text x="150" y="110" font-size="12" fill="#666">DECIMAL(10,2)</text>
+        
+        <text x="10" y="140" font-size="12" fill="#666">庫存 (stock)</text>
+        <text x="150" y="140" font-size="12" fill="#666">INT</text>
+    </g>
+    
+    <g transform="translate(500,180)">
+        <!-- Orders Table -->
+        <rect x="0" y="0" width="200" height="150" fill="white" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <rect x="0" y="0" width="200" height="30" fill="#4263eb" stroke="#4263eb" stroke-width="2" rx="5"/>
+        <text x="100" y="20" font-size="16" text-anchor="middle" fill="white">訂單表 (Orders)</text>
+        
+        <!-- Table Fields -->
+        <line x1="0" y1="60" x2="200" y2="60" stroke="#ddd"/>
+        <text x="10" y="50" font-size="12" fill="#666">訂單編號 (order_id)</text>
+        <text x="150" y="50" font-size="12" fill="#666">PRIMARY KEY</text>
+        
+        <line x1="0" y1="90" x2="200" y2="90" stroke="#ddd"/>
+        <text x="10" y="80" font-size="12" fill="#666">商品編號 (product_id)</text>
+        <text x="150" y="80" font-size="12" fill="#666">FOREIGN KEY</text>
+        
+        <line x1="0" y1="120" x2="200" y2="120" stroke="#ddd"/>
+        <text x="10" y="110" font-size="12" fill="#666">數量 (quantity)</text>
+        <text x="150" y="110" font-size="12" fill="#666">INT</text>
+        
+        <text x="10" y="140" font-size="12" fill="#666">訂單日期 (date)</text>
+        <text x="150" y="140" font-size="12" fill="#666">DATE</text>
+    </g>
+
+    <!-- Relationship Arrow -->
+    <g transform="translate(300,230)">
+        <path d="M0,0 L200,0" stroke="#4263eb" stroke-width="2" marker-end="url(#arrowhead)"/>
+        <text x="100" y="-10" font-size="14" text-anchor="middle" fill="#666">一對多關係</text>
+    </g>
+    
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#4263eb"/>
+        </marker>
+    </defs>
+    
+    <!-- Key Concepts -->
+    <g transform="translate(100,400)">
+        <rect width="600" height="120" fill="white" stroke="#ddd" stroke-width="2" rx="5"/>
+        <text x="20" y="30" font-size="16" fill="#333">重要概念：</text>
+        
+        <g transform="translate(40,50)">
+            <circle cx="0" cy="0" r="5" fill="#4263eb"/>
+            <text x="15" y="5" font-size="14" fill="#666">主鍵 (Primary Key)：唯一標識每筆記錄的欄位</text>
+            
+            <circle cx="0" cy="30" r="5" fill="#4263eb"/>
+            <text x="15" y="35" font-size="14" fill="#666">外鍵 (Foreign Key)：用於建立表之間關係的欄位</text>
+            
+            <circle cx="0" cy="60" r="5" fill="#4263eb"/>
+            <text x="15" y="65" font-size="14" fill="#666">數據類型：定義欄位可以存儲的數據格式</text>
+        </g>
+    </g>
+</svg> 
