@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        虛擬環境隔離示意圖
+    </text>
+
+    <!-- System Python -->
+    <g transform="translate(50,80)">
+        <!-- Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">系統 Python</text>
+        
+        <!-- System Box -->
+        <rect x="20" y="50" width="260" height="80" fill="#fff" stroke="#666" stroke-width="2" rx="10"/>
+        
+        <!-- Content -->
+        <g transform="translate(40,70)">
+            <text x="0" y="20" font-family="Arial" font-size="14" fill="#333">Python 3.9</text>
+            <text x="0" y="40" font-family="Arial" font-size="14" fill="#666">全域套件</text>
+        </g>
+    </g>
+
+    <!-- Virtual Environments -->
+    <g transform="translate(50,200)">
+        <!-- Project A -->
+        <g transform="translate(0,0)">
+            <!-- Container -->
+            <rect x="20" y="20" width="220" height="160" fill="#fff" stroke="#1e88e5" stroke-width="2" rx="10"/>
+            
+            <!-- Title -->
+            <text x="130" y="45" text-anchor="middle" font-family="Arial" font-size="16" fill="#1e88e5">專案 A 虛擬環境</text>
+            
+            <!-- Content -->
+            <g transform="translate(40,70)">
+                <text x="0" y="0" font-family="Arial" font-size="14" fill="#333">Python 2.7</text>
+                <text x="0" y="25" font-family="Arial" font-size="12" fill="#666">• Django 1.11</text>
+                <text x="0" y="45" font-family="Arial" font-size="12" fill="#666">• MySQL-python 1.2.5</text>
+                <text x="0" y="65" font-family="Arial" font-size="12" fill="#666">• Pillow 6.2.2</text>
+            </g>
+        </g>
+
+        <!-- Project B -->
+        <g transform="translate(270,0)">
+            <!-- Container -->
+            <rect x="20" y="20" width="220" height="160" fill="#fff" stroke="#43a047" stroke-width="2" rx="10"/>
+            
+            <!-- Title -->
+            <text x="130" y="45" text-anchor="middle" font-family="Arial" font-size="16" fill="#43a047">專案 B 虛擬環境</text>
+            
+            <!-- Content -->
+            <g transform="translate(40,70)">
+                <text x="0" y="0" font-family="Arial" font-size="14" fill="#333">Python 3.9</text>
+                <text x="0" y="25" font-family="Arial" font-size="12" fill="#666">• FastAPI 0.68.1</text>
+                <text x="0" y="45" font-family="Arial" font-size="12" fill="#666">• SQLAlchemy 1.4.23</text>
+                <text x="0" y="65" font-family="Arial" font-size="12" fill="#666">• Pydantic 1.8.2</text>
+            </g>
+        </g>
+
+        <!-- Project C -->
+        <g transform="translate(540,0)">
+            <!-- Container -->
+            <rect x="20" y="20" width="220" height="160" fill="#fff" stroke="#fb8c00" stroke-width="2" rx="10"/>
+            
+            <!-- Title -->
+            <text x="130" y="45" text-anchor="middle" font-family="Arial" font-size="16" fill="#fb8c00">專案 C 虛擬環境</text>
+            
+            <!-- Content -->
+            <g transform="translate(40,70)">
+                <text x="0" y="0" font-family="Arial" font-size="14" fill="#333">Python 3.8</text>
+                <text x="0" y="25" font-family="Arial" font-size="12" fill="#666">• Flask 2.0.1</text>
+                <text x="0" y="45" font-family="Arial" font-size="12" fill="#666">• Redis 4.0.2</text>
+                <text x="0" y="65" font-family="Arial" font-size="12" fill="#666">• Celery 5.1.2</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Isolation Lines -->
+    <g transform="translate(0,0)" stroke-width="2" stroke-dasharray="4,4">
+        <!-- Project A -->
+        <path d="M 180,160 L 180,220" stroke="#1e88e5" fill="none"/>
+        <!-- Project B -->
+        <path d="M 450,160 L 450,220" stroke="#43a047" fill="none"/>
+        <!-- Project C -->
+        <path d="M 720,160 L 720,220" stroke="#fb8c00" fill="none"/>
+    </g>
+
+    <!-- Benefits -->
+    <g transform="translate(50,380)">
+        <text x="350" y="0" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">
+            每個專案擁有獨立的 Python 版本和套件環境
+        </text>
+    </g>
+
+    <!-- Isolation Indicators -->
+    <g transform="translate(0,0)">
+        <!-- Between A and B -->
+        <line x1="310" y1="300" x2="310" y2="320" stroke="#666" stroke-width="2"/>
+        <text x="310" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">完全隔離</text>
+        
+        <!-- Between B and C -->
+        <line x1="580" y1="300" x2="580" y2="320" stroke="#666" stroke-width="2"/>
+        <text x="580" y="335" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">完全隔離</text>
+    </g>
+</svg> 
