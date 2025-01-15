@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">HTTP 請求結構</text>
+  <text x="400" y="70" font-family="sans-serif" font-size="16" fill="#666" text-anchor="middle">就像填寫標準化的點餐單</text>
+
+  <!-- 左側：實際的點餐單 -->
+  <g transform="translate(50,100)">
+    <!-- 點餐單外框 -->
+    <rect x="0" y="0" width="300" height="450" rx="5" fill="#fff" stroke="#1976d2" stroke-width="2"/>
+    
+    <!-- 點餐單標題 -->
+    <rect x="0" y="0" width="300" height="40" rx="5" fill="#e3f2fd"/>
+    <text x="150" y="25" font-family="sans-serif" font-size="16" fill="#1976d2" text-anchor="middle">餐廳點餐單</text>
+    
+    <!-- 點餐方式 -->
+    <g transform="translate(20,60)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">點餐方式：</text>
+      <rect x="0" y="10" width="260" height="30" rx="3" fill="#f5f5f5"/>
+      <text x="10" y="30" font-family="sans-serif" font-size="14" fill="#666">內用</text>
+    </g>
+    
+    <!-- 顧客資訊 -->
+    <g transform="translate(20,120)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">顧客資訊：</text>
+      <rect x="0" y="10" width="260" height="30" rx="3" fill="#f5f5f5"/>
+      <text x="10" y="30" font-family="sans-serif" font-size="14" fill="#666">桌號：A1</text>
+    </g>
+    
+    <!-- 餐點內容 -->
+    <g transform="translate(20,180)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">餐點內容：</text>
+      <rect x="0" y="10" width="260" height="80" rx="3" fill="#f5f5f5"/>
+      <text x="10" y="30" font-family="sans-serif" font-size="14" fill="#666">- 漢堡 × 1</text>
+      <text x="10" y="50" font-family="sans-serif" font-size="14" fill="#666">- 薯條 × 1</text>
+    </g>
+  </g>
+
+  <!-- 右側：HTTP 請求結構 -->
+  <g transform="translate(450,100)">
+    <!-- HTTP 請求外框 -->
+    <rect x="0" y="0" width="300" height="450" rx="5" fill="#fff" stroke="#388e3c" stroke-width="2"/>
+    
+    <!-- 請求行 -->
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="300" height="80" rx="5" fill="#e8f5e9"/>
+      <text x="20" y="30" font-family="sans-serif" font-size="14" fill="#388e3c" font-weight="bold">請求行（Request Line）：</text>
+      <text x="20" y="55" font-family="monospace" font-size="14" fill="#333">POST /order HTTP/1.1</text>
+    </g>
+    
+    <!-- 請求頭 -->
+    <g transform="translate(0,100)">
+      <text x="20" y="0" font-family="sans-serif" font-size="14" fill="#388e3c" font-weight="bold">請求頭（Headers）：</text>
+      <rect x="20" y="10" width="260" height="120" rx="3" fill="#f5f5f5"/>
+      <text x="30" y="35" font-family="monospace" font-size="14" fill="#333">Host: www.restaurant.com</text>
+      <text x="30" y="60" font-family="monospace" font-size="14" fill="#333">Accept: application/json</text>
+      <text x="30" y="85" font-family="monospace" font-size="14" fill="#333">Content-Type: application/json</text>
+      <text x="30" y="110" font-family="monospace" font-size="14" fill="#333">User-Agent: Mozilla/5.0</text>
+    </g>
+    
+    <!-- 請求體 -->
+    <g transform="translate(0,250)">
+      <text x="20" y="0" font-family="sans-serif" font-size="14" fill="#388e3c" font-weight="bold">請求體（Body）：</text>
+      <rect x="20" y="10" width="260" height="120" rx="3" fill="#f5f5f5"/>
+      <text x="30" y="35" font-family="monospace" font-size="14" fill="#333">{</text>
+      <text x="40" y="60" font-family="monospace" font-size="14" fill="#333">"items": [</text>
+      <text x="50" y="85" font-family="monospace" font-size="14" fill="#333">{"item": "漢堡", "qty": 1},</text>
+      <text x="50" y="110" font-family="monospace" font-size="14" fill="#333">{"item": "薯條", "qty": 1}</text>
+      <text x="40" y="135" font-family="monospace" font-size="14" fill="#333">]</text>
+    </g>
+  </g>
+
+  <!-- 對應關係箭頭 -->
+  <g>
+    <!-- 點餐方式 -> 請求行 -->
+    <path d="M350,180 L450,140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <!-- 顧客資訊 -> 請求頭 -->
+    <path d="M350,240 L450,200" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <!-- 餐點內容 -> 請求體 -->
+    <path d="M350,300 L450,350" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- 底部說明 -->
+  <g transform="translate(50,570)">
+    <rect x="0" y="0" width="700" height="30" rx="5" fill="#fff" stroke="#666"/>
+    <text x="350" y="20" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">
+      HTTP 請求就像一張標準化的點餐單，包含了點餐方式、顧客資訊和具體餐點內容
+    </text>
+  </g>
+
+  <!-- 箭頭標記定義 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg> 

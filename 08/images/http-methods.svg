@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">HTTP 請求方法：GET vs POST</text>
+
+  <!-- GET 方法區域 -->
+  <g transform="translate(50,80)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="320" height="40" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+    <text x="160" y="25" font-family="sans-serif" font-size="18" fill="#1976d2" text-anchor="middle">GET 方法</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="320" height="200" rx="5" fill="#fff" stroke="#1976d2"/>
+    
+    <!-- 客人 -->
+    <g transform="translate(30,100)">
+      <circle cx="30" cy="30" r="20" fill="#ffb74d"/> <!-- 頭 -->
+      <path d="M30,50 L30,90 M10,60 L50,60 M20,90 L20,110 M40,90 L40,110" 
+            stroke="#ffb74d" stroke-width="4" fill="none"/> <!-- 身體 -->
+    </g>
+    
+    <!-- 對話框 -->
+    <path d="M100,90 L250,90 L250,130 L180,130 L170,140 L170,130 L100,130 Z" 
+          fill="#e3f2fd" stroke="#1976d2"/>
+    <text x="175" y="115" font-family="sans-serif" font-size="14" fill="#1976d2" text-anchor="middle">我想看菜單</text>
+    
+    <!-- 菜單 -->
+    <g transform="translate(220,80)">
+      <rect x="0" y="0" width="70" height="90" fill="#fff" stroke="#1976d2"/>
+      <line x1="10" y1="20" x2="60" y2="20" stroke="#1976d2"/>
+      <line x1="10" y1="40" x2="60" y2="40" stroke="#1976d2"/>
+      <line x1="10" y1="60" x2="60" y2="60" stroke="#1976d2"/>
+    </g>
+    
+    <!-- 說明文字 -->
+    <text x="160" y="200" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">像是查看菜單</text>
+    <text x="160" y="220" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">不會改變服務器的數據</text>
+  </g>
+
+  <!-- POST 方法區域 -->
+  <g transform="translate(430,80)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="320" height="40" rx="5" fill="#e8f5e9" stroke="#388e3c"/>
+    <text x="160" y="25" font-family="sans-serif" font-size="18" fill="#388e3c" text-anchor="middle">POST 方法</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="320" height="200" rx="5" fill="#fff" stroke="#388e3c"/>
+    
+    <!-- 客人 -->
+    <g transform="translate(30,100)">
+      <circle cx="30" cy="30" r="20" fill="#ffb74d"/> <!-- 頭 -->
+      <path d="M30,50 L30,90 M10,60 L50,60 M20,90 L20,110 M40,90 L40,110" 
+            stroke="#ffb74d" stroke-width="4" fill="none"/> <!-- 身體 -->
+    </g>
+    
+    <!-- 訂單對話框 -->
+    <path d="M100,90 L250,90 L250,150 L180,150 L170,160 L170,150 L100,150 Z" 
+          fill="#e8f5e9" stroke="#388e3c"/>
+    <text x="175" y="110" font-family="sans-serif" font-size="14" fill="#388e3c" text-anchor="middle">我要點餐：</text>
+    <text x="175" y="130" font-family="sans-serif" font-size="12" fill="#388e3c" text-anchor="middle">- 漢堡 1個</text>
+    
+    <!-- 訂單 -->
+    <g transform="translate(220,80)">
+      <rect x="0" y="0" width="70" height="90" fill="#fff" stroke="#388e3c"/>
+      <text x="35" y="30" font-family="sans-serif" font-size="10" fill="#388e3c" text-anchor="middle">訂單</text>
+      <line x1="10" y1="40" x2="60" y2="40" stroke="#388e3c"/>
+      <text x="35" y="60" font-family="sans-serif" font-size="10" fill="#388e3c" text-anchor="middle">漢堡 x1</text>
+    </g>
+    
+    <!-- 說明文字 -->
+    <text x="160" y="200" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">像是提交訂單</text>
+    <text x="160" y="220" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">會改變服務器的數據</text>
+  </g>
+
+  <!-- 程式碼示例 -->
+  <g transform="translate(50,330)">
+    <!-- GET 示例 -->
+    <rect x="0" y="0" width="320" height="80" rx="5" fill="#f5f5f5" stroke="#666"/>
+    <text x="20" y="30" font-family="monospace" font-size="14" fill="#333">GET /menu HTTP/1.1</text>
+    <text x="20" y="50" font-family="monospace" font-size="14" fill="#333">Host: restaurant.com</text>
+    
+    <!-- POST 示例 -->
+    <rect x="380" y="0" width="320" height="140" rx="5" fill="#f5f5f5" stroke="#666"/>
+    <text x="400" y="30" font-family="monospace" font-size="14" fill="#333">POST /order HTTP/1.1</text>
+    <text x="400" y="50" font-family="monospace" font-size="14" fill="#333">Host: restaurant.com</text>
+    <text x="400" y="70" font-family="monospace" font-size="14" fill="#333">Content-Type: application/json</text>
+    <text x="400" y="100" font-family="monospace" font-size="14" fill="#333">{</text>
+    <text x="400" y="120" font-family="monospace" font-size="14" fill="#333">  "dish": "漢堡", "quantity": 1</text>
+    <text x="400" y="140" font-family="monospace" font-size="14" fill="#333">}</text>
+  </g>
+
+  <!-- 底部說明 -->
+  <g transform="translate(50,500)">
+    <rect x="0" y="0" width="700" height="80" rx="5" fill="#fff" stroke="#666"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="14" fill="#666">• GET 方法像是在餐廳看菜單，只是獲取信息，不會改變任何東西</text>
+    <text x="20" y="55" font-family="sans-serif" font-size="14" fill="#666">• POST 方法像是點餐，會提交新的信息，改變服務器上的數據</text>
+  </g>
+</svg> 
