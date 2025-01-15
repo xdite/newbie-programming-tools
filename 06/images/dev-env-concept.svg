@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        開發環境 vs 廚房環境
+    </text>
+
+    <!-- Kitchen Side -->
+    <g transform="translate(50,80)">
+        <!-- Kitchen Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">廚房環境</text>
+        
+        <!-- Kitchen Box -->
+        <rect x="20" y="50" width="260" height="240" fill="none" stroke="#666" stroke-width="2" rx="10"/>
+        
+        <!-- Kitchen Items -->
+        <g transform="translate(40,80)">
+            <!-- Kitchen Space -->
+            <rect x="0" y="0" width="40" height="40" fill="#FFE0B2" stroke="#FB8C00"/>
+            <text x="50" y="25" font-family="Arial" font-size="14" fill="#333">乾淨的廚房</text>
+            
+            <!-- Cooking Tools -->
+            <rect x="0" y="50" width="40" height="40" fill="#C8E6C9" stroke="#43A047"/>
+            <text x="50" y="75" font-family="Arial" font-size="14" fill="#333">廚具</text>
+            
+            <!-- Ingredients -->
+            <rect x="0" y="100" width="40" height="40" fill="#BBDEFB" stroke="#1E88E5"/>
+            <text x="50" y="125" font-family="Arial" font-size="14" fill="#333">食材</text>
+            
+            <!-- Recipe -->
+            <rect x="0" y="150" width="40" height="40" fill="#E1BEE7" stroke="#8E24AA"/>
+            <text x="50" y="175" font-family="Arial" font-size="14" fill="#333">食譜</text>
+        </g>
+    </g>
+
+    <!-- Arrow -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+    </g>
+
+    <!-- Dev Environment Side -->
+    <g transform="translate(490,80)">
+        <!-- Dev Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">開發環境</text>
+        
+        <!-- Dev Box -->
+        <rect x="20" y="50" width="260" height="240" fill="none" stroke="#666" stroke-width="2" rx="10"/>
+        
+        <!-- Dev Items -->
+        <g transform="translate(40,80)">
+            <!-- Workspace -->
+            <rect x="0" y="0" width="40" height="40" fill="#FFE0B2" stroke="#FB8C00"/>
+            <text x="50" y="25" font-family="Arial" font-size="14" fill="#333">工作空間</text>
+            
+            <!-- Dev Tools -->
+            <rect x="0" y="50" width="40" height="40" fill="#C8E6C9" stroke="#43A047"/>
+            <text x="50" y="75" font-family="Arial" font-size="14" fill="#333">開發工具</text>
+            
+            <!-- Packages -->
+            <rect x="0" y="100" width="40" height="40" fill="#BBDEFB" stroke="#1E88E5"/>
+            <text x="50" y="125" font-family="Arial" font-size="14" fill="#333">程式套件</text>
+            
+            <!-- Config -->
+            <rect x="0" y="150" width="40" height="40" fill="#E1BEE7" stroke="#8E24AA"/>
+            <text x="50" y="175" font-family="Arial" font-size="14" fill="#333">專案設定</text>
+        </g>
+    </g>
+</svg> 
