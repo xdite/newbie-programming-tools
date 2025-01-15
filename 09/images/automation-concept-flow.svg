@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- 標題 -->
+    <text x="250" y="40" font-family="Arial" font-size="24" fill="#2d3748" font-weight="bold">從標準化到自動化</text>
+    
+    <!-- 左側：標準化基礎 -->
+    <g transform="translate(50,80)">
+        <rect width="200" height="450" fill="#fff5f5" stroke="#805ad5" stroke-width="2" rx="10"/>
+        <text x="60" y="40" font-family="Arial" font-size="20" fill="#6b46c1" font-weight="bold">標準化基礎</text>
+        
+        <!-- 標準化清單 -->
+        <g transform="translate(20,70)">
+            <rect width="160" height="120" fill="#e9d8fd" stroke="#805ad5" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#6b46c1">輸入標準</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#6b46c1" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#6b46c1">• 主題分類表</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#6b46c1">• 評估指標</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#6b46c1">• 參考資料庫</text>
+        </g>
+        
+        <!-- 處理流程 -->
+        <g transform="translate(20,210)">
+            <rect width="160" height="120" fill="#e9d8fd" stroke="#805ad5" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#6b46c1">處理流程</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#6b46c1" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#6b46c1">• 內容模板</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#6b46c1">• 寫作格式</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#6b46c1">• 審查清單</text>
+        </g>
+        
+        <!-- 輸出規範 -->
+        <g transform="translate(20,350)">
+            <rect width="160" height="80" fill="#e9d8fd" stroke="#805ad5" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#6b46c1">輸出規範</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#6b46c1" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#6b46c1">• 發布格式</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#6b46c1">• 追蹤指標</text>
+        </g>
+    </g>
+    
+    <!-- 中間：自動化轉換 -->
+    <g transform="translate(300,80)">
+        <rect width="200" height="450" fill="#ebf8ff" stroke="#3182ce" stroke-width="2" rx="10"/>
+        <text x="50" y="40" font-family="Arial" font-size="20" fill="#2b6cb0" font-weight="bold">自動化轉換</text>
+        
+        <!-- LLM助手 -->
+        <g transform="translate(20,70)">
+            <rect width="160" height="120" fill="#bee3f8" stroke="#3182ce" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2b6cb0">LLM 助手</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2b6cb0" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2b6cb0">• 主題生成</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2b6cb0">• 內容擴充</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2b6cb0">• 智能優化</text>
+        </g>
+        
+        <!-- 自動化工具 -->
+        <g transform="translate(20,210)">
+            <rect width="160" height="120" fill="#bee3f8" stroke="#3182ce" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2b6cb0">自動化工具</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2b6cb0" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2b6cb0">• 資料爬蟲</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2b6cb0">• 排程發布</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2b6cb0">• 數據分析</text>
+        </g>
+        
+        <!-- API整合 -->
+        <g transform="translate(20,350)">
+            <rect width="160" height="80" fill="#bee3f8" stroke="#3182ce" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2b6cb0">API 整合</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2b6cb0" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2b6cb0">• 服務連接</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2b6cb0">• 數據同步</text>
+        </g>
+    </g>
+    
+    <!-- 右側：自動化成果 -->
+    <g transform="translate(550,80)">
+        <rect width="200" height="450" fill="#f0fff4" stroke="#38a169" stroke-width="2" rx="10"/>
+        <text x="60" y="40" font-family="Arial" font-size="20" fill="#2f855a" font-weight="bold">自動化成果</text>
+        
+        <!-- 效率提升 -->
+        <g transform="translate(20,70)">
+            <rect width="160" height="120" fill="#c6f6d5" stroke="#38a169" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2f855a">效率提升</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2f855a" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 生產力 x3</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 時間節省 70%</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2f855a">• 錯誤減少 90%</text>
+        </g>
+        
+        <!-- 品質穩定 -->
+        <g transform="translate(20,210)">
+            <rect width="160" height="120" fill="#c6f6d5" stroke="#38a169" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2f855a">品質穩定</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2f855a" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 格式一致</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 內容完整</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2f855a">• SEO優化</text>
+        </g>
+        
+        <!-- 擴展能力 -->
+        <g transform="translate(20,350)">
+            <rect width="160" height="80" fill="#c6f6d5" stroke="#38a169" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2f855a">擴展能力</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2f855a" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 多平台發布</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 數據驅動優化</text>
+        </g>
+    </g>
+    
+    <!-- 連接箭頭 -->
+    <g>
+        <!-- 標準化到自動化 -->
+        <path d="M 250,300 L 300,300" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- 自動化到成果 -->
+        <path d="M 500,300 L 550,300" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6"
+                orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+        </marker>
+    </defs>
+</svg> 

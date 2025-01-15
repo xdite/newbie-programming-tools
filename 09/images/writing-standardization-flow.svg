@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- 標題 -->
+    <text x="250" y="40" font-family="Arial" font-size="24" fill="#2d3748" font-weight="bold">寫作流程標準化</text>
+    
+    <!-- 左側：混亂狀態 -->
+    <g transform="translate(50,80)">
+        <rect width="200" height="450" fill="#fff5f5" stroke="#fc8181" stroke-width="2" rx="10"/>
+        <text x="60" y="40" font-family="Arial" font-size="20" fill="#c53030" font-weight="bold">混亂狀態</text>
+        
+        <!-- 雜亂的便利貼 -->
+        <g transform="translate(20,70)">
+            <rect width="70" height="70" fill="#fed7d7" stroke="#fc8181" stroke-width="1" transform="rotate(10)"/>
+            <rect width="70" height="70" fill="#fed7d7" stroke="#fc8181" stroke-width="1" transform="translate(30,20) rotate(-5)"/>
+            <rect width="70" height="70" fill="#fed7d7" stroke="#fc8181" stroke-width="1" transform="translate(60,40) rotate(15)"/>
+            <text x="30" y="100" font-family="Arial" font-size="14" fill="#c53030">主題雜亂</text>
+        </g>
+        
+        <!-- 混亂的文件 -->
+        <g transform="translate(20,180)">
+            <path d="M 0,0 L 150,0 L 150,100 L 0,100 Z" fill="#fed7d7" stroke="#fc8181" stroke-width="1"/>
+            <path d="M 20,20 L 130,20 M 20,40 L 100,40 M 20,60 L 120,60 M 20,80 L 90,80" stroke="#c53030" stroke-width="1"/>
+            <text x="30" y="130" font-family="Arial" font-size="14" fill="#c53030">格式不一</text>
+        </g>
+        
+        <!-- 時間浪費 -->
+        <g transform="translate(20,300)">
+            <circle cx="50" cy="50" r="40" fill="#fed7d7" stroke="#fc8181" stroke-width="2"/>
+            <line x1="50" y1="50" x2="50" y2="20" stroke="#c53030" stroke-width="2"/>
+            <line x1="50" y1="50" x2="70" y2="50" stroke="#c53030" stroke-width="2"/>
+            <text x="20" y="110" font-family="Arial" font-size="14" fill="#c53030">效率低下</text>
+        </g>
+    </g>
+    
+    <!-- 中間：標準化流程 -->
+    <g transform="translate(300,80)">
+        <rect width="200" height="450" fill="#ebf8ff" stroke="#63b3ed" stroke-width="2" rx="10"/>
+        <text x="50" y="40" font-family="Arial" font-size="20" fill="#2b6cb0" font-weight="bold">標準化</text>
+        
+        <!-- 主題庫 -->
+        <g transform="translate(20,70)">
+            <rect width="160" height="100" fill="#bee3f8" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="40" y="30" font-family="Arial" font-size="16" fill="#2b6cb0">主題庫</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2b6cb0" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2b6cb0">• 技術分享</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2b6cb0">• 經驗總結</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2b6cb0">• 問題解決</text>
+        </g>
+        
+        <!-- 內容模板 -->
+        <g transform="translate(20,190)">
+            <rect width="160" height="120" fill="#bee3f8" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="40" y="30" font-family="Arial" font-size="16" fill="#2b6cb0">內容模板</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2b6cb0" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2b6cb0">1. 開場引入</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2b6cb0">2. 問題描述</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2b6cb0">3. 解決方案</text>
+            <text x="30" y="120" font-family="Arial" font-size="12" fill="#2b6cb0">4. 總結建議</text>
+        </g>
+        
+        <!-- 發布流程 -->
+        <g transform="translate(20,330)">
+            <rect width="160" height="100" fill="#bee3f8" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="40" y="30" font-family="Arial" font-size="16" fill="#2b6cb0">發布流程</text>
+            <line x1="20" y1="40" x2="140" y2="40" stroke="#2b6cb0" stroke-width="1"/>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2b6cb0">• 審查清單</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2b6cb0">• 發布時間</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2b6cb0">• 追蹤指標</text>
+        </g>
+    </g>
+    
+    <!-- 右側：優化結果 -->
+    <g transform="translate(550,80)">
+        <rect width="200" height="450" fill="#f0fff4" stroke="#9ae6b4" stroke-width="2" rx="10"/>
+        <text x="60" y="40" font-family="Arial" font-size="20" fill="#2f855a" font-weight="bold">高效產出</text>
+        
+        <!-- 文章產出 -->
+        <g transform="translate(20,70)">
+            <rect width="160" height="100" fill="#c6f6d5" stroke="#9ae6b4" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2f855a">穩定產出</text>
+            <text x="30" y="60" font-family="Arial" font-size="14" fill="#2f855a">每週 3-5 篇</text>
+            <rect width="120" height="20" fill="#e6ffed" stroke="#9ae6b4" transform="translate(20,70)"/>
+            <rect width="90" height="20" fill="#9ae6b4" transform="translate(20,70)"/>
+        </g>
+        
+        <!-- 品質保證 -->
+        <g transform="translate(20,190)">
+            <rect width="160" height="100" fill="#c6f6d5" stroke="#9ae6b4" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2f855a">品質保證</text>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 結構完整</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 內容深入</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2f855a">• 風格統一</text>
+        </g>
+        
+        <!-- 讀者反饋 -->
+        <g transform="translate(20,310)">
+            <rect width="160" height="120" fill="#c6f6d5" stroke="#9ae6b4" stroke-width="1" rx="5"/>
+            <text x="30" y="30" font-family="Arial" font-size="16" fill="#2f855a">正面反饋</text>
+            <text x="30" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 閱讀量提升</text>
+            <text x="30" y="80" font-family="Arial" font-size="12" fill="#2f855a">• 互動增加</text>
+            <text x="30" y="100" font-family="Arial" font-size="12" fill="#2f855a">• 訂閱成長</text>
+        </g>
+    </g>
+    
+    <!-- 連接箭頭 -->
+    <g>
+        <!-- 混亂到標準化 -->
+        <path d="M 250,300 L 300,300" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- 標準化到高效 -->
+        <path d="M 500,300 L 550,300" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6"
+                orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+        </marker>
+    </defs>
+</svg> 

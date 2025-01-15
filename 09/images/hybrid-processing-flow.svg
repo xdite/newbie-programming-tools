@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- 標題 -->
+    <text x="250" y="40" font-family="Arial" font-size="24" fill="#2d3748" font-weight="bold">LLM 與程式的混合處理模式</text>
+    
+    <!-- 中央處理流程 -->
+    <g transform="translate(150,80)">
+        <!-- 第一層：數據理解 -->
+        <g>
+            <rect width="500" height="140" fill="#faf5ff" stroke="#805ad5" stroke-width="2" rx="10"/>
+            <text x="200" y="35" font-family="Arial" font-size="20" fill="#6b46c1" font-weight="bold">數據理解層</text>
+            
+            <!-- LLM部分 -->
+            <g transform="translate(20,50)">
+                <rect width="220" height="70" fill="#e9d8fd" stroke="#805ad5" stroke-width="1" rx="5"/>
+                <text x="30" y="25" font-family="Arial" font-size="16" fill="#6b46c1">LLM 處理</text>
+                <text x="30" y="45" font-family="Arial" font-size="12" fill="#6b46c1">• 理解上下文</text>
+                <text x="30" y="60" font-family="Arial" font-size="12" fill="#6b46c1">• 識別意圖</text>
+            </g>
+            
+            <!-- 程式部分 -->
+            <g transform="translate(260,50)">
+                <rect width="220" height="70" fill="#e9d8fd" stroke="#805ad5" stroke-width="1" rx="5"/>
+                <text x="30" y="25" font-family="Arial" font-size="16" fill="#6b46c1">程式處理</text>
+                <text x="30" y="45" font-family="Arial" font-size="12" fill="#6b46c1">• 數據驗證</text>
+                <text x="30" y="60" font-family="Arial" font-size="12" fill="#6b46c1">• 格式轉換</text>
+            </g>
+        </g>
+        
+        <!-- 第二層：邏輯處理 -->
+        <g transform="translate(0,160)">
+            <rect width="500" height="140" fill="#ebf8ff" stroke="#3182ce" stroke-width="2" rx="10"/>
+            <text x="200" y="35" font-family="Arial" font-size="20" fill="#2b6cb0" font-weight="bold">邏輯處理層</text>
+            
+            <!-- LLM部分 -->
+            <g transform="translate(20,50)">
+                <rect width="220" height="70" fill="#bee3f8" stroke="#3182ce" stroke-width="1" rx="5"/>
+                <text x="30" y="25" font-family="Arial" font-size="16" fill="#2b6cb0">LLM 處理</text>
+                <text x="30" y="45" font-family="Arial" font-size="12" fill="#2b6cb0">• 複雜判斷</text>
+                <text x="30" y="60" font-family="Arial" font-size="12" fill="#2b6cb0">• 例外處理</text>
+            </g>
+            
+            <!-- 程式部分 -->
+            <g transform="translate(260,50)">
+                <rect width="220" height="70" fill="#bee3f8" stroke="#3182ce" stroke-width="1" rx="5"/>
+                <text x="30" y="25" font-family="Arial" font-size="16" fill="#2b6cb0">程式處理</text>
+                <text x="30" y="45" font-family="Arial" font-size="12" fill="#2b6cb0">• 規則執行</text>
+                <text x="30" y="60" font-family="Arial" font-size="12" fill="#2b6cb0">• 數據計算</text>
+            </g>
+        </g>
+        
+        <!-- 第三層：結果生成 -->
+        <g transform="translate(0,320)">
+            <rect width="500" height="140" fill="#f0fff4" stroke="#38a169" stroke-width="2" rx="10"/>
+            <text x="200" y="35" font-family="Arial" font-size="20" fill="#2f855a" font-weight="bold">結果生成層</text>
+            
+            <!-- LLM部分 -->
+            <g transform="translate(20,50)">
+                <rect width="220" height="70" fill="#c6f6d5" stroke="#38a169" stroke-width="1" rx="5"/>
+                <text x="30" y="25" font-family="Arial" font-size="16" fill="#2f855a">LLM 處理</text>
+                <text x="30" y="45" font-family="Arial" font-size="12" fill="#2f855a">• 生成自然語言</text>
+                <text x="30" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 內容優化</text>
+            </g>
+            
+            <!-- 程式部分 -->
+            <g transform="translate(260,50)">
+                <rect width="220" height="70" fill="#c6f6d5" stroke="#38a169" stroke-width="1" rx="5"/>
+                <text x="30" y="25" font-family="Arial" font-size="16" fill="#2f855a">程式處理</text>
+                <text x="30" y="45" font-family="Arial" font-size="12" fill="#2f855a">• 格式化輸出</text>
+                <text x="30" y="60" font-family="Arial" font-size="12" fill="#2f855a">• 數據存儲</text>
+            </g>
+        </g>
+    </g>
+    
+    <!-- 連接箭頭 -->
+    <g>
+        <!-- 第一層到第二層 -->
+        <path d="M 400,220 L 400,240" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- 第二層到第三層 -->
+        <path d="M 400,380 L 400,400" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- 左側數據流向標籤 -->
+    <g transform="translate(50,200)">
+        <text x="0" y="0" font-family="Arial" font-size="14" fill="#4a5568">數據流向</text>
+        <path d="M 0,20 L 0,250" stroke="#4a5568" stroke-width="2" stroke-dasharray="5,5"/>
+        <path d="M -5,250 L 0,260 L 5,250" fill="none" stroke="#4a5568" stroke-width="2"/>
+    </g>
+    
+    <!-- 右側協作說明 -->
+    <g transform="translate(680,200)">
+        <text x="0" y="0" font-family="Arial" font-size="14" fill="#4a5568">LLM與程式</text>
+        <text x="0" y="20" font-family="Arial" font-size="14" fill="#4a5568">協作處理</text>
+        <path d="M 0,40 L 0,250" stroke="#4a5568" stroke-width="2" stroke-dasharray="5,5"/>
+        <path d="M -5,250 L 0,260 L 5,250" fill="none" stroke="#4a5568" stroke-width="2"/>
+    </g>
+    
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6"
+                orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+        </marker>
+    </defs>
+</svg> 
