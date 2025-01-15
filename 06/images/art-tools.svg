@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        獨立工具箱的重要性
+    </text>
+
+    <!-- Bad Practice -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#dc3545">混在一起的工具</text>
+        
+        <!-- Messy Box -->
+        <rect x="20" y="50" width="260" height="240" fill="#fff" stroke="#dc3545" stroke-width="2" rx="10"/>
+        
+        <!-- Tools -->
+        <g transform="translate(40,70)">
+            <!-- Watercolor -->
+            <path d="M 10,20 L 50,20 L 45,50 L 15,50 Z" fill="#1e88e5" stroke="#333"/>
+            <text x="60" y="40" font-family="Arial" font-size="12" fill="#333">水彩顏料</text>
+            
+            <!-- Oil Paint -->
+            <rect x="80" y="10" width="40" height="40" fill="#4caf50" stroke="#333"/>
+            <text x="130" y="40" font-family="Arial" font-size="12" fill="#333">油畫顏料</text>
+            
+            <!-- Pencils -->
+            <line x1="170" y1="10" x2="200" y2="50" stroke="#666" stroke-width="4"/>
+            <text x="210" y="40" font-family="Arial" font-size="12" fill="#333">鉛筆</text>
+            
+            <!-- Papers -->
+            <g transform="translate(20,80)">
+                <rect x="0" y="0" width="200" height="30" fill="#fff" stroke="#333"/>
+                <text x="100" y="20" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">混合的紙張</text>
+            </g>
+            
+            <!-- Warning -->
+            <text x="100" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc3545">⚠️ 工具互相污染</text>
+            <text x="100" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc3545">⚠️ 難以找到需要的工具</text>
+            <text x="100" y="180" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc3545">⚠️ 材料可能互相干擾</text>
+        </g>
+    </g>
+
+    <!-- Arrow -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+        <text x="30" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">改善</text>
+    </g>
+
+    <!-- Good Practice -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#28a745">獨立的工具箱</text>
+        
+        <!-- Toolboxes -->
+        <g transform="translate(20,50)">
+            <!-- Watercolor Box -->
+            <rect x="0" y="0" width="260" height="70" fill="#fff" stroke="#1e88e5" stroke-width="2" rx="5"/>
+            <text x="10" y="20" font-family="Arial" font-size="14" fill="#1e88e5">水彩工具箱</text>
+            <path d="M 20,30 L 50,30 L 45,50 L 25,50 Z" fill="#1e88e5" stroke="#333"/>
+            <rect x="60" y="30" width="180" height="20" fill="#e3f2fd" stroke="#1e88e5"/>
+            <text x="150" y="45" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">專用水彩紙</text>
+            
+            <!-- Oil Paint Box -->
+            <rect x="0" y="80" width="260" height="70" fill="#fff" stroke="#4caf50" stroke-width="2" rx="5"/>
+            <text x="10" y="100" font-family="Arial" font-size="14" fill="#4caf50">油畫工具箱</text>
+            <rect x="20" y="110" width="30" height="30" fill="#4caf50" stroke="#333"/>
+            <rect x="60" y="110" width="180" height="20" fill="#e8f5e9" stroke="#4caf50"/>
+            <text x="150" y="125" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">專用畫布</text>
+            
+            <!-- Sketch Box -->
+            <rect x="0" y="160" width="260" height="70" fill="#fff" stroke="#666" stroke-width="2" rx="5"/>
+            <text x="10" y="180" font-family="Arial" font-size="14" fill="#666">素描工具箱</text>
+            <line x1="20" y1="190" x2="50" y2="220" stroke="#666" stroke-width="4"/>
+            <rect x="60" y="190" width="180" height="20" fill="#f5f5f5" stroke="#666"/>
+            <text x="150" y="205" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">素描本</text>
+        </g>
+    </g>
+
+    <!-- Benefits -->
+    <g transform="translate(50,340)">
+        <rect x="0" y="0" width="700" height="40" fill="#e8f5e9" stroke="#28a745" stroke-width="1" rx="5"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 工具整齊有序   ✓ 材料不會互相污染   ✓ 快速找到需要的工具   ✓ 方便攜帶和管理
+        </text>
+    </g>
+</svg> 
