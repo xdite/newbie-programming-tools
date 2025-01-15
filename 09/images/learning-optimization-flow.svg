@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#ffffff"/>
+    
+    <!-- 標題 -->
+    <text x="300" y="40" font-family="Arial" font-size="20" fill="#2d3748" font-weight="bold">學習流程優化案例</text>
+    
+    <!-- I/O 定義區域 -->
+    <g transform="translate(50,80)">
+        <rect width="700" height="140" fill="#f7fafc" stroke="#4299e1" stroke-width="2" rx="10"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#2b6cb0" font-weight="bold">1. I/O 定義</text>
+        
+        <!-- 輸入部分 -->
+        <g transform="translate(20,50)">
+            <rect width="200" height="70" fill="#ebf8ff" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#2c5282">輸入</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#2c5282">• 學習材料</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#2c5282">• 時間投入</text>
+        </g>
+        
+        <!-- 目標部分 -->
+        <g transform="translate(250,50)">
+            <rect width="200" height="70" fill="#ebf8ff" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#2c5282">目標</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#2c5282">• 提高學習效率</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#2c5282">• 加深理解</text>
+        </g>
+        
+        <!-- 限制部分 -->
+        <g transform="translate(480,50)">
+            <rect width="200" height="70" fill="#ebf8ff" stroke="#63b3ed" stroke-width="1" rx="5"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#2c5282">限制</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#2c5282">• 時間有限</text>
+            <text x="20" y="60" font-family="Arial" font-size="12" fill="#2c5282">• 注意力分散</text>
+        </g>
+    </g>
+    
+    <!-- 問題拆解區域 -->
+    <g transform="translate(50,240)">
+        <rect width="700" height="160" fill="#f7fafc" stroke="#48bb78" stroke-width="2" rx="10"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#2f855a" font-weight="bold">2. 問題拆解</text>
+        
+        <!-- 學習效率問題 -->
+        <g transform="translate(20,50)">
+            <rect width="320" height="90" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1" rx="5"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#2f855a">學習效率低</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#2f855a">• 資料難以理解</text>
+            <text x="20" y="65" font-family="Arial" font-size="12" fill="#2f855a">• 實踐機會少</text>
+            <text x="20" y="85" font-family="Arial" font-size="12" fill="#2f855a">• 缺乏即時反饋</text>
+        </g>
+        
+        <!-- 知識整合問題 -->
+        <g transform="translate(360,50)">
+            <rect width="320" height="90" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1" rx="5"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#2f855a">知識整合慢</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#2f855a">• 筆記不系統</text>
+            <text x="20" y="65" font-family="Arial" font-size="12" fill="#2f855a">• 複習不及時</text>
+            <text x="20" y="85" font-family="Arial" font-size="12" fill="#2f855a">• 應用場景少</text>
+        </g>
+    </g>
+    
+    <!-- 解決方案區域 -->
+    <g transform="translate(50,420)">
+        <rect width="700" height="160" fill="#f7fafc" stroke="#ed64a6" stroke-width="2" rx="10"/>
+        <text x="20" y="30" font-family="Arial" font-size="16" fill="#97266d" font-weight="bold">3. 解決方案</text>
+        
+        <!-- 輸入優化 -->
+        <g transform="translate(20,50)">
+            <rect width="200" height="90" fill="#fff5f7" stroke="#fbb6ce" stroke-width="1" rx="5"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#97266d">輸入優化</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#97266d">• LLM 輔助理解</text>
+            <text x="20" y="65" font-family="Arial" font-size="12" fill="#97266d">• AI 工具解釋</text>
+            <text x="20" y="85" font-family="Arial" font-size="12" fill="#97266d">• 自動化筆記</text>
+        </g>
+        
+        <!-- 處理優化 -->
+        <g transform="translate(250,50)">
+            <rect width="200" height="90" fill="#fff5f7" stroke="#fbb6ce" stroke-width="1" rx="5"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#97266d">處理優化</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#97266d">• 智能複習提醒</text>
+            <text x="20" y="65" font-family="Arial" font-size="12" fill="#97266d">• 自動化練習</text>
+            <text x="20" y="85" font-family="Arial" font-size="12" fill="#97266d">• 即時反饋系統</text>
+        </g>
+        
+        <!-- 輸出優化 -->
+        <g transform="translate(480,50)">
+            <rect width="200" height="90" fill="#fff5f7" stroke="#fbb6ce" stroke-width="1" rx="5"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#97266d">輸出優化</text>
+            <text x="20" y="45" font-family="Arial" font-size="12" fill="#97266d">• 知識圖譜建立</text>
+            <text x="20" y="65" font-family="Arial" font-size="12" fill="#97266d">• 自動化測試</text>
+            <text x="20" y="85" font-family="Arial" font-size="12" fill="#97266d">• 應用場景模擬</text>
+        </g>
+    </g>
+    
+    <!-- 連接箭頭 -->
+    <g>
+        <!-- I/O到問題拆解 -->
+        <path d="M 400,220 L 400,240" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- 問題拆解到解決方案 -->
+        <path d="M 400,400 L 400,420" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- 箭頭標記定義 -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="6" markerHeight="6"
+                orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+        </marker>
+    </defs>
+</svg> 
