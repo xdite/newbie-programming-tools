@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">HTTP 就像餐廳點餐</text>
+
+  <!-- 左側：客戶端（客人） -->
+  <g transform="translate(50,100)">
+    <!-- 客人圖示 -->
+    <g transform="translate(60,40)">
+      <!-- 頭 -->
+      <circle cx="40" cy="40" r="20" fill="#ffb74d"/>
+      <!-- 身體 -->
+      <path d="M40,60 L40,100 M20,70 L60,70 M30,100 L30,120 M50,100 L50,120" 
+            stroke="#ffb74d" stroke-width="4" fill="none"/>
+      <!-- 手拿菜單 -->
+      <rect x="60" y="65" width="15" height="20" fill="#fff" stroke="#666"/>
+    </g>
+    <text x="100" y="105" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">客人/瀏覽器</text>
+    
+    <!-- 對話框：請求 -->
+    <g transform="translate(0,180)">
+      <path d="M60,0 L180,0 L180,80 L100,80 L80,100 L80,80 L60,80 Z" 
+            fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+      <text x="120" y="30" font-family="sans-serif" font-size="14" fill="#1976d2" text-anchor="middle">GET /menu</text>
+      <text x="120" y="55" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">「我想看菜單！」</text>
+    </g>
+  </g>
+
+  <!-- 中間：HTTP 通訊 -->
+  <g transform="translate(300,100)">
+    <!-- 餐廳桌子 -->
+    <rect x="-50" y="150" width="300" height="10" fill="#8d6e63"/>
+    <rect x="-40" y="160" width="280" height="20" fill="#6d4c41"/>
+    
+    <!-- 請求箭頭 -->
+    <g>
+      <path d="M-50,80 L200,80" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <circle cx="75" cy="80" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+      <text x="75" y="85" font-family="sans-serif" font-size="14" fill="#f57c00" text-anchor="middle">→</text>
+    </g>
+    <text x="75" y="60" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">HTTP 請求</text>
+    
+    <!-- 回應箭頭 -->
+    <g>
+      <path d="M200,180 L-50,180" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+      <circle cx="75" cy="180" r="15" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+      <text x="75" y="185" font-family="sans-serif" font-size="14" fill="#f57c00" text-anchor="middle">←</text>
+    </g>
+    <text x="75" y="210" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">HTTP 回應</text>
+  </g>
+
+  <!-- 右側：服務器（餐廳/廚房） -->
+  <g transform="translate(500,100)">
+    <!-- 廚房/服務器圖示 -->
+    <g transform="translate(50,40)">
+      <!-- 廚房外觀 -->
+      <rect x="0" y="0" width="100" height="80" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+      <!-- 門 -->
+      <rect x="35" y="50" width="30" height="30" fill="#388e3c"/>
+      <!-- 窗戶 -->
+      <rect x="15" y="15" width="25" height="25" fill="#fff" stroke="#388e3c"/>
+      <rect x="60" y="15" width="25" height="25" fill="#fff" stroke="#388e3c"/>
+      <!-- 煙囪 -->
+      <rect x="70" y="-20" width="15" height="20" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+      <!-- 冒煙效果 -->
+      <path d="M75,-30 Q80,-40 85,-30 Q90,-20 85,-10" stroke="#ccc" stroke-width="2" fill="none">
+        <animate attributeName="d" 
+                 values="M75,-30 Q80,-40 85,-30 Q90,-20 85,-10;
+                         M75,-35 Q80,-45 85,-35 Q90,-25 85,-15;
+                         M75,-30 Q80,-40 85,-30 Q90,-20 85,-10"
+                 dur="2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <text x="100" y="140" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">餐廳/服務器</text>
+    
+    <!-- 回應對話框 -->
+    <g transform="translate(10,180)">
+      <path d="M20,0 L140,0 L140,80 L60,80 L40,100 L40,80 L20,80 Z" 
+            fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+      <text x="80" y="30" font-family="sans-serif" font-size="14" fill="#388e3c" text-anchor="middle">200 OK</text>
+      <text x="80" y="55" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">「菜單在這裡！」</text>
+    </g>
+  </g>
+
+  <!-- 底部說明 -->
+  <g transform="translate(50,420)">
+    <rect x="0" y="0" width="700" height="60" rx="5" fill="#fff" stroke="#666" stroke-width="1"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="14" fill="#666">• 就像客人（瀏覽器）向餐廳（服務器）點餐一樣</text>
+    <text x="20" y="45" font-family="sans-serif" font-size="14" fill="#666">• HTTP 是客人和餐廳之間溝通的「語言」</text>
+  </g>
+
+  <!-- 箭頭標記定義 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg> 
