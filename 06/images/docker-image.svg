@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        Docker 映像檔：菜單照片 vs 容器範本
+    </text>
+
+    <!-- Menu Photo Section -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#e65100">菜單照片</text>
+        
+        <!-- Photo Frame -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#e65100" stroke-width="2" rx="10"/>
+        
+        <!-- Menu Items -->
+        <g transform="translate(40,70)">
+            <!-- Photo 1 -->
+            <rect x="0" y="0" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#e65100">經典漢堡套餐</text>
+            <text x="10" y="45" font-family="Arial" font-size="12" fill="#666">✓ 標準化呈現</text>
+            <text x="120" y="45" font-family="Arial" font-size="12" fill="#666">✓ 可重複製作</text>
+            
+            <!-- Photo 2 -->
+            <rect x="0" y="70" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="95" font-family="Arial" font-size="14" fill="#e65100">照片用途</text>
+            <text x="10" y="115" font-family="Arial" font-size="12" fill="#666">✓ 展示內容</text>
+            <text x="120" y="115" font-family="Arial" font-size="12" fill="#666">✓ 參考範本</text>
+            
+            <!-- Photo 3 -->
+            <rect x="0" y="140" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="165" font-family="Arial" font-size="14" fill="#e65100">共享特性</text>
+            <text x="10" y="185" font-family="Arial" font-size="12" fill="#666">✓ 可以複製</text>
+            <text x="120" y="185" font-family="Arial" font-size="12" fill="#666">✓ 可以分享</text>
+            
+            <!-- Photo 4 -->
+            <rect x="0" y="210" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="235" font-family="Arial" font-size="14" fill="#e65100">版本管理</text>
+            <text x="10" y="255" font-family="Arial" font-size="12" fill="#666">✓ 不同季節</text>
+            <text x="120" y="255" font-family="Arial" font-size="12" fill="#666">✓ 特別版本</text>
+        </g>
+    </g>
+
+    <!-- Compatibility Arrows -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+        <text x="30" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">相同概念</text>
+    </g>
+
+    <!-- Docker Image Section -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#2e7d32">Docker 映像檔</text>
+        
+        <!-- Image Box -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="10"/>
+        
+        <!-- Image Items -->
+        <g transform="translate(40,70)">
+            <!-- Image 1 -->
+            <rect x="0" y="0" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#2e7d32">應用範本</text>
+            <text x="10" y="45" font-family="Arial" font-size="12" fill="#666">✓ 標準環境</text>
+            <text x="120" y="45" font-family="Arial" font-size="12" fill="#666">✓ 可重複使用</text>
+            
+            <!-- Image 2 -->
+            <rect x="0" y="70" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="95" font-family="Arial" font-size="14" fill="#2e7d32">映像檔用途</text>
+            <text x="10" y="115" font-family="Arial" font-size="12" fill="#666">✓ 環境定義</text>
+            <text x="120" y="115" font-family="Arial" font-size="12" fill="#666">✓ 部署模板</text>
+            
+            <!-- Image 3 -->
+            <rect x="0" y="140" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="165" font-family="Arial" font-size="14" fill="#2e7d32">分享特性</text>
+            <text x="10" y="185" font-family="Arial" font-size="12" fill="#666">✓ Docker Hub</text>
+            <text x="120" y="185" font-family="Arial" font-size="12" fill="#666">✓ 私有倉庫</text>
+            
+            <!-- Image 4 -->
+            <rect x="0" y="210" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="235" font-family="Arial" font-size="14" fill="#2e7d32">版本標籤</text>
+            <text x="10" y="255" font-family="Arial" font-size="12" fill="#666">✓ latest</text>
+            <text x="120" y="255" font-family="Arial" font-size="12" fill="#666">✓ 特定版本</text>
+        </g>
+    </g>
+
+    <!-- Key Points -->
+    <g transform="translate(50,420)">
+        <rect x="0" y="0" width="700" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="5"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 可重複使用   ✓ 標準化定義   ✓ 版本控制   ✓ 易於分享
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 環境一致性   ✓ 快速部署   ✓ 跨平台支援   ✓ 集中管理
+        </text>
+    </g>
+</svg> 

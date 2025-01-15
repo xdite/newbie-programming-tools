@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        Dockerfile：食譜 vs 建構指令
+    </text>
+
+    <!-- Recipe Section -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#e65100">食譜</text>
+        
+        <!-- Recipe Box -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#e65100" stroke-width="2" rx="10"/>
+        
+        <!-- Recipe Items -->
+        <g transform="translate(40,70)">
+            <!-- Base -->
+            <rect x="0" y="0" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#e65100">基本材料</text>
+            <text x="10" y="45" font-family="Arial" font-size="12" fill="#666">✓ 主要食材</text>
+            <text x="120" y="45" font-family="Arial" font-size="12" fill="#666">✓ 基本調味料</text>
+            
+            <!-- Steps -->
+            <rect x="0" y="70" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="95" font-family="Arial" font-size="14" fill="#e65100">烹飪步驟</text>
+            <text x="10" y="115" font-family="Arial" font-size="12" fill="#666">✓ 順序說明</text>
+            <text x="120" y="115" font-family="Arial" font-size="12" fill="#666">✓ 詳細指示</text>
+            
+            <!-- Environment -->
+            <rect x="0" y="140" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="165" font-family="Arial" font-size="14" fill="#e65100">烹飪環境</text>
+            <text x="10" y="185" font-family="Arial" font-size="12" fill="#666">✓ 溫度設定</text>
+            <text x="120" y="185" font-family="Arial" font-size="12" fill="#666">✓ 時間控制</text>
+            
+            <!-- Version -->
+            <rect x="0" y="210" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="235" font-family="Arial" font-size="14" fill="#e65100">版本管理</text>
+            <text x="10" y="255" font-family="Arial" font-size="12" fill="#666">✓ 記錄修改</text>
+            <text x="120" y="255" font-family="Arial" font-size="12" fill="#666">✓ 改良歷程</text>
+        </g>
+    </g>
+
+    <!-- Compatibility Arrows -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+        <text x="30" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">相同概念</text>
+    </g>
+
+    <!-- Dockerfile Section -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#2e7d32">Dockerfile</text>
+        
+        <!-- Dockerfile Box -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="10"/>
+        
+        <!-- Dockerfile Items -->
+        <g transform="translate(40,70)">
+            <!-- Base Image -->
+            <rect x="0" y="0" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#2e7d32">基礎映像檔</text>
+            <text x="10" y="45" font-family="Arial" font-size="12" fill="#666">✓ FROM 指令</text>
+            <text x="120" y="45" font-family="Arial" font-size="12" fill="#666">✓ 選擇基底</text>
+            
+            <!-- Instructions -->
+            <rect x="0" y="70" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="95" font-family="Arial" font-size="14" fill="#2e7d32">建構指令</text>
+            <text x="10" y="115" font-family="Arial" font-size="12" fill="#666">✓ RUN 指令</text>
+            <text x="120" y="115" font-family="Arial" font-size="12" fill="#666">✓ COPY 指令</text>
+            
+            <!-- Environment -->
+            <rect x="0" y="140" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="165" font-family="Arial" font-size="14" fill="#2e7d32">環境設定</text>
+            <text x="10" y="185" font-family="Arial" font-size="12" fill="#666">✓ ENV 指令</text>
+            <text x="120" y="185" font-family="Arial" font-size="12" fill="#666">✓ WORKDIR</text>
+            
+            <!-- Version -->
+            <rect x="0" y="210" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="235" font-family="Arial" font-size="14" fill="#2e7d32">版本控制</text>
+            <text x="10" y="255" font-family="Arial" font-size="12" fill="#666">✓ Git 管理</text>
+            <text x="120" y="255" font-family="Arial" font-size="12" fill="#666">✓ 標籤管理</text>
+        </g>
+    </g>
+
+    <!-- Key Points -->
+    <g transform="translate(50,420)">
+        <rect x="0" y="0" width="700" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="5"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 步驟清晰   ✓ 可重複執行   ✓ 版本控制   ✓ 易於分享
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 自動化建構   ✓ 標準化流程   ✓ 易於維護   ✓ 可攜性強
+        </text>
+    </g>
+</svg> 

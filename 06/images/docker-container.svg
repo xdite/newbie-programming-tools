@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        Docker 容器：實際餐點 vs 執行實例
+    </text>
+
+    <!-- Meal Section -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#e65100">實際餐點</text>
+        
+        <!-- Meal Box -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#e65100" stroke-width="2" rx="10"/>
+        
+        <!-- Meal Items -->
+        <g transform="translate(40,70)">
+            <!-- Instance -->
+            <rect x="0" y="0" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#e65100">餐點實體</text>
+            <text x="10" y="45" font-family="Arial" font-size="12" fill="#666">✓ 從菜單製作</text>
+            <text x="120" y="45" font-family="Arial" font-size="12" fill="#666">✓ 獨立包裝</text>
+            
+            <!-- State -->
+            <rect x="0" y="70" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="95" font-family="Arial" font-size="14" fill="#e65100">餐點狀態</text>
+            <text x="10" y="115" font-family="Arial" font-size="12" fill="#666">✓ 製作中</text>
+            <text x="120" y="115" font-family="Arial" font-size="12" fill="#666">✓ 已完成</text>
+            
+            <!-- Isolation -->
+            <rect x="0" y="140" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="165" font-family="Arial" font-size="14" fill="#e65100">獨立性</text>
+            <text x="10" y="185" font-family="Arial" font-size="12" fill="#666">✓ 分開包裝</text>
+            <text x="120" y="185" font-family="Arial" font-size="12" fill="#666">✓ 避免混合</text>
+            
+            <!-- Lifecycle -->
+            <rect x="0" y="210" width="220" height="60" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+            <text x="10" y="235" font-family="Arial" font-size="14" fill="#e65100">生命週期</text>
+            <text x="10" y="255" font-family="Arial" font-size="12" fill="#666">✓ 製作→送達</text>
+            <text x="120" y="255" font-family="Arial" font-size="12" fill="#666">✓ 食用→丟棄</text>
+        </g>
+    </g>
+
+    <!-- Compatibility Arrows -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+        <text x="30" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">相同概念</text>
+    </g>
+
+    <!-- Docker Container Section -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#2e7d32">Docker 容器</text>
+        
+        <!-- Container Box -->
+        <rect x="20" y="50" width="260" height="300" fill="#fff" stroke="#2e7d32" stroke-width="2" rx="10"/>
+        
+        <!-- Container Items -->
+        <g transform="translate(40,70)">
+            <!-- Instance -->
+            <rect x="0" y="0" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#2e7d32">執行實例</text>
+            <text x="10" y="45" font-family="Arial" font-size="12" fill="#666">✓ 從映像檔建立</text>
+            <text x="120" y="45" font-family="Arial" font-size="12" fill="#666">✓ 獨立環境</text>
+            
+            <!-- State -->
+            <rect x="0" y="70" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="95" font-family="Arial" font-size="14" fill="#2e7d32">容器狀態</text>
+            <text x="10" y="115" font-family="Arial" font-size="12" fill="#666">✓ 運行中</text>
+            <text x="120" y="115" font-family="Arial" font-size="12" fill="#666">✓ 已停止</text>
+            
+            <!-- Isolation -->
+            <rect x="0" y="140" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="165" font-family="Arial" font-size="14" fill="#2e7d32">隔離性</text>
+            <text x="10" y="185" font-family="Arial" font-size="12" fill="#666">✓ 資源隔離</text>
+            <text x="120" y="185" font-family="Arial" font-size="12" fill="#666">✓ 網路隔離</text>
+            
+            <!-- Lifecycle -->
+            <rect x="0" y="210" width="220" height="60" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+            <text x="10" y="235" font-family="Arial" font-size="14" fill="#2e7d32">生命週期</text>
+            <text x="10" y="255" font-family="Arial" font-size="12" fill="#666">✓ 建立→運行</text>
+            <text x="120" y="255" font-family="Arial" font-size="12" fill="#666">✓ 停止→刪除</text>
+        </g>
+    </g>
+
+    <!-- Key Points -->
+    <g transform="translate(50,420)">
+        <rect x="0" y="0" width="700" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="1" rx="5"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 獨立運行   ✓ 資源隔離   ✓ 狀態管理   ✓ 生命週期控制
+        </text>
+        <text x="350" y="45" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            ✓ 快速啟動   ✓ 彈性配置   ✓ 易於管理   ✓ 可靠運行
+        </text>
+    </g>
+</svg> 
