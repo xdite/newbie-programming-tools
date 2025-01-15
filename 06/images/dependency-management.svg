@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        專案依賴管理示意圖
+    </text>
+
+    <!-- Project Files Side -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#6f42c1">專案檔案</text>
+        
+        <!-- Files Box -->
+        <rect x="20" y="50" width="260" height="240" fill="#fff" stroke="#6f42c1" stroke-width="2" rx="10"/>
+        
+        <!-- Files -->
+        <g transform="translate(40,70)">
+            <!-- Main App -->
+            <rect x="0" y="0" width="220" height="40" fill="#f3e5f5" stroke="#6f42c1" stroke-width="1"/>
+            <text x="10" y="25" font-family="monospace" font-size="14" fill="#333">app.py</text>
+            
+            <!-- Requirements -->
+            <rect x="0" y="50" width="220" height="40" fill="#f3e5f5" stroke="#6f42c1" stroke-width="1"/>
+            <text x="10" y="75" font-family="monospace" font-size="14" fill="#333">requirements.txt</text>
+            
+            <!-- Package JSON -->
+            <rect x="0" y="100" width="220" height="40" fill="#f3e5f5" stroke="#6f42c1" stroke-width="1"/>
+            <text x="10" y="125" font-family="monospace" font-size="14" fill="#333">package.json</text>
+            
+            <!-- Lock Files -->
+            <rect x="0" y="150" width="220" height="40" fill="#f3e5f5" stroke="#6f42c1" stroke-width="1"/>
+            <text x="10" y="175" font-family="monospace" font-size="14" fill="#333">package-lock.json</text>
+        </g>
+    </g>
+
+    <!-- Dependency Graph -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#6f42c1">依賴關係圖</text>
+        
+        <!-- Graph Box -->
+        <rect x="20" y="50" width="260" height="240" fill="#fff" stroke="#6f42c1" stroke-width="2" rx="10"/>
+        
+        <!-- Main Package -->
+        <g transform="translate(150,100)">
+            <circle cx="0" cy="0" r="30" fill="#6f42c1"/>
+            <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">主要套件</text>
+        </g>
+        
+        <!-- Dependencies -->
+        <g transform="translate(150,100)">
+            <!-- Left Dependency -->
+            <g transform="translate(-80,80)">
+                <circle cx="0" cy="0" r="25" fill="#9c27b0"/>
+                <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="10" fill="#fff">依賴 A</text>
+                <line x1="20" y1="-20" x2="65" y2="-65" stroke="#6f42c1" stroke-width="2"/>
+            </g>
+            
+            <!-- Right Dependency -->
+            <g transform="translate(80,80)">
+                <circle cx="0" cy="0" r="25" fill="#9c27b0"/>
+                <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="10" fill="#fff">依賴 B</text>
+                <line x1="-20" y1="-20" x2="-65" y2="-65" stroke="#6f42c1" stroke-width="2"/>
+            </g>
+            
+            <!-- Sub Dependencies -->
+            <g transform="translate(-80,80)">
+                <g transform="translate(-40,60)">
+                    <circle cx="0" cy="0" r="20" fill="#ba68c8"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="8" fill="#fff">子依賴</text>
+                    <line x1="10" y1="-15" x2="30" y2="-50" stroke="#9c27b0" stroke-width="1"/>
+                </g>
+                <g transform="translate(40,60)">
+                    <circle cx="0" cy="0" r="20" fill="#ba68c8"/>
+                    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="8" fill="#fff">子依賴</text>
+                    <line x1="-10" y1="-15" x2="-30" y2="-50" stroke="#9c27b0" stroke-width="1"/>
+                </g>
+            </g>
+        </g>
+    </g>
+
+    <!-- Connection Lines -->
+    <g transform="translate(0,0)" stroke="#6f42c1" stroke-width="1" stroke-dasharray="4,4">
+        <!-- Requirements to Graph -->
+        <path d="M 310,180 C 400,180 400,180 490,180" fill="none"/>
+    </g>
+
+    <!-- Version Control -->
+    <g transform="translate(50,340)">
+        <rect x="0" y="0" width="700" height="40" fill="#f3e5f5" stroke="#6f42c1" stroke-width="1" rx="5"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">
+            版本控制：express@4.17.1 → express@^4.17.1 → express@~4.17.1 → express@4.17.*
+        </text>
+    </g>
+
+    <!-- Management Tools -->
+    <g transform="translate(370,140)">
+        <rect x="0" y="0" width="100" height="25" fill="#6f42c1" rx="5"/>
+        <text x="50" y="17" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">npm install</text>
+        
+        <rect x="0" y="35" width="100" height="25" fill="#6f42c1" rx="5"/>
+        <text x="50" y="52" text-anchor="middle" font-family="Arial" font-size="12" fill="#fff">pip install</text>
+    </g>
+</svg> 

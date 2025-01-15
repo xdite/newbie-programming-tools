@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        環境變數與配置管理
+    </text>
+
+    <!-- Development Environment -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="130" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#2196f3">開發環境</text>
+        
+        <!-- Config Box -->
+        <rect x="20" y="50" width="220" height="240" fill="#fff" stroke="#2196f3" stroke-width="2" rx="10"/>
+        
+        <!-- Config Content -->
+        <g transform="translate(40,70)">
+            <!-- Database -->
+            <rect x="0" y="0" width="180" height="30" fill="#e3f2fd" stroke="#2196f3" stroke-width="1"/>
+            <text x="10" y="20" font-family="monospace" font-size="12" fill="#333">DB_URL=localhost:3306</text>
+            
+            <!-- API Key -->
+            <rect x="0" y="40" width="180" height="30" fill="#e3f2fd" stroke="#2196f3" stroke-width="1"/>
+            <text x="10" y="60" font-family="monospace" font-size="12" fill="#333">API_KEY=dev_key123</text>
+            
+            <!-- Debug -->
+            <rect x="0" y="80" width="180" height="30" fill="#e3f2fd" stroke="#2196f3" stroke-width="1"/>
+            <text x="10" y="100" font-family="monospace" font-size="12" fill="#333">DEBUG=true</text>
+            
+            <!-- Port -->
+            <rect x="0" y="120" width="180" height="30" fill="#e3f2fd" stroke="#2196f3" stroke-width="1"/>
+            <text x="10" y="140" font-family="monospace" font-size="12" fill="#333">PORT=3000</text>
+        </g>
+    </g>
+
+    <!-- Staging Environment -->
+    <g transform="translate(290,80)">
+        <!-- Section Title -->
+        <text x="130" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#ff9800">測試環境</text>
+        
+        <!-- Config Box -->
+        <rect x="20" y="50" width="220" height="240" fill="#fff" stroke="#ff9800" stroke-width="2" rx="10"/>
+        
+        <!-- Config Content -->
+        <g transform="translate(40,70)">
+            <!-- Database -->
+            <rect x="0" y="0" width="180" height="30" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+            <text x="10" y="20" font-family="monospace" font-size="12" fill="#333">DB_URL=stage-db:3306</text>
+            
+            <!-- API Key -->
+            <rect x="0" y="40" width="180" height="30" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+            <text x="10" y="60" font-family="monospace" font-size="12" fill="#333">API_KEY=stage_key456</text>
+            
+            <!-- Debug -->
+            <rect x="0" y="80" width="180" height="30" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+            <text x="10" y="100" font-family="monospace" font-size="12" fill="#333">DEBUG=false</text>
+            
+            <!-- Port -->
+            <rect x="0" y="120" width="180" height="30" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+            <text x="10" y="140" font-family="monospace" font-size="12" fill="#333">PORT=8080</text>
+        </g>
+    </g>
+
+    <!-- Production Environment -->
+    <g transform="translate(530,80)">
+        <!-- Section Title -->
+        <text x="130" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#4caf50">正式環境</text>
+        
+        <!-- Config Box -->
+        <rect x="20" y="50" width="220" height="240" fill="#fff" stroke="#4caf50" stroke-width="2" rx="10"/>
+        
+        <!-- Config Content -->
+        <g transform="translate(40,70)">
+            <!-- Database -->
+            <rect x="0" y="0" width="180" height="30" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+            <text x="10" y="20" font-family="monospace" font-size="12" fill="#333">DB_URL=prod-db:3306</text>
+            
+            <!-- API Key -->
+            <rect x="0" y="40" width="180" height="30" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+            <text x="10" y="60" font-family="monospace" font-size="12" fill="#333">API_KEY=********</text>
+            
+            <!-- Debug -->
+            <rect x="0" y="80" width="180" height="30" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+            <text x="10" y="100" font-family="monospace" font-size="12" fill="#333">DEBUG=false</text>
+            
+            <!-- Port -->
+            <rect x="0" y="120" width="180" height="30" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+            <text x="10" y="140" font-family="monospace" font-size="12" fill="#333">PORT=80</text>
+        </g>
+    </g>
+
+    <!-- Storage Methods -->
+    <g transform="translate(50,340)">
+        <!-- .env File -->
+        <rect x="0" y="0" width="220" height="40" fill="#e3f2fd" stroke="#2196f3" stroke-width="1" rx="5"/>
+        <text x="110" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">.env 檔案</text>
+        
+        <!-- Environment Variables -->
+        <rect x="240" y="0" width="220" height="40" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="5"/>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">系統環境變數</text>
+        
+        <!-- Secrets Management -->
+        <rect x="480" y="0" width="220" height="40" fill="#e8f5e9" stroke="#4caf50" stroke-width="1" rx="5"/>
+        <text x="590" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">機密資訊管理服務</text>
+    </g>
+
+    <!-- Security Note -->
+    <g transform="translate(400,180)">
+        <text x="0" y="0" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">
+            ⚠️ 永遠不要將敏感資訊提交到版本控制系統
+        </text>
+    </g>
+</svg> 
