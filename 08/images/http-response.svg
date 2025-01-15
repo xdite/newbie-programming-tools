@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">HTTP 響應結構</text>
+  <text x="400" y="70" font-family="sans-serif" font-size="16" fill="#666" text-anchor="middle">就像餐廳的點餐確認單</text>
+
+  <!-- 左側：餐廳確認單 -->
+  <g transform="translate(50,100)">
+    <!-- 確認單外框 -->
+    <rect x="0" y="0" width="300" height="450" rx="5" fill="#fff" stroke="#f57c00" stroke-width="2"/>
+    
+    <!-- 確認單標題 -->
+    <rect x="0" y="0" width="300" height="40" rx="5" fill="#fff3e0"/>
+    <text x="150" y="25" font-family="sans-serif" font-size="16" fill="#f57c00" text-anchor="middle">點餐確認單</text>
+    
+    <!-- 訂單狀態 -->
+    <g transform="translate(20,60)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">訂單狀態：</text>
+      <rect x="0" y="10" width="260" height="30" rx="3" fill="#f5f5f5"/>
+      <text x="10" y="30" font-family="sans-serif" font-size="14" fill="#4caf50">已接受</text>
+    </g>
+    
+    <!-- 餐廳資訊 -->
+    <g transform="translate(20,120)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">餐廳資訊：</text>
+      <rect x="0" y="10" width="260" height="80" rx="3" fill="#f5f5f5"/>
+      <text x="10" y="30" font-family="sans-serif" font-size="14" fill="#666">分店：台北信義店</text>
+      <text x="10" y="55" font-family="sans-serif" font-size="14" fill="#666">廚師：王小明</text>
+      <text x="10" y="80" font-family="sans-serif" font-size="14" fill="#666">預計等待：15分鐘</text>
+    </g>
+    
+    <!-- 確認內容 -->
+    <g transform="translate(20,230)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">確認內容：</text>
+      <rect x="0" y="10" width="260" height="60" rx="3" fill="#f5f5f5"/>
+      <text x="10" y="35" font-family="sans-serif" font-size="14" fill="#666">您的訂單已成功送出</text>
+      <text x="10" y="60" font-family="sans-serif" font-size="14" fill="#666">訂單編號：A12345</text>
+    </g>
+  </g>
+
+  <!-- 右側：HTTP 響應結構 -->
+  <g transform="translate(450,100)">
+    <!-- HTTP 響應外框 -->
+    <rect x="0" y="0" width="300" height="450" rx="5" fill="#fff" stroke="#7b1fa2" stroke-width="2"/>
+    
+    <!-- 響應行 -->
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="300" height="80" rx="5" fill="#f3e5f5"/>
+      <text x="20" y="30" font-family="sans-serif" font-size="14" fill="#7b1fa2" font-weight="bold">響應行（Response Line）：</text>
+      <text x="20" y="55" font-family="monospace" font-size="14" fill="#333">HTTP/1.1 200 OK</text>
+    </g>
+    
+    <!-- 響應頭 -->
+    <g transform="translate(0,100)">
+      <text x="20" y="0" font-family="sans-serif" font-size="14" fill="#7b1fa2" font-weight="bold">響應頭（Headers）：</text>
+      <rect x="20" y="10" width="260" height="120" rx="3" fill="#f5f5f5"/>
+      <text x="30" y="35" font-family="monospace" font-size="14" fill="#333">Content-Type: application/json</text>
+      <text x="30" y="60" font-family="monospace" font-size="14" fill="#333">Server: nginx</text>
+      <text x="30" y="85" font-family="monospace" font-size="14" fill="#333">Date: Wed, 21 Oct 2023</text>
+      <text x="30" y="110" font-family="monospace" font-size="14" fill="#333">Content-Length: 128</text>
+    </g>
+    
+    <!-- 響應體 -->
+    <g transform="translate(0,250)">
+      <text x="20" y="0" font-family="sans-serif" font-size="14" fill="#7b1fa2" font-weight="bold">響應體（Body）：</text>
+      <rect x="20" y="10" width="260" height="120" rx="3" fill="#f5f5f5"/>
+      <text x="30" y="35" font-family="monospace" font-size="14" fill="#333">{</text>
+      <text x="40" y="60" font-family="monospace" font-size="14" fill="#333">"status": "success",</text>
+      <text x="40" y="85" font-family="monospace" font-size="14" fill="#333">"message": "訂單已接受",</text>
+      <text x="40" y="110" font-family="monospace" font-size="14" fill="#333">"orderId": "A12345"</text>
+      <text x="30" y="135" font-family="monospace" font-size="14" fill="#333">}</text>
+    </g>
+  </g>
+
+  <!-- 對應關係箭頭 -->
+  <g>
+    <!-- 訂單狀態 -> 響應行 -->
+    <path d="M350,180 L450,140" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <!-- 餐廳資訊 -> 響應頭 -->
+    <path d="M350,240 L450,200" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <!-- 確認內容 -> 響應體 -->
+    <path d="M350,300 L450,350" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- 底部說明 -->
+  <g transform="translate(50,570)">
+    <rect x="0" y="0" width="700" height="30" rx="5" fill="#fff" stroke="#666"/>
+    <text x="350" y="20" font-family="sans-serif" font-size="14" fill="#666" text-anchor="middle">
+      HTTP 響應就像餐廳的點餐確認單，包含了訂單狀態、餐廳資訊和確認內容
+    </text>
+  </g>
+
+  <!-- 箭頭標記定義 -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg> 

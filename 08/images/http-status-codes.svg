@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">HTTP 狀態碼</text>
+  <text x="400" y="70" font-family="sans-serif" font-size="16" fill="#666" text-anchor="middle">就像餐廳服務生的不同回應</text>
+
+  <!-- 2xx 成功狀態 -->
+  <g transform="translate(50,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="220" height="40" rx="5" fill="#e8f5e9" stroke="#388e3c"/>
+    <text x="110" y="25" font-family="sans-serif" font-size="16" fill="#388e3c" text-anchor="middle">2xx 成功狀態</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="220" height="400" rx="5" fill="#fff" stroke="#388e3c"/>
+    
+    <!-- 200 OK -->
+    <g transform="translate(20,70)">
+      <text x="0" y="0" font-family="monospace" font-size="14" fill="#388e3c" font-weight="bold">200 OK</text>
+      <rect x="0" y="10" width="180" height="80" rx="3" fill="#f5f5f5"/>
+      <!-- 服務生和餐點 -->
+      <circle cx="40" cy="40" r="15" fill="#4caf50"/> <!-- 頭 -->
+      <path d="M40,55 L40,70" stroke="#4caf50" stroke-width="2"/> <!-- 身體 -->
+      <rect x="60" y="35" width="40" height="30" fill="#fff" stroke="#4caf50"/> <!-- 餐盤 -->
+      <text x="90" y="75" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">訂單成功送達</text>
+    </g>
+
+    <!-- 201 Created -->
+    <g transform="translate(20,170)">
+      <text x="0" y="0" font-family="monospace" font-size="14" fill="#388e3c" font-weight="bold">201 Created</text>
+      <rect x="0" y="10" width="180" height="80" rx="3" fill="#f5f5f5"/>
+      <!-- 新訂單確認 -->
+      <rect x="40" y="30" width="40" height="30" fill="#fff" stroke="#4caf50"/> <!-- 訂單單 -->
+      <text x="60" y="50" font-family="sans-serif" font-size="10" fill="#4caf50">NEW</text>
+      <text x="90" y="75" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">新訂單已接受</text>
+    </g>
+  </g>
+
+  <!-- 4xx 客戶端錯誤 -->
+  <g transform="translate(290,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="220" height="40" rx="5" fill="#ffebee" stroke="#d32f2f"/>
+    <text x="110" y="25" font-family="sans-serif" font-size="16" fill="#d32f2f" text-anchor="middle">4xx 客戶端錯誤</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="220" height="400" rx="5" fill="#fff" stroke="#d32f2f"/>
+    
+    <!-- 404 Not Found -->
+    <g transform="translate(20,70)">
+      <text x="0" y="0" font-family="monospace" font-size="14" fill="#d32f2f" font-weight="bold">404 Not Found</text>
+      <rect x="0" y="10" width="180" height="80" rx="3" fill="#f5f5f5"/>
+      <!-- 空盤子 -->
+      <rect x="40" y="35" width="40" height="30" fill="#fff" stroke="#d32f2f"/> <!-- 空盤 -->
+      <text x="90" y="75" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">菜品售完了</text>
+    </g>
+
+    <!-- 403 Forbidden -->
+    <g transform="translate(20,170)">
+      <text x="0" y="0" font-family="monospace" font-size="14" fill="#d32f2f" font-weight="bold">403 Forbidden</text>
+      <rect x="0" y="10" width="180" height="80" rx="3" fill="#f5f5f5"/>
+      <!-- 禁止進入標誌 -->
+      <circle cx="60" cy="50" r="20" fill="#fff" stroke="#d32f2f"/>
+      <line x1="45" y1="50" x2="75" y2="50" stroke="#d32f2f" stroke-width="2"/>
+      <text x="90" y="75" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">不能進入廚房</text>
+    </g>
+  </g>
+
+  <!-- 5xx 服務器錯誤 -->
+  <g transform="translate(530,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="220" height="40" rx="5" fill="#fff3e0" stroke="#f57c00"/>
+    <text x="110" y="25" font-family="sans-serif" font-size="16" fill="#f57c00" text-anchor="middle">5xx 服務器錯誤</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="220" height="400" rx="5" fill="#fff" stroke="#f57c00"/>
+    
+    <!-- 500 Internal Server Error -->
+    <g transform="translate(20,70)">
+      <text x="0" y="0" font-family="monospace" font-size="14" fill="#f57c00" font-weight="bold">500 Server Error</text>
+      <rect x="0" y="10" width="180" height="80" rx="3" fill="#f5f5f5"/>
+      <!-- 故障的廚具 -->
+      <rect x="40" y="30" width="40" height="40" fill="#fff" stroke="#f57c00"/> <!-- 爐子 -->
+      <text x="60" y="55" font-family="sans-serif" font-size="20" fill="#f57c00">⚡</text>
+      <text x="90" y="75" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">廚房設備故障</text>
+    </g>
+
+    <!-- 503 Service Unavailable -->
+    <g transform="translate(20,170)">
+      <text x="0" y="0" font-family="monospace" font-size="14" fill="#f57c00" font-weight="bold">503 Unavailable</text>
+      <rect x="0" y="10" width="180" height="80" rx="3" fill="#f5f5f5"/>
+      <!-- 暫停營業標誌 -->
+      <rect x="40" y="30" width="60" height="30" fill="#fff" stroke="#f57c00"/>
+      <text x="70" y="50" font-family="sans-serif" font-size="10" fill="#f57c00">暫停營業</text>
+      <text x="90" y="75" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">餐廳太忙，暫停接單</text>
+    </g>
+  </g>
+
+  <!-- 底部說明 -->
+  <g transform="translate(50,520)">
+    <rect x="0" y="0" width="700" height="60" rx="5" fill="#fff" stroke="#666"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="14" fill="#666">• 2xx：成功狀態，表示請求被成功處理（訂單成功）</text>
+    <text x="20" y="45" font-family="sans-serif" font-size="14" fill="#666">• 4xx：客戶端錯誤，表示請求有問題（客人方面的問題）</text>
+    <text x="20" y="65" font-family="sans-serif" font-size="14" fill="#666">• 5xx：服務器錯誤，表示服務器處理請求時出錯（餐廳方面的問題）</text>
+  </g>
+</svg> 

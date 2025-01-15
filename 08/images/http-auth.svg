@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">HTTP 認證機制</text>
+  <text x="400" y="70" font-family="sans-serif" font-size="16" fill="#666" text-anchor="middle">就像餐廳的會員制度</text>
+
+  <!-- 普通顧客區域 -->
+  <g transform="translate(50,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="220" height="40" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+    <text x="110" y="25" font-family="sans-serif" font-size="16" fill="#1976d2" text-anchor="middle">普通顧客</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="220" height="200" rx="5" fill="#fff" stroke="#1976d2"/>
+    
+    <!-- 顧客圖示 -->
+    <g transform="translate(20,70)">
+      <circle cx="30" cy="30" r="20" fill="#90caf9"/> <!-- 頭 -->
+      <path d="M30,50 L30,90 M10,60 L50,60 M20,90 L20,110 M40,90 L40,110" 
+            stroke="#90caf9" stroke-width="4" fill="none"/> <!-- 身體 -->
+    </g>
+    
+    <!-- 權限說明 -->
+    <g transform="translate(80,70)">
+      <text x="0" y="20" font-family="sans-serif" font-size="14" fill="#666">可以：</text>
+      <text x="0" y="45" font-family="sans-serif" font-size="12" fill="#666">• 瀏覽菜單</text>
+      <text x="0" y="65" font-family="sans-serif" font-size="12" fill="#666">• 點餐用餐</text>
+    </g>
+    
+    <!-- 認證方式 -->
+    <rect x="20" y="140" width="180" height="80" rx="3" fill="#f5f5f5"/>
+    <text x="110" y="165" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">無需認證</text>
+    <text x="110" y="185" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">GET /menu</text>
+  </g>
+
+  <!-- 會員顧客區域 -->
+  <g transform="translate(290,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="220" height="40" rx="5" fill="#e8f5e9" stroke="#388e3c"/>
+    <text x="110" y="25" font-family="sans-serif" font-size="16" fill="#388e3c" text-anchor="middle">會員顧客</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="220" height="200" rx="5" fill="#fff" stroke="#388e3c"/>
+    
+    <!-- 會員圖示 -->
+    <g transform="translate(20,70)">
+      <circle cx="30" cy="30" r="20" fill="#81c784"/> <!-- 頭 -->
+      <path d="M30,50 L30,90 M10,60 L50,60 M20,90 L20,110 M40,90 L40,110" 
+            stroke="#81c784" stroke-width="4" fill="none"/> <!-- 身體 -->
+      <!-- 會員卡 -->
+      <rect x="50" y="20" width="30" height="20" fill="#fff" stroke="#388e3c"/>
+      <text x="65" y="34" font-family="sans-serif" font-size="10" fill="#388e3c" text-anchor="middle">VIP</text>
+    </g>
+    
+    <!-- 權限說明 -->
+    <g transform="translate(80,70)">
+      <text x="0" y="20" font-family="sans-serif" font-size="14" fill="#666">可以：</text>
+      <text x="0" y="45" font-family="sans-serif" font-size="12" fill="#666">• 享受優惠</text>
+      <text x="0" y="65" font-family="sans-serif" font-size="12" fill="#666">• 累積點數</text>
+    </g>
+    
+    <!-- 認證方式 -->
+    <rect x="20" y="140" width="180" height="80" rx="3" fill="#f5f5f5"/>
+    <text x="110" y="165" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">需要會員卡</text>
+    <text x="110" y="185" font-family="sans-serif" font-size="10" fill="#666" text-anchor="middle">Authorization: Bearer eyJhbGc...</text>
+  </g>
+
+  <!-- 餐廳員工區域 -->
+  <g transform="translate(530,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="220" height="40" rx="5" fill="#fff3e0" stroke="#f57c00"/>
+    <text x="110" y="25" font-family="sans-serif" font-size="16" fill="#f57c00" text-anchor="middle">餐廳員工</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="220" height="200" rx="5" fill="#fff" stroke="#f57c00"/>
+    
+    <!-- 員工圖示 -->
+    <g transform="translate(20,70)">
+      <circle cx="30" cy="30" r="20" fill="#ffb74d"/> <!-- 頭 -->
+      <path d="M30,50 L30,90 M10,60 L50,60 M20,90 L20,110 M40,90 L40,110" 
+            stroke="#ffb74d" stroke-width="4" fill="none"/> <!-- 身體 -->
+      <!-- 員工證 -->
+      <rect x="50" y="20" width="30" height="40" fill="#fff" stroke="#f57c00"/>
+      <text x="65" y="34" font-family="sans-serif" font-size="8" fill="#f57c00" text-anchor="middle">STAFF</text>
+      <circle cx="65" cy="45" r="8" fill="#f57c00"/>
+    </g>
+    
+    <!-- 權限說明 -->
+    <g transform="translate(80,70)">
+      <text x="0" y="20" font-family="sans-serif" font-size="14" fill="#666">可以：</text>
+      <text x="0" y="45" font-family="sans-serif" font-size="12" fill="#666">• 進入廚房</text>
+      <text x="0" y="65" font-family="sans-serif" font-size="12" fill="#666">• 操作收銀機</text>
+    </g>
+    
+    <!-- 認證方式 -->
+    <rect x="20" y="140" width="180" height="80" rx="3" fill="#f5f5f5"/>
+    <text x="110" y="165" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">需要員工證</text>
+    <text x="110" y="185" font-family="sans-serif" font-size="10" fill="#666" text-anchor="middle">Authorization: Basic dXNlcjpwYXNz</text>
+  </g>
+
+  <!-- 底部說明 -->
+  <g transform="translate(50,350)">
+    <rect x="0" y="0" width="700" height="200" rx="5" fill="#fff" stroke="#666"/>
+    
+    <!-- 認證流程示意 -->
+    <g transform="translate(50,30)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">認證流程：</text>
+      
+      <!-- 步驟1 -->
+      <g transform="translate(0,20)">
+        <circle cx="10" cy="10" r="10" fill="#1976d2"/>
+        <text x="10" y="14" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">1</text>
+        <text x="30" y="14" font-family="sans-serif" font-size="12" fill="#666">出示證件（發送認證信息）</text>
+      </g>
+      
+      <!-- 步驟2 -->
+      <g transform="translate(0,50)">
+        <circle cx="10" cy="10" r="10" fill="#388e3c"/>
+        <text x="10" y="14" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">2</text>
+        <text x="30" y="14" font-family="sans-serif" font-size="12" fill="#666">驗證身份（服務器檢查）</text>
+      </g>
+      
+      <!-- 步驟3 -->
+      <g transform="translate(0,80)">
+        <circle cx="10" cy="10" r="10" fill="#f57c00"/>
+        <text x="10" y="14" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">3</text>
+        <text x="30" y="14" font-family="sans-serif" font-size="12" fill="#666">獲得權限（可以訪問特定資源）</text>
+      </g>
+    </g>
+    
+    <!-- 補充說明 -->
+    <g transform="translate(350,30)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">常見認證方式：</text>
+      <text x="0" y="30" font-family="sans-serif" font-size="12" fill="#666">• Cookie-based：像是會員卡號碼</text>
+      <text x="0" y="50" font-family="sans-serif" font-size="12" fill="#666">• Token-based：像是一次性通行證</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="12" fill="#666">• Basic Auth：像是員工帳號密碼</text>
+      <text x="0" y="90" font-family="sans-serif" font-size="12" fill="#666">• OAuth：像是用其他證件（如護照）證明身份</text>
+    </g>
+  </g>
+</svg> 

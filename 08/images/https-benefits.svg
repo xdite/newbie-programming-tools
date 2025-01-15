@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">為什麼需要 HTTPS？</text>
+  <text x="400" y="70" font-family="sans-serif" font-size="16" fill="#666" text-anchor="middle">保護你的數據就像保護你的錢包和個人信息</text>
+
+  <!-- 左側：保護數據隱私 -->
+  <g transform="translate(50,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="320" height="40" rx="5" fill="#e3f2fd" stroke="#1976d2"/>
+    <text x="160" y="25" font-family="sans-serif" font-size="16" fill="#1976d2" text-anchor="middle">保護數據隱私</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="320" height="400" rx="5" fill="#fff" stroke="#1976d2"/>
+    
+    <!-- 信用卡場景 -->
+    <g transform="translate(20,70)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">支付安全</text>
+      <rect x="0" y="10" width="280" height="100" rx="3" fill="#f5f5f5"/>
+      <!-- 信用卡 -->
+      <rect x="20" y="30" width="80" height="50" rx="5" fill="#bbdefb" stroke="#1976d2"/>
+      <text x="60" y="60" font-family="monospace" font-size="10" fill="#1976d2" text-anchor="middle">**** **** 1234</text>
+      <!-- 加密符號 -->
+      <text x="120" y="60" font-family="sans-serif" font-size="20" fill="#1976d2">🔒</text>
+      <text x="140" y="90" font-family="sans-serif" font-size="12" fill="#666">保護信用卡資料</text>
+    </g>
+    
+    <!-- 密碼場景 -->
+    <g transform="translate(20,190)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">密碼保護</text>
+      <rect x="0" y="10" width="280" height="100" rx="3" fill="#f5f5f5"/>
+      <!-- 密碼輸入框 -->
+      <rect x="20" y="30" width="120" height="30" fill="#fff" stroke="#1976d2"/>
+      <text x="35" y="50" font-family="monospace" font-size="12" fill="#1976d2">********</text>
+      <!-- 加密符號 -->
+      <text x="160" y="50" font-family="sans-serif" font-size="20" fill="#1976d2">🔒</text>
+      <text x="140" y="90" font-family="sans-serif" font-size="12" fill="#666">防止密碼被偷看</text>
+    </g>
+    
+    <!-- 個人資料場景 -->
+    <g transform="translate(20,310)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">個人資料</text>
+      <rect x="0" y="10" width="280" height="100" rx="3" fill="#f5f5f5"/>
+      <!-- 表單 -->
+      <rect x="20" y="30" width="150" height="60" fill="#fff" stroke="#1976d2"/>
+      <text x="35" y="50" font-family="sans-serif" font-size="12" fill="#666">姓名：***</text>
+      <text x="35" y="70" font-family="sans-serif" font-size="12" fill="#666">電話：***</text>
+      <!-- 加密符號 -->
+      <text x="190" y="50" font-family="sans-serif" font-size="20" fill="#1976d2">🔒</text>
+      <text x="140" y="90" font-family="sans-serif" font-size="12" fill="#666">確保個人資料安全</text>
+    </g>
+  </g>
+
+  <!-- 右側：防止數據被篡改 -->
+  <g transform="translate(430,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="320" height="40" rx="5" fill="#e8f5e9" stroke="#388e3c"/>
+    <text x="160" y="25" font-family="sans-serif" font-size="16" fill="#388e3c" text-anchor="middle">防止數據被篡改</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="320" height="400" rx="5" fill="#fff" stroke="#388e3c"/>
+    
+    <!-- 原始數據場景 -->
+    <g transform="translate(20,70)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">確保數據完整性</text>
+      <rect x="0" y="10" width="280" height="100" rx="3" fill="#f5f5f5"/>
+      <!-- 訂單內容 -->
+      <rect x="20" y="30" width="120" height="60" fill="#fff" stroke="#388e3c"/>
+      <text x="35" y="50" font-family="sans-serif" font-size="12" fill="#388e3c">訂單金額：$100</text>
+      <text x="35" y="70" font-family="sans-serif" font-size="12" fill="#388e3c">商品：正品</text>
+      <!-- 數字簽名 -->
+      <text x="160" y="50" font-family="sans-serif" font-size="20" fill="#388e3c">✓</text>
+      <text x="140" y="90" font-family="sans-serif" font-size="12" fill="#666">確保收到原始數據</text>
+    </g>
+    
+    <!-- 中間人攻擊防護 -->
+    <g transform="translate(20,190)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">防止中間人攻擊</text>
+      <rect x="0" y="10" width="280" height="100" rx="3" fill="#f5f5f5"/>
+      <!-- 安全通道 -->
+      <path d="M20,60 L260,60" stroke="#388e3c" stroke-width="10" stroke-linecap="round"/>
+      <text x="40" y="50" font-family="sans-serif" font-size="20" fill="#388e3c">🔒</text>
+      <text x="240" y="50" font-family="sans-serif" font-size="20" fill="#388e3c">🔒</text>
+      <text x="140" y="90" font-family="sans-serif" font-size="12" fill="#666">建立安全通訊通道</text>
+    </g>
+    
+    <!-- 網站認證 -->
+    <g transform="translate(20,310)">
+      <text x="0" y="0" font-family="sans-serif" font-size="14" fill="#333" font-weight="bold">網站身份認證</text>
+      <rect x="0" y="10" width="280" height="100" rx="3" fill="#f5f5f5"/>
+      <!-- 證書圖示 -->
+      <rect x="20" y="30" width="80" height="60" fill="#fff" stroke="#388e3c"/>
+      <text x="60" y="65" font-family="sans-serif" font-size="20" fill="#388e3c">📜</text>
+      <!-- 認證標記 -->
+      <text x="120" y="60" font-family="sans-serif" font-size="20" fill="#388e3c">✓</text>
+      <text x="140" y="90" font-family="sans-serif" font-size="12" fill="#666">確認網站真實身份</text>
+    </g>
+  </g>
+
+  <!-- 底部說明 -->
+  <g transform="translate(50,520)">
+    <rect x="0" y="0" width="700" height="60" rx="5" fill="#fff" stroke="#666"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="14" fill="#666">• HTTPS 通過加密保護你的敏感資料，就像把重要文件放在保險箱裡</text>
+    <text x="20" y="45" font-family="sans-serif" font-size="14" fill="#666">• HTTPS 確保數據完整性和真實性，防止資料在傳輸過程中被竄改</text>
+  </g>
+</svg> 

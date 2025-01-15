@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 標題 -->
+  <text x="400" y="40" font-family="sans-serif" font-size="24" fill="#333" text-anchor="middle">HTTP vs HTTPS</text>
+  <text x="400" y="70" font-family="sans-serif" font-size="16" fill="#666" text-anchor="middle">就像餐廳的點餐方式</text>
+
+  <!-- HTTP 區域（上半部分） -->
+  <g transform="translate(50,100)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="700" height="40" rx="5" fill="#ffebee" stroke="#d32f2f"/>
+    <text x="350" y="25" font-family="sans-serif" font-size="16" fill="#d32f2f" text-anchor="middle">HTTP：在大廳裡大聲喊出訂單（不安全）</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="700" height="150" rx="5" fill="#fff" stroke="#d32f2f"/>
+    
+    <!-- 顧客 -->
+    <g transform="translate(50,80)">
+      <circle cx="30" cy="30" r="20" fill="#ffcdd2"/> <!-- 頭 -->
+      <path d="M30,50 L30,90 M10,60 L50,60 M20,90 L20,110 M40,90 L40,110" 
+            stroke="#ffcdd2" stroke-width="4" fill="none"/> <!-- 身體 -->
+    </g>
+    
+    <!-- 訂單內容（未加密） -->
+    <path d="M120,100 L300,100" stroke="#d32f2f" stroke-width="2" stroke-dasharray="5,5"/>
+    <g transform="translate(150,70)">
+      <rect x="0" y="0" width="120" height="60" fill="#fff" stroke="#d32f2f"/>
+      <text x="60" y="25" font-family="monospace" font-size="12" fill="#d32f2f" text-anchor="middle">漢堡 × 1</text>
+      <text x="60" y="45" font-family="monospace" font-size="12" fill="#d32f2f" text-anchor="middle">薯條 × 1</text>
+    </g>
+    
+    <!-- 竊聽者 -->
+    <g transform="translate(320,80)">
+      <circle cx="30" cy="30" r="15" fill="#ef5350"/> <!-- 頭 -->
+      <path d="M30,45 L30,70 M20,55 L40,55" stroke="#ef5350" stroke-width="3"/> <!-- 身體 -->
+      <text x="30" y="90" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">竊聽者</text>
+    </g>
+    
+    <!-- 服務生 -->
+    <g transform="translate(550,80)">
+      <circle cx="30" cy="30" r="20" fill="#ffcdd2"/> <!-- 頭 -->
+      <rect x="10" y="50" width="40" height="50" fill="#ffcdd2"/> <!-- 身體 -->
+    </g>
+  </g>
+
+  <!-- HTTPS 區域（下半部分） -->
+  <g transform="translate(50,320)">
+    <!-- 標題 -->
+    <rect x="0" y="0" width="700" height="40" rx="5" fill="#e8f5e9" stroke="#388e3c"/>
+    <text x="350" y="25" font-family="sans-serif" font-size="16" fill="#388e3c" text-anchor="middle">HTTPS：用密碼本寫下訂單（安全加密）</text>
+    
+    <!-- 內容區域 -->
+    <rect x="0" y="50" width="700" height="150" rx="5" fill="#fff" stroke="#388e3c"/>
+    
+    <!-- 顧客 -->
+    <g transform="translate(50,80)">
+      <circle cx="30" cy="30" r="20" fill="#81c784"/> <!-- 頭 -->
+      <path d="M30,50 L30,90 M10,60 L50,60 M20,90 L20,110 M40,90 L40,110" 
+            stroke="#81c784" stroke-width="4" fill="none"/> <!-- 身體 -->
+      <!-- 密碼本 -->
+      <rect x="50" y="20" width="20" height="30" fill="#fff" stroke="#388e3c"/>
+      <text x="60" y="40" font-family="sans-serif" font-size="8" fill="#388e3c" text-anchor="middle">🔒</text>
+    </g>
+    
+    <!-- 加密訂單 -->
+    <path d="M120,100 L300,100" stroke="#388e3c" stroke-width="2"/>
+    <g transform="translate(150,70)">
+      <rect x="0" y="0" width="120" height="60" fill="#fff" stroke="#388e3c"/>
+      <text x="60" y="25" font-family="monospace" font-size="12" fill="#388e3c" text-anchor="middle">X8f#mP9$...</text>
+      <text x="60" y="45" font-family="monospace" font-size="12" fill="#388e3c" text-anchor="middle">Ky7@nL2$...</text>
+    </g>
+    
+    <!-- 竊聽者（困惑） -->
+    <g transform="translate(320,80)">
+      <circle cx="30" cy="30" r="15" fill="#ef5350"/> <!-- 頭 -->
+      <path d="M30,45 L30,70 M20,55 L40,55" stroke="#ef5350" stroke-width="3"/> <!-- 身體 -->
+      <text x="30" y="90" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">❓❓❓</text>
+    </g>
+    
+    <!-- 服務生（有密碼本） -->
+    <g transform="translate(550,80)">
+      <circle cx="30" cy="30" r="20" fill="#81c784"/> <!-- 頭 -->
+      <rect x="10" y="50" width="40" height="50" fill="#81c784"/> <!-- 身體 -->
+      <!-- 密碼本 -->
+      <rect x="50" y="20" width="20" height="30" fill="#fff" stroke="#388e3c"/>
+      <text x="60" y="40" font-family="sans-serif" font-size="8" fill="#388e3c" text-anchor="middle">🔒</text>
+    </g>
+  </g>
+
+  <!-- 底部說明 -->
+  <g transform="translate(50,500)">
+    <rect x="0" y="0" width="700" height="80" rx="5" fill="#fff" stroke="#666"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="14" fill="#666">• HTTP：數據明文傳輸，就像在餐廳大廳裡大聲說話，容易被其他人聽到</text>
+    <text x="20" y="55" font-family="sans-serif" font-size="14" fill="#666">• HTTPS：數據加密傳輸，就像用密碼本寫訂單，只有服務生能看懂內容</text>
+  </g>
+</svg> 
