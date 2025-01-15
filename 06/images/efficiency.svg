@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+        環境管理提升開發效率
+    </text>
+
+    <!-- Without Environment Management -->
+    <g transform="translate(50,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#dc3545">傳統方式</text>
+        
+        <!-- Timeline Box -->
+        <rect x="20" y="50" width="260" height="240" fill="#fff" stroke="#dc3545" stroke-width="2" rx="10"/>
+        
+        <!-- Timeline -->
+        <g transform="translate(40,80)">
+            <!-- Setup Time -->
+            <rect x="0" y="0" width="220" height="40" fill="#ffe6e6" stroke="#dc3545" stroke-width="2"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#333">手動設置環境: 2小時</text>
+            
+            <!-- Debugging Time -->
+            <rect x="0" y="50" width="220" height="40" fill="#ffe6e6" stroke="#dc3545" stroke-width="2"/>
+            <text x="10" y="75" font-family="Arial" font-size="14" fill="#333">解決依賴衝突: 1.5小時</text>
+            
+            <!-- Testing Time -->
+            <rect x="0" y="100" width="220" height="40" fill="#ffe6e6" stroke="#dc3545" stroke-width="2"/>
+            <text x="10" y="125" font-family="Arial" font-size="14" fill="#333">環境不一致問題: 2小時</text>
+            
+            <!-- Total -->
+            <rect x="0" y="150" width="220" height="40" fill="#dc3545" stroke="#dc3545" stroke-width="2"/>
+            <text x="10" y="175" font-family="Arial" font-size="14" fill="#fff">總計: 5.5小時</text>
+        </g>
+    </g>
+
+    <!-- Arrow -->
+    <g transform="translate(370,200)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#666" stroke-width="2"/>
+        <polygon points="60,0 50,-5 50,5" fill="#666"/>
+        <text x="30" y="-10" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">改善</text>
+    </g>
+
+    <!-- With Environment Management -->
+    <g transform="translate(490,80)">
+        <!-- Section Title -->
+        <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="20" fill="#28a745">使用環境管理</text>
+        
+        <!-- Timeline Box -->
+        <rect x="20" y="50" width="260" height="240" fill="#fff" stroke="#28a745" stroke-width="2" rx="10"/>
+        
+        <!-- Timeline -->
+        <g transform="translate(40,80)">
+            <!-- Setup Time -->
+            <rect x="0" y="0" width="220" height="40" fill="#e6ffe6" stroke="#28a745" stroke-width="2"/>
+            <text x="10" y="25" font-family="Arial" font-size="14" fill="#333">自動化環境設置: 10分鐘</text>
+            
+            <!-- Switch Projects -->
+            <rect x="0" y="50" width="220" height="40" fill="#e6ffe6" stroke="#28a745" stroke-width="2"/>
+            <text x="10" y="75" font-family="Arial" font-size="14" fill="#333">快速切換專案: 2分鐘</text>
+            
+            <!-- Testing Time -->
+            <rect x="0" y="100" width="220" height="40" fill="#e6ffe6" stroke="#28a745" stroke-width="2"/>
+            <text x="10" y="125" font-family="Arial" font-size="14" fill="#333">環境一致性檢查: 3分鐘</text>
+            
+            <!-- Total -->
+            <rect x="0" y="150" width="220" height="40" fill="#28a745" stroke="#28a745" stroke-width="2"/>
+            <text x="10" y="175" font-family="Arial" font-size="14" fill="#fff">總計: 15分鐘</text>
+        </g>
+    </g>
+
+    <!-- Benefits -->
+    <g transform="translate(50,340)">
+        <text x="350" y="0" text-anchor="middle" font-family="Arial" font-size="16" fill="#333">
+            節省 97% 的環境相關時間
+        </text>
+        <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">
+            更多時間專注於開發核心功能
+        </text>
+    </g>
+
+    <!-- Time Savings Indicators -->
+    <g transform="translate(0,0)" stroke="#28a745" stroke-width="2">
+        <!-- Setup Time Comparison -->
+        <path d="M 310,170 C 380,170 380,170 490,170" fill="none" stroke-dasharray="4,4"/>
+        <text x="400" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#28a745">節省 95%</text>
+        
+        <!-- Project Switch -->
+        <path d="M 310,220 C 380,220 380,220 490,220" fill="none" stroke-dasharray="4,4"/>
+        <text x="400" y="215" text-anchor="middle" font-family="Arial" font-size="12" fill="#28a745">節省 98%</text>
+        
+        <!-- Testing -->
+        <path d="M 310,270 C 380,270 380,270 490,270" fill="none" stroke-dasharray="4,4"/>
+        <text x="400" y="265" text-anchor="middle" font-family="Arial" font-size="12" fill="#28a745">節省 97%</text>
+    </g>
+</svg> 
