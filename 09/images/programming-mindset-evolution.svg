@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for background -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f3f4f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+      markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4B5563"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#grad1)"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#1F2937" font-size="24" font-weight="bold">
+    新時代程式開發者的進化之路
+  </text>
+
+  <!-- Stage 1: Standardization -->
+  <g transform="translate(50,100)">
+    <rect x="0" y="0" width="200" height="220" rx="10" fill="#E5E7EB" stroke="#4B5563"/>
+    <text x="100" y="40" text-anchor="middle" fill="#1F2937" font-size="18">標準化思維</text>
+    <rect x="20" y="60" width="160" height="30" rx="5" fill="#D1D5DB"/>
+    <text x="100" y="80" text-anchor="middle" fill="#1F2937" font-size="14">清晰的框架</text>
+    <rect x="20" y="100" width="160" height="30" rx="5" fill="#D1D5DB"/>
+    <text x="100" y="120" text-anchor="middle" fill="#1F2937" font-size="14">可重複的流程</text>
+    <rect x="20" y="140" width="160" height="30" rx="5" fill="#D1D5DB"/>
+    <text x="100" y="160" text-anchor="middle" fill="#1F2937" font-size="14">優化的模板</text>
+  </g>
+
+  <!-- Stage 2: Automation -->
+  <g transform="translate(300,100)">
+    <rect x="0" y="0" width="200" height="220" rx="10" fill="#93C5FD" stroke="#2563EB"/>
+    <text x="100" y="40" text-anchor="middle" fill="#1E3A8A" font-size="18">自動化思維</text>
+    <rect x="20" y="60" width="160" height="30" rx="5" fill="#BFDBFE"/>
+    <text x="100" y="80" text-anchor="middle" fill="#1E3A8A" font-size="14">重複任務識別</text>
+    <rect x="20" y="100" width="160" height="30" rx="5" fill="#BFDBFE"/>
+    <text x="100" y="120" text-anchor="middle" fill="#1E3A8A" font-size="14">自動化流程</text>
+    <rect x="20" y="140" width="160" height="30" rx="5" fill="#BFDBFE"/>
+    <text x="100" y="160" text-anchor="middle" fill="#1E3A8A" font-size="14">效率提升</text>
+  </g>
+
+  <!-- Stage 3: AI Integration -->
+  <g transform="translate(550,100)">
+    <rect x="0" y="0" width="200" height="220" rx="10" fill="#34D399" stroke="#059669"/>
+    <text x="100" y="40" text-anchor="middle" fill="#064E3B" font-size="18">智能化思維</text>
+    <rect x="20" y="60" width="160" height="30" rx="5" fill="#6EE7B7"/>
+    <text x="100" y="80" text-anchor="middle" fill="#064E3B" font-size="14">LLM 協作</text>
+    <rect x="20" y="100" width="160" height="30" rx="5" fill="#6EE7B7"/>
+    <text x="100" y="120" text-anchor="middle" fill="#064E3B" font-size="14">智能決策</text>
+    <rect x="20" y="140" width="160" height="30" rx="5" fill="#6EE7B7"/>
+    <text x="100" y="160" text-anchor="middle" fill="#064E3B" font-size="14">創新突破</text>
+  </g>
+
+  <!-- Connecting Arrows -->
+  <g stroke="#4B5563" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="250" y1="210" x2="290" y2="210"/>
+    <line x1="500" y1="210" x2="540" y2="210"/>
+  </g>
+
+  <!-- Bottom Text -->
+  <text x="400" y="360" text-anchor="middle" fill="#1F2937" font-size="16">
+    從程式工匠到 AI 時代的系統思考者
+  </text>
+</svg> 

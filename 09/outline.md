@@ -1,5 +1,7 @@
 # 第九章：程式設計思維(結合AI)
 
+![新時代程式開發者的進化之路](images/programming-mindset-evolution.svg)
+
 ## 學習目標
 - 掌握問題分析與 I/O 定義的思維方式
 - 學會內容生產的標準化與模板化
